@@ -28,8 +28,7 @@ $(function () {
             }, {
                 title: "介绍",
                 field: 'intro',
-                width: '23%',
-                sortable: true
+                width: '23%'
             }, {
                 title: "作品数",
                 field: 'works',
