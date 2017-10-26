@@ -1,0 +1,84 @@
+.my_clearfix_both {
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .form-inline .control-label {
+        padding-top: 7px !important;
+    }
+}
+
+.search-form {
+    margin-bottom: 3%;
+}
+
+.search-form > div:not(:last-child) {
+    margin-bottom: 15px;
+    clear: both;
+}
+
+.search-form .col-md-3:last-child {
+    padding-left: 0;
+}
+
+.search-form .form-label {
+    float: left !important;
+    width: 27%;
+}
+
+.search-form .form-value {
+    display: inline-block;
+    width: 70%;
+}
+
+.upload-img-preview {
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.upload-img-preview .icon-container {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    z-index: 100;
+    display: none;
+}
+
+.upload-img-preview img {
+    border-radius: 5%;
+}
+
+.upload-img-preview .icon-container i {
+    font-size: 20px;
+}
+
+.upload-loading {
+    background: url('../js/plugins/jquery-file-upload/img/loading.gif') no-repeat;
+    display: none;
+    width: 32px;
+    background-size: contain;
+    height: 32px;
+    float: right;
+}
+
+.colorpicker-2x .colorpicker-saturation {
+    width: 150px;
+    height: 150px;
+}
+
+.colorpicker-2x .colorpicker-hue,
+.colorpicker-2x .colorpicker-alpha {
+    width: 30px;
+    height: 150px;
+}
+
+.colorpicker-2x .colorpicker-color,
+.colorpicker-2x .colorpicker-color div {
+    height: 30px;
+}
+
+.table tbody td {
+    vertical-align: middle !important;
+}
