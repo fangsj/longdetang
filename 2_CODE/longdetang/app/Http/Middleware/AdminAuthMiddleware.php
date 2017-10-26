@@ -16,7 +16,7 @@ class AdminAuthMiddleware
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        if (Auth::guard($guard)->guest() && !$request->is('*login*')) {
+        if (!$request->is('*login*') && !Auth::guard($guard)->check()) {
             if ($request->ajax() || $request->wantsJson()) {
                 return response('Unauthorized.', 401);
             } else {

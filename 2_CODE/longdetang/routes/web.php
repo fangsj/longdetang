@@ -18,7 +18,7 @@ use App\Repositorys\Product\ProductRepository;
 //    return view('product.list');
 //});
 
-Route::group(['prefix' => 'admin','namespace' => 'Admin', 'middleware' => ['web']],function ($router) {
+Route::group(['prefix' => 'admin','namespace' => 'Admin', 'middleware' => ['auth.admin:admin']],function ($router) {
     // 登录
     $router->get('login', 'LoginController@showLoginForm')->name('admin.login');
     $router->post('login', 'LoginController@login');
