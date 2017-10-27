@@ -76,7 +76,7 @@
                 <li data-menu-link="{{ admin('/video')  }}" data-menu-code="004">
                     <a><i class="fa fa-video-camera"></i> <span class="nav-label">视频管理</span></a>
                 </li>
-                <li data-menu-link="{{ admin('/logout')  }}" data-menu-code="005">
+                <li data-menu-link="{{ admin('/banner')  }}" data-menu-code="005">
                     <a><i class="fa fa-picture-o"></i> <span class="nav-label">首页轮播</span></a>
                 </li>
             </ul>

@@ -58,6 +58,14 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin', 'middleware' => ['auth
     $router->post('artist/add', 'ArtistController@add');
     $router->get('artist/edit', 'ArtistController@initEdit');
     $router->post('artist/edit', 'ArtistController@edit');
+    // 轮播管理
+    $router->get('banner', 'BannerController@index');
+    $router->post('banner', 'BannerController@query');
+    $router->post('banner/delete', 'BannerController@delete');
+    $router->get('banner/add', 'BannerController@initAdd');
+    $router->post('banner/add', 'BannerController@add');
+    $router->get('banner/edit', 'BannerController@initEdit');
+    $router->post('banner/edit', 'BannerController@edit');
 });
 
 //Auth::routes();
