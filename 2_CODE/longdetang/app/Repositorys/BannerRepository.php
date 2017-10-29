@@ -11,7 +11,7 @@ namespace App\Repositorys;
 
 use App\Models\Banner;
 
-class BannerRepository implements IArtistRepository
+class BannerRepository implements IBannerRepository
 {
     public function paginate($params)
     {

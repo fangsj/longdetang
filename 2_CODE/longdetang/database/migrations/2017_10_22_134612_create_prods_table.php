@@ -15,8 +15,9 @@ class CreateProdsTable extends Migration
     {
         Schema::create('prods', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->comment('商品名称');
-            $table->string('code')->comment('商品编码，系统内部唯一');
+            $table->string('name', 32)->comment('商品名称');
+            $table->string('code', 16)->comment('商品编码，系统内部唯一');
+            $table->string('pic', 256)->comment('商品图')->nullable();
             $table->decimal('price', 8,2)->comment('商品价格');
             $table->integer('artist_id')->comment('艺人Id')->nullable();
             $table->integer('category_id')->comment('大类ID')->nullable();

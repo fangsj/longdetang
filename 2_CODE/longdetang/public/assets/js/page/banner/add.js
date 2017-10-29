@@ -6,7 +6,7 @@ $(function () {
     $("#picInput").fileupload({
         url: url('/upload'),
         singleFileUploads: false,
-        formData: {"kind": "video"},
+        formData: {"kind": "banner"},
         paramName: "files[]",
         done: function (e, resp) {
             if (resp.result) {

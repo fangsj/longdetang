@@ -64,7 +64,7 @@
                         龙德堂
                     </div>
                 </li>
-                <li data-menu-link="{{ admin('/logout')  }}" data-menu-code="001">
+                <li data-menu-link="{{ admin('/prod')  }}" data-menu-code="001">
                     <a><i class="fa fa-shopping-cart"></i> <span class="nav-label">商品管理</span></a>
                 </li>
                 <li data-menu-link="{{ admin('/prod/category')  }}" data-menu-code="002">

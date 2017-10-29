@@ -51,3 +51,7 @@ Route::get('banner/add', 'BannerController@initAdd');
 Route::post('banner/add', 'BannerController@add');
 Route::get('banner/edit', 'BannerController@initEdit');
 Route::post('banner/edit', 'BannerController@edit');
+// 商品管理
+Route::get('prod', 'ProdController@index');
+Route::post('prod', 'ProdController@query');
+Route::post('prod/delete', 'ProdController@delete');

@@ -31,4 +31,6 @@ class ArtistRepository implements IArtistRepository
             'total' => $paginate->total()
         ];
     }
+
+
 }
