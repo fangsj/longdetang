@@ -12,4 +12,5 @@ namespace App\Repositorys;
 interface IProdRepository
 {
     public function paginate($params);
+    public function delete($param, Request $request = null);
 }

@@ -11,6 +11,7 @@ namespace App\Repositorys;
 
 use App\Models\ProdCategory;
 use App\Models\ProdSecondCategory;
+use Illuminate\Http\Request;
 
 class ProdCategoryRespository implements IProdCategoryRepository
 {
@@ -29,7 +30,7 @@ class ProdCategoryRespository implements IProdCategoryRepository
         return $categorys;
     }
 
-    public function delete($id)
+    public function delete($id, Request $request = null)
     {
         ProdCategory::where('id', $id)->delete();
         ProdSecondCategory::where('parent_id', $id)->delete();

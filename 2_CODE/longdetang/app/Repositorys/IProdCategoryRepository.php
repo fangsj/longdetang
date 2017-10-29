@@ -9,12 +9,12 @@
 namespace App\Repositorys;
 
 
-use App\Models\ProdCategory;
+use Illuminate\Http\Request;
 
 interface IProdCategoryRepository
 {
     public function get();
-    public function delete($id);
+    public function delete($id, Request $request = null);
     public function open($id);
     public function close($id);
 }

@@ -12,6 +12,6 @@ namespace App\Repositorys;
 interface IVideoLibRepository
 {
     public function paginate($params);
-
     public function switch_status($params);
+    public function delete($param, Request $request = null);
 }

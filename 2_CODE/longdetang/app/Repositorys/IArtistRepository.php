@@ -9,7 +9,10 @@
 namespace App\Repositorys;
 
 
+use Illuminate\Http\Request;
+
 interface IArtistRepository
 {
     public function paginate($params);
+    public function delete($param, Request $request = null);
 }

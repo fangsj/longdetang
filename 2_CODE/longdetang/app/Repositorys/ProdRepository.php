@@ -10,6 +10,7 @@ namespace App\Repositorys;
 
 
 use App\Models\Prod;
+use App\Models\ProdAttach;
 
 class ProdRepository implements IProdRepository
 {
@@ -39,5 +40,12 @@ class ProdRepository implements IProdRepository
             'pages' => $paginate->lastPage(),
             'total' => $paginate->total()
         ];
+    }
+
+
+    public function delete($param, Request $request = null)
+    {
+        Prod::where('id', $param['id'])->delete();
+        ProdAttach::where('prod_id', $param['id'])->delete();
     }
 }

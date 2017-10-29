@@ -10,16 +10,17 @@ namespace App\Repositorys;
 
 
 use App\Models\Artist;
+use Illuminate\Http\Request;
 
 class ArtistRepository implements IArtistRepository
 {
     public function paginate($params)
     {
         $query = Artist::toBase();
-        if(!empty($params['name'])) {
-            $query->where('name', 'like', "%".$params['name']."%");
+        if (!empty($params['name'])) {
+            $query->where('name', 'like', "%" . $params['name'] . "%");
         }
-        if(!empty($params['sortName'])) {
+        if (!empty($params['sortName'])) {
             $query->orderBy($params['sortName'], (!empty($params['sortOrder']) ? $params['sortOrder'] : 'desc'));
         }
         $paginate = $query->paginate($params['pageSize'], ['*'], 'pageNumber');
@@ -32,5 +33,8 @@ class ArtistRepository implements IArtistRepository
         ];
     }
 
-
+    public function delete($param, Request $request = null)
+    {
+        Artist::where('id', $param['id'])->delete();
+    }
 }

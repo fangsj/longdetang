@@ -21,7 +21,7 @@ trait DeleteTrait
      */
     public function delete(Request $request)
     {
-        $this->model->where('id', $request->id)->delete();
+        $this->repository->delete($request->all());
         return $this->successOnlyMsg($this->module_name.'删除成功!');
     }
 }

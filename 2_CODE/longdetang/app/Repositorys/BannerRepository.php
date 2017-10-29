@@ -31,4 +31,9 @@ class BannerRepository implements IBannerRepository
             'total' => $paginate->total()
         ];
     }
+
+    public function delete($param, Request $request = null)
+    {
+        Banner::where('id', $param['id'])->delete();
+    }
 }

@@ -9,6 +9,7 @@
 namespace App\Repositorys;
 
 
+use App\Models\VideoLib;
 use Illuminate\Support\Facades\DB;
 
 class VideoLibRepository implements IVideoLibRepository
@@ -42,5 +43,10 @@ class VideoLibRepository implements IVideoLibRepository
         } else {
             DB::update('update video_libs set status=2, updated_at = now() where id = ?', [$params['id']]);
         }
+    }
+
+    public function delete($param, Request $request = null)
+    {
+        VideoLib::where('id', $param['id'])->delete();
     }
 }
