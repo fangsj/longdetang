@@ -1,5 +1,5 @@
 @extends('admin.layout')
-@section('title', '新增视频')
+@section('title', '编辑艺人')
 
 @section('content')
     @include('admin.js.validate')

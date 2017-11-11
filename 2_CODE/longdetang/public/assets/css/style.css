@@ -2966,7 +2966,7 @@ label.error {
 /* Image cropper style */
 .img-container,
 .img-preview {
-    overflow: hidden;
+    /*overflow: hidden;*/
     text-align: left;
     /*width: 100%;*/
 }

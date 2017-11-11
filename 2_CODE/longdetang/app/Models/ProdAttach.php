@@ -10,4 +10,5 @@ class ProdAttach extends Model
     //
     protected $table = 'prod_attachs';
     use SoftDeletes;
+    protected $fillable = ['prod_id', 'name', 'url'];
 }

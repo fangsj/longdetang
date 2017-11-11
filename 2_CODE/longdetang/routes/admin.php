@@ -43,6 +43,7 @@ Route::get('artist/add', 'ArtistController@initAdd');
 Route::post('artist/add', 'ArtistController@add');
 Route::get('artist/edit', 'ArtistController@initEdit');
 Route::post('artist/edit', 'ArtistController@edit');
+Route::post('artist/search', 'ArtistController@search');
 // 轮播管理
 Route::get('banner', 'BannerController@index');
 Route::post('banner', 'BannerController@query');
@@ -54,4 +55,9 @@ Route::post('banner/edit', 'BannerController@edit');
 // 商品管理
 Route::get('prod', 'ProdController@index');
 Route::post('prod', 'ProdController@query');
+Route::get('prod/add', 'ProdController@initAdd');
+Route::post('prod/add', 'ProdController@add');
+Route::get('prod/edit', 'ProdController@initEdit');
+Route::post('prod/edit', 'ProdController@edit');
 Route::post('prod/delete', 'ProdController@delete');
+Route::post('prod/status', 'ProdController@switchStatus');

@@ -11,6 +11,24 @@ $(function () {
                 deleteRow: true,
                 edit: function (row) {
                     redirect(url('/prod/edit'), {id: row.id});
+                },
+                swtichStatus: function(row) {
+                    var _this = this;
+                    $.post(url('/prod/status'), {
+                        'id': row.id,
+                        'status': row.status != 1 ? 1 : 2
+                    }, function (resp) {
+                        if (resp.status == 0) {
+                            alert.success({
+                                message:resp.msg,
+                                callback: function () {
+                                    _this.search();
+                                }
+                            });
+                        } else {
+                            alert.danger(resp.msg)
+                        }
+                    });
                 }
             }
         },

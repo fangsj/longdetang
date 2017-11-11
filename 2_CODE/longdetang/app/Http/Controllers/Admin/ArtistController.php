@@ -23,4 +23,8 @@ class ArtistController extends BaseController
         $this->repository = $artistRepository;
         $this->model = Artist::query();
     }
+
+    public function search(Request $request) {
+        return response()->json($this->model->select('id', 'name as text')->where('name', 'like', "%" . $request->term . "%")->get());
+    }
 }
