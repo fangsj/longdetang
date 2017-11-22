@@ -1,0 +1,3743 @@
+@charset "utf-8";
+
+/************************************************
+ 各ページコンテンツ用
+************************************************ */
+/* ==============================================
+▼TOP
+=============================================== */
+/* メインイメージ
+----------------------------------------------- */
+#main_image {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* ==============================================
+▼下層
+=============================================== */
+div#undercolumn_error{
+	padding: 0 20px;
+}
+div#undercolumn_error p.error {
+    padding: 50px 0;
+	text-align: center;
+}
+
+/* ==============================================
+▼ガイド
+=============================================== */
+/* ◎◎について
+----------------------------------------------- */
+div#undercolumn_aboutus {
+}
+
+/* 特定商取引法
+----------------------------------------------- */
+div#undercolumn_order {
+	margin: 0 auto;
+    max-width: 920px;
+	width: 100%;
+	font-size: 13px;
+}
+div#undercolumn_order dl{
+	width:920px;
+	margin:0px 0px 20px 0px;
+	padding:0px 0px 20px 0px;
+	border-bottom: #CCC dotted 1px;
+}
+
+div#undercolumn_order dt{
+	width:220px;
+	margin:0px;
+	padding:0px 10px;
+	float:left;
+	text-align:left;
+	line-height:1.8em;
+}
+div#undercolumn_order dt:before{
+	content: "■ ";
+}
+
+div#undercolumn_order dd{
+	width:680px;
+	margin:0px;
+	padding:0px;
+	float:right;
+	text-align:left;
+	line-height:1.8em;
+	
+}
+div#undercolumn_order dd a{
+	text-decoration: underline;
+}
+	div#undercolumn_order.privacy p{
+		margin: 0;
+		padding: 0 0 30px;
+
+	}
+div#undercolumn_order.privacy h3{
+	font-size: 16px;
+	margin: 0 0 20px;
+	padding: 0;
+}
+div#undercolumn_order.privacy p span{
+	font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+/* お問い合わせ
+----------------------------------------------- */
+div#undercolumn_contact {
+    margin: 0 auto;
+    max-width: 920px;
+	width: 100%;
+	font-size: 13px;
+}
+div#undercolumn_contact dl{
+	width:920px;
+	margin:0px 0px 20px 0px;
+	padding:0px 0px 20px 0px;
+	border-bottom: #CCC dotted 1px;
+}
+
+div#undercolumn_contact dt{
+	width:220px;
+	margin:0px;
+	padding:0px 10px;
+	float:left;
+	text-align:left;
+	line-height:1.8em;
+}
+
+div#undercolumn_contact dd{
+	width:680px;
+	margin:0px;
+	padding:0px;
+	float:right;
+	text-align:left;
+	line-height:1.8em;
+	
+}
+.zipimg img {
+    vertical-align: middle;
+}
+
+
+/* ==============================================
+▼MYページ
+=============================================== */
+/* 共通設定
+----------------------------------------------- */
+
+div#mynavi_area {
+    width: 100%;
+}
+
+div#mycontents_area {
+    width: 100%;
+}
+
+div#mynavi_area nav.myNavi{
+	    margin: 0;
+    padding: 0;
+    border-bottom: #000 solid 2px;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 0;
+}
+
+div#mynavi_area .mynavi_list {
+	margin: 0 0 0 -4px;
+	padding: 0;
+	
+	
+}
+div#mynavi_area .mynavi_list li {
+	float: left;
+	margin: 0;
+	padding: 0 0 0 4px;
+	box-sizing: border-box;
+	width: 16.666666%;
+}
+
+div#mynavi_area .mynavi_list li a{
+	display: block;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #000;
+	background: #d7d7d7;
+	position: relative;
+}
+div#mynavi_area .mynavi_list li a:hover{
+color: #fff;
+	background: #676767;
+}
+
+
+
+div#mynavi_area .mynavi_list li a.selected{
+	background: #000;
+	color: #fff;
+}
+div#mynavi_area .mynavi_list li a.selected:after{
+	content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #000 transparent transparent transparent;
+}
+
+div#mynavi_area div.point_announce {
+   padding: 20px;
+    margin-bottom: 20px;
+    border: solid 1px #dddddd;
+    background: #fafafa;
+    font-size: 13px;
+    text-align: right;
+    line-height: 1.8em;
+}
+
+
+div#mycontents_area p.inforamtion {
+    margin-bottom: 20px;
+}
+div#mypagecolumn {
+          width: 960px;
+    margin:0 auto;
+	padding: 0;
+	font-size: 13px;
+}
+
+
+div#mypagecolumn h4 {
+    margin: 10px auto;
+    border-bottom: 1px solid #999;
+    text-align: left;
+    font-size: 120%;
+}
+
+div#mypagecolumn table.list {
+    width: 100%;
+    border: none;
+    margin: 15px 0 30px;
+    font-size: 13px;
+}
+
+div#mypagecolumn table.list .col1 {
+	width: 180px;
+}
+div#mypagecolumn table.list .col2 {
+	width: 110px;
+}
+div#mypagecolumn table.list .col3 {
+	width: 250px;
+}
+div#mypagecolumn table.list .col4 {
+	width: 150px;
+}
+div#mypagecolumn table.list .col5 {
+	width: 130px;
+}
+div#mypagecolumn table.list .col6 {
+	width: 90px;
+}
+div#mypagecolumn table.list th {
+	background: #fff;
+	text-align: center;
+	border: none;
+	border-bottom: 1px solid #e2e2e2;
+	font-weight: bold;
+}
+div#mypagecolumn table.list th:last-child {
+}
+div#mypagecolumn table.list td {
+	text-align: center;
+	border-bottom: 1px solid #e2e2e2;
+	border-right: 1px solid #e2e2e2;
+	padding: 10px 5px;
+}
+div#mypagecolumn table.list td:last-child {
+	border-right: none;
+}
+div#mypagecolumn table.list td.detail {
+	font-weight: bold;
+	color: #000;
+}
+div#mypagecolumn table.list td.detail a {
+	color: #000;
+}
+div#mypagecolumn .count {
+    text-align: right;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+div#mypagecolumn dl{
+	width:920px;
+	margin:0px 0px 20px 0px;
+	padding:0px 0px 20px 0px;
+	border-bottom: #CCC dotted 1px;
+}
+
+div#mypagecolumn dt{
+	width:220px;
+	margin:0px;
+	padding:0px 10px;
+	float:left;
+	text-align:left;
+	line-height:1.8em;
+}
+
+div#mypagecolumn dd{
+	width:680px;
+	margin:0px;
+	padding:0px;
+	float:right;
+	text-align:left;
+	line-height:1.8em;
+	
+}
+
+div#mypagecolumn  p.information{
+	margin:0 0 40px;
+}
+div#mypagecolumn div#complete_area .message{
+	margin:0 0 20px;
+	padding: 30px 0 0;
+    line-height: 150%;
+    font-weight: bold;
+    font-size: 18px;
+}
+div#mypagecolumn div#complete_area .refusalmessage{
+	margin:0 0 20px;
+	padding: 30px 0 0;
+    line-height: 150%;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* 購入履歴一覧/詳細
+----------------------------------------------- */
+div#mycontents_area div.mycondition_area {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: solid 1px #dddddd;
+    background: #fafafa;
+    font-size: 13px;
+    line-height: 1.8em;
+}
+
+
+.add_address {
+    margin-bottom: 20px;
+}
+.add_address a{
+	-webkit-appearance: none;
+    background: #000;
+    height: 40px;
+    width: 250px;
+    color: #fff !important;
+    border: none;
+    border-radius: 0;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    line-height: 40px;
+    text-decoration: none !important;
+	text-align: center;
+}
+
+/* 会員登録内容変更/退会
+----------------------------------------------- */
+div#mycontents_area .message_area {
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+div#mycontents_area .message_area p {
+    margin-bottom: 20px;
+}
+
+/* ==============================================
+▼会員登録
+=============================================== */
+div#undercolumn_entry {
+     margin: 0 auto;
+    width: 100%;
+    line-height: 1.8em;
+	font-size:14px;
+}
+
+div#undercolumn_entry h2 {
+       margin: 0 0 50px;
+    padding: 0 0 14px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    font-family: Georgia, "Times New Roman", 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    position: relative;
+}
+div#undercolumn_entry h2:after {
+    content: "";
+    display: block;
+    width: 30px;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -15px;
+}
+div#undercolumn_entry .kiyaku_area{
+	width:920px;
+	    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+div#undercolumn_entry .kiyaku_area .kiyaku_text {
+    margin: 20px auto;
+    padding: 10px;
+    border: solid 1px #e3e3e3;
+    width: 898px;
+	height:500px;
+	overflow:auto;
+    background: none;
+}
+
+
+div#undercolumn_entry .entry_area{
+	width:920px;
+	    margin: 0 auto;
+    padding: 0;
+}
+
+div#undercolumn_entry .entry_area p{
+	margin:0 0 40px;
+}
+
+div#undercolumn_entry .entry_area dl{
+	width:920px;
+	margin:0px 0px 20px 0px;
+	padding:0px 0px 20px 0px;
+	border-bottom: #CCC dotted 1px;
+}
+
+div#undercolumn_entry .entry_area dt{
+	width:220px;
+	margin:0px;
+	padding:0px 10px;
+	float:left;
+	text-align:left;
+	line-height:1.8em;
+}
+
+div#undercolumn_entry .entry_area dd{
+	width:680px;
+	margin:0px;
+	padding:0px;
+	float:right;
+	text-align:left;
+	line-height:1.8em;
+	
+}
+
+div#undercolumn_entry .entry_area dd p{
+	margin:0 0 5px;
+}
+div#undercolumn_entry .kiyaku_area .btn_area2 {
+    display: none;
+}
+div#undercolumn_entry .kiyaku_area li a.nag {
+    background: #666;
+}
+div#undercolumn_entry .kiyaku_area li a.ag {
+    background: #000;
+}
+
+div#complete_area h4 {
+    font-size: 16px;
+	margin-bottom: 20px;
+}
+div#complete_area {
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.8em;
+}
+div#complete_area .shop_information {
+    margin-top: 40px;
+    padding: 20px 0 0 0;
+    border-top: #C5C5C5 solid 1px;
+    text-align: left;
+}
+/* ==============================================
+▼ログイン
+=============================================== */
+div#undercolumn_login {
+     margin: 0 auto;
+    width: 100%;
+    line-height: 1.8em;
+	font-size:14px;
+}
+
+div#undercolumn_login h2 {
+  margin: 0 0 50px;
+    padding: 0 0 14px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    font-family: Georgia, "Times New Roman", 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    position: relative;
+	
+}
+div#undercolumn_login h2:after {
+    content: "";
+    display: block;
+    width: 30px;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -15px;
+}
+div#undercolumn_login .login_box{
+width:1000px;
+	    margin: 0 auto;
+    padding: 0px;
+}
+
+div#undercolumn_login .login_box .login_title{
+	text-align:center;
+	margin:0 0 20px;
+	padding:10px 0;
+	border-bottom: #C5C5C5 solid 3px;
+	border-top: #C5C5C5 solid 3px;
+	font-size:15px;
+	line-height:1;
+
+	
+	
+}
+
+div#undercolumn_login a{
+	color:#000;
+	text-decoration:underline;
+}
+
+div#undercolumn_login a:hover{
+	color:#000;
+	text-decoration: none;
+}
+
+div#undercolumn_login .login_area {
+	    float: left;
+    width: 490px;
+    line-height: 1.8em;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    background: #efefef;
+    height: 540px;
+}
+
+div#undercolumn_login .login_area2 {
+	float:right;
+	 width: 490px;
+    line-height: 1.8em;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    background: #efefef;
+    height: 540px;
+}
+
+div#undercolumn_login .login_area .inputbox {
+    margin: 15px auto 15px auto;
+    padding:0px;
+}
+
+div#undercolumn_login .login_area .inputbox .btn_area {
+    margin-top: 0;
+}
+
+div#undercolumn_login .login_area .inputbox .btn_area2 {
+	display:none;
+}
+
+div#undercolumn_login .login_area2 .inputbox .btn_area {
+    margin-top: 10px;
+}
+
+div#undercolumn_login .login_area2 .inputbox .btn_area2 {
+	display:none;
+}
+
+div#mycontents_area .btn_area{
+	display:block;
+}
+
+div#mycontents_area .btn_area2{
+	display:none;
+}
+
+
+/* ==============================================
+▼エラー
+=============================================== */
+div#undercolumn_error .message_area {
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+div#undercolumn_error .message_area .error {
+    padding: 120px 0;
+}
+
+
+/* ==============================================
+▼商品一覧
+=============================================== */
+/* ページ送り
+----------------------------------------------- */
+.pagenumber_area {
+    padding-bottom: 10px;
+	font-size: 13px;
+}
+
+.pagenumber_area_top{
+	padding: 0px 0 40px;
+	
+}
+.pagecond_area {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.pagenumber_area {
+    margin:0;
+}
+.pagecond_area {
+    border: 1px solid #ccc;
+}
+.pagenumber_area .navi {
+    width: 100%;
+    text-align: left;
+}
+.pagenumber_area .navi li {
+    display: inline;
+}
+.pagenumber_area .change {
+    float: right;
+    text-align: right;
+    white-space: nowrap;
+}
+.pagenumber_area .change a {
+   display: inline-block;
+	padding: 0 2px;
+
+}
+
+/* レイアウト
+----------------------------------------------- */
+div.list_area {
+    padding: 0;
+    width: 100%;
+}
+
+div.listphoto {
+    float: left;
+	width: 330px;
+	height: 330px;
+	line-height: 0;
+}
+div.listphoto img{
+	width: 100%;
+	height: auto;
+}
+/* メインカラム用 1カラム時*/
+div.listrightbloc {
+	margin: 0 0 0 360px;
+	padding: 0;
+}
+div.listrightbloc .clearfix:after {
+        display:inline-block;
+}
+div.listrightbloc h4{
+	font-size: 16px;
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	border-bottom: #ccc dotted 1px;
+}
+div.listrightbloc ul.category{
+	display: block;
+	margin:0 0 20px;
+	padding: 0;
+}
+div.listrightbloc ul.category li{
+	height: 28px;
+	line-height: 28px;
+	padding: 0 10px;
+	background: #eae8dc;
+	font-size: 12px;
+	margin: 0 3px 0 0;
+	float: left;
+ }
+/* メインカラム用 2カラム時*/
+#main_column.colnum2 div.listrightbloc {
+    float: right;
+    width: 80%;
+}
+
+/* メインカラム用 3カラム時*/
+#main_column.colnum3 div.listrightbloc {
+    float: right;
+    width: 74%;
+}
+
+
+/* 商品情報 各種設定
+----------------------------------------------- */
+/* 商品ステータス */
+div.listrightbloc ul.status_icon {
+    margin-bottom: 10px;
+    width: 100%;
+}
+div.listrightbloc ul.status_icon li {
+    margin-right: 5px;
+    float: left;
+}
+
+/* 商品名 */
+div.listrightbloc h3 {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+/* コメント */
+div.listrightbloc .listcomment {
+    margin: 0 0 10px 0;
+    text-align: left;
+	font-size: 14px;
+}
+
+/* 商品詳細を見る */
+
+.detai_btn_box{
+	float: right;
+	width: 30%;
+	background: #000;
+}
+
+.detai_btn_box a.detail_btn {
+	margin-bottom: 0;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	border:none;
+	text-decoration: none;
+	color: #fff;
+	font-weight: normal;
+	text-align: center;
+	font-size: 14px;
+	
+}
+
+a.detail_btn {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	border: #ccc solid 1px;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+	font-size: 14px;
+}
+
+/* 価格 */
+div.listrightbloc .pricebox {
+       margin: 0 0 20px;
+	padding: 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+div.listrightbloc .pricebox span{
+	font-size: 18px;
+}
+/* 買い物カゴ */
+div.listrightbloc .cart_area {
+	margin: 0;
+	padding: 0;
+}
+
+/* 規格 */
+div.listrightbloc .classlist {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background: url("../img/background/line_dot_02.gif") repeat-x bottom ;
+}
+div.listrightbloc dl {
+    width: 100%;
+}
+div.listrightbloc dt {
+    display: inline-block;
+    vertical-align: top;
+}
+div.listrightbloc dd {
+    padding-bottom: 10px;
+    display: inline-block;
+}
+div.listrightbloc dd p.attention {
+    margin-top: 5px;
+}
+
+/* カゴに入れる */
+div.listrightbloc .cartin {
+        margin: 0;
+    float: left;
+    width: 70%;
+    background: #000;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: 0 0 0 20px;
+    font-size: 14px;
+	border-right: #ccc solid 1px;
+	height: 40px;
+}
+div.listrightbloc .cartin select {
+    border: none;
+    padding: 0 30px 0 10px;
+    background-color: #000;
+    color: #fff;
+	height: 40px;
+	box-sizing: border-box;
+	background-image: url(image/select_ar_w.svg);
+	background-repeat: no-repeat;
+	    background-position: 22% 50%;
+    position: absolute;
+    width: 140%;
+	
+}
+div.listrightbloc .cartin .quantity {
+    padding:0;
+    float :left;
+    text-align: left;
+	color: #fff;
+	box-sizing: border-box;
+	border-right: #ccc solid 1px;
+	height: 40px;
+	    line-height: 40px;
+	    width: 100px;
+    overflow: hidden;
+	position: relative;
+}
+div.listrightbloc .cartin .quantity .box {
+    width: 70px;
+}
+div.listrightbloc .cartin_btn {
+       margin: 0 0 0 100px;
+	height: 40px;
+	overflow: hidden;
+}
+
+
+/* ==============================================
+▼商品詳細
+=============================================== */
+/* レイアウト
+
+    tplファイルのマークアップが同じ項目
+        * 1カラム時
+        * 2カラム時
+        * 3カラム時
+
+----------------------------------------------- */
+#detailarea,
+.sub_area {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#detailarea h1{
+	font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-size: 18px;
+    margin: 0 0 20px;
+    padding: 0;
+    font-weight: 700;
+    line-height: 1em;
+    text-align: center;
+    position: relative;
+    letter-spacing: 3px;
+}
+#detailarea p.read{
+	text-align: center;
+	font-size: 14px;
+	line-height: 2.0em;
+	margin: 0 0 70px;
+	padding: 0;
+}
+#detailarea .detailBlock{
+	max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.landingBlock{
+	padding: 64px 0;
+	margin: 0;
+	background: #f0eee2;
+	
+}
+
+.landingBlock .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.landingBlock .wrap ul{
+	margin: 0;
+	padding: 0;
+	display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.landingBlock .wrap ul li{
+	float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+}
+.landingBlock .wrap ul li.sm{
+		display: none;
+	}
+.landingBlock .wrap ul li .block {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.landingBlock .wrap ul li .block .textBox{
+	    margin: 0;
+    padding: 70px 50px;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+}
+.landingBlock .wrap ul li .block .pt{
+position: absolute;
+    top: 0;
+    right: left;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 40px 0 0;
+    border-color: #000 transparent transparent transparent;
+    color: #000;font-family: Georgia, Times New Roman, Times, serif;
+    z-index: 200;
+}
+.landingBlock .wrap ul li .block .pt span{
+        -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: block;
+    width: 50px;
+    text-align: center;
+    /* margin: 0 0 0 0; */
+    position: absolute;
+    top: -25px;
+    left: 5px;
+    font-family: Georgia, Times New Roman, Times, serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.landingBlock .wrap ul li .block .textBox h2{
+	font-weight: normal;
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 22px;
+}
+.landingBlock .wrap ul li .block .textBox p{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 2.0em;
+}
+.landingBlock .wrap ul li .block .thumb{
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+.landingBlock .wrap ul li .block .thumb img{
+	width: 100%;
+	height: auto;
+}
+.landingBlock .wrap ul li .block .textBox .table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.landingBlock .wrap ul li .block .textBox .tableCell {
+    width: 100%;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+}
+
+.specBlock{
+	max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 50px;
+}
+
+.specBlock .specBox{
+	margin: 0;
+	padding: 0 0 64px;
+}
+.specBlock .specBox .leftBox{
+	float: left;
+	width: 50%;
+	margin: 0;
+	padding: 0;
+}
+.specBlock .specBox .leftBox dl{
+	margin: 0 0 20px;
+	padding: 0 0 0 64px;
+	height: 14px;
+	position: relative;
+}
+.specBlock .specBox .leftBox dl.end{
+	margin: 0 0 50px;
+	padding: 0 0 0 64px;
+	height: 14px;
+	position: relative;
+}
+
+.specBlock .specBox .leftBox dl dt{
+	position: absolute;
+	width: 64px;
+	height: 14px;
+	text-align:left;
+	line-height: 14px;
+	color: #000;
+	font-size: 13px;
+	    top: 0;
+    left: 0;
+}
+
+.specBlock .specBox .leftBox dl dd{
+	margin: 0;
+	padding: 0;
+	height: 14px;
+	
+}
+.specBlock .specBox .leftBox dl dd ul{
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.specBlock .specBox .leftBox dl dd ul.rc li{
+	float: left;
+	width: 20%;
+	height: 14px;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: none;
+}
+.specBlock .specBox .leftBox dl dd ul.bc li{
+	float: left;
+	width: 20%;
+	height: 14px;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: none;
+}
+.specBlock .specBox .leftBox dl dd ul.g1 li:nth-child(1){
+	display: block;
+}
+.specBlock .specBox .leftBox dl dd ul.g2 li:nth-child(1),
+.specBlock .specBox .leftBox dl dd ul.g2 li:nth-child(2){
+	display: block;
+}
+.specBlock .specBox .leftBox dl dd ul.g3 li:nth-child(1),
+.specBlock .specBox .leftBox dl dd ul.g3 li:nth-child(2),
+.specBlock .specBox .leftBox dl dd ul.g3 li:nth-child(3){
+	display: block;
+}
+.specBlock .specBox .leftBox dl dd ul.g4 li:nth-child(1),
+.specBlock .specBox .leftBox dl dd ul.g4 li:nth-child(2),
+.specBlock .specBox .leftBox dl dd ul.g4 li:nth-child(3),
+.specBlock .specBox .leftBox dl dd ul.g4 li:nth-child(4){
+	display: block;
+}
+
+.specBlock .specBox .leftBox dl dd ul.g5 li:nth-child(1),
+.specBlock .specBox .leftBox dl dd ul.g5 li:nth-child(2),
+.specBlock .specBox .leftBox dl dd ul.g5 li:nth-child(3),
+.specBlock .specBox .leftBox dl dd ul.g5 li:nth-child(4),
+.specBlock .specBox .leftBox dl dd ul.g5 li:nth-child(5){
+	display: block;
+}
+
+
+
+.specBlock .specBox .leftBox dl dd ul li:nth-child(1){
+	background: #d4d5cd;
+}
+.specBlock .specBox .leftBox dl dd ul li:nth-child(2){
+	background: #aaab9d;
+}
+.specBlock .specBox .leftBox dl dd ul li:nth-child(3){
+	background: #7f8674;
+}
+.specBlock .specBox .leftBox dl dd ul li:nth-child(4){
+	background: #4f6751;
+}
+.specBlock .specBox .leftBox dl dd ul li:nth-child(5){
+	background: #0f4f3e;
+}
+
+.specBlock .specBox .leftBox dl.end dd .bar{
+	height: 14px;
+	margin: 0 8px;
+	padding: 0;
+	position: relative;
+	
+}
+.specBlock .specBox .leftBox dl.end dd .bar:after{
+	  content: "";
+    display: block;
+    /* width: 30px; */
+    border-bottom: 2px solid #d1d1d1;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 0;
+    right: 0;
+}
+
+.specBlock .specBox .leftBox dl.end dd .bar span{
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	position: absolute;
+	top:50%;
+	margin-top: -4px;
+	margin-left: -4px;
+	text-indent: -9999px;
+	z-index: 10;
+}
+
+.specBlock .specBox .leftBox dl.end dd .bar .bx{
+	 width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    z-index: 30;
+	margin-top: -15px;
+	margin-left: -15px;
+	
+}
+.specBlock .specBox .leftBox dl.end dd .bar .bx:nth-child(1){
+	left:0;
+	
+}
+.specBlock .specBox .leftBox dl.end dd .bar .bx:nth-child(2){
+	left:25%;
+
+}
+.specBlock .specBox .leftBox dl.end dd .bar .bx:nth-child(3){
+	left:50%;
+
+}
+.specBlock .specBox .leftBox dl.end dd .bar .bx:nth-child(4){
+	left:75%;
+
+}
+.specBlock .specBox .leftBox dl.end dd .bar .bx:nth-child(5){
+	left:100%;
+
+}
+
+.specBlock .specBox .leftBox dl.end dd .bar .bx span{
+	background: #a5a5a5;
+	    margin-top: -4px;
+    margin-left: -4px;
+	top:50%;
+	left:50%;
+}
+
+.specBlock .specBox .leftBox dl.end dd .bar .bx span.active{
+	background: #dd081c;
+	border: #f49c00 solid 3px;
+	margin-top: -6px;
+	margin-left: -8px;
+	top:50%;
+	left:50%;
+}
+
+.specBlock .specBox .leftBox ul.icons{
+	    margin: 0;
+    padding: 0;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.specBlock .specBox .leftBox ul.icons li{
+	float: left;
+    width: 16.666666%;
+    margin: 0 0 16px;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+}
+.specBlock .specBox .leftBox ul.icons li .block{
+	    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+	text-align: center;
+}
+.specBlock .specBox .leftBox ul.icons li .block .thumb{
+	padding: 0 10px;
+	margin: 0 0 3px;
+	line-height: 0;
+	text-align: center;
+}
+.specBlock .specBox .leftBox ul.icons li .block .thumb img{
+	max-width: 50px;
+	height: auto;
+	width: 100%;
+}
+.specBlock .specBox .leftBox ul.icons li .block p{
+	text-align: center;
+	font-size: 12px;
+}
+.specBlock .specBox .leftBox p{
+	text-align: left;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+.specBlock .specBox .leftBox p a{
+	text-decoration: underline;
+}
+.specBlock .specBox .musashiBlock{
+	width: 46%;
+	padding: 8px;
+	box-sizing: border-box;
+	border:#dbdbdb solid 1px;
+	float: right;
+}
+.specBlock .specBox .musashiBlock .wrap{
+	padding: 30px;
+	border: #000 solid 1px;
+	margin: 0;
+}
+
+.specBlock .specBox .musashiBlock .wrap h3{
+	margin: 0 0 20px;
+	padding: 15px 0 15px 80px;
+	font-size: 31px;
+	    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+	background: url(image/634icon.svg) no-repeat 0 50%;
+}
+.specBlock .specBox .musashiBlock .wrap h3 span{
+	font-size: 18px;
+}
+.specBlock .specBox .musashiBlock .wrap h3 rt{
+    font-size: 14px;
+}
+.specBlock .specBox .musashiBlock .wrap h3 rb {
+			letter-spacing: 5px;
+}
+.specBlock .specBox .musashiBlock .wrap p{
+	font-size: 13px;
+	line-height: 2.0em;
+}
+
+.specBlock .notes{
+	padding: 30px 0;
+	border-top: #ccc dotted 1px;
+	border-bottom: #ccc dotted 1px;
+}
+.specBlock .notes b{
+	font-weight: bold;
+}
+.specBlock .notes p{
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	line-height: 2.0em;
+}
+/* レイアウト
+----------------------------------------------- */
+/* 1カラム用 */
+#main_column.colnum1 div#detailphotobloc {
+    width: 500px;
+    float: left;
+}
+#main_column.colnum1 #detailrightbloc {
+	margin: 0 0 0 550px;
+    padding: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0px;
+}
+#main_column.colnum1 div.subtext {
+    margin-bottom: 20px;
+    float: left;
+    width: 69%;
+}
+#main_column.colnum1 div.subphotoimg {
+    float: right;
+    width: 25%;
+    text-align: right;
+}
+#main_column.colnum1 p.subtext {
+    margin-bottom: 20px;
+}
+
+/* 2カラム用 */
+#main_column.colnum2 div#detailphotobloc {
+    float: left;
+    width: 37%;
+}
+#main_column.colnum2 #detailrightbloc {
+    float: right;
+    width: 63%;
+}
+#main_column.colnum2 div.subtext {
+    margin-bottom: 20px;
+    float: left;
+    width: 73%;
+}
+#main_column.colnum2 p.subtext {
+    margin-bottom: 20px;
+}
+#main_column.colnum2 div.subphotoimg {
+    float: right;
+    width: 25%;
+    text-align: right;
+}
+
+/* 3カラム用 */
+#main_column.colnum3 div#detailphotobloc {
+    float: left;
+    width: 49%;
+}
+#main_column.colnum3 #detailrightbloc {
+    float: right;
+    width: 50%;
+}
+#main_column.colnum3 div.subtext {
+    margin-bottom: 20px;
+    float: left;
+    width: 63%;
+}
+#main_column.colnum3 p.subtext {
+    margin-bottom: 20px;
+}
+#main_column.colnum3 div.subphotoimg {
+    float: right;
+    width: 35%;
+    text-align: right;
+}
+
+/* 商品情報 各種設定
+----------------------------------------------- */
+#detailrightbloc h2 {
+    margin: 0 0 5px 0;
+    padding: 0 0 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+	border-bottom: #ccc dotted 1px;
+}
+
+#detailrightbloc .relative_cat {
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    background: url("../img/background/line_dot_01.gif") repeat-x bottom ;
+}
+#detailrightbloc .main_comment {
+    margin-bottom: 20px;
+	padding: 0 0 20px 0;
+	font-size: 14px;
+	border-bottom: #ccc dotted 1px;
+}
+
+/* 商品コード */
+#detailrightbloc .product_code{
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 10px;
+}
+#detailrightbloc .product_code dt,
+#detailrightbloc .product_code dd {
+    display: inline;
+}
+
+#detailrightbloc .pay{
+	margin: 0 0 20px;
+	padding: 0 10px 0 0;
+	font-size: 10px;
+	display: inline-block;
+}
+#detailrightbloc .pay dt{
+font-size: 12px;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+#detailrightbloc .pay dd {
+    font-size: 12px;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	display: inline;
+}
+#detailrightbloc .pay dd span{
+	font-size: 24px;
+}
+/* 商品ステータス */
+#detailrightbloc ul.status_icon {
+    margin-bottom: 10px;
+    width: 100%;
+}
+#detailrightbloc ul.status_icon li {
+    margin-right: 5px;
+    margin-bottom: 3px;
+    float: left;
+}
+
+/* 通常価格 */
+#detailrightbloc .normal_price dt,
+#detailrightbloc .normal_price dd {
+    display: inline;
+}
+
+/* 販売価格 */
+#detailrightbloc .sale_price dt,
+#detailrightbloc .sale_price dd {
+    display: inline;
+}
+
+/* ポイント */
+
+
+#detailrightbloc .point{
+	margin: 0 0 20px;
+	padding: 0 0px 0 0;
+	font-size: 12px;
+	display: inline-block;
+}
+
+#detailrightbloc .point span{
+	font-size: 18px;
+}
+/* 規格 */
+#detailrightbloc div.classlist {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background: url("../img/background/line_dot_02.gif") repeat-x bottom ;
+}
+#detailrightbloc .classlist {
+    margin-bottom: 5px;
+}
+#detailrightbloc ul {
+    margin-bottom: 10px;
+    width: 100%;
+}
+#detailrightbloc ul li {
+    vertical-align: top;
+    float: left;
+}
+
+/* メーカー */
+#detailrightbloc .maker dt,
+#detailrightbloc .maker dd {
+    display: inline;
+}
+
+/* メーカーURL */
+#detailrightbloc .comment1 dt,
+#detailrightbloc .comment1 dd {
+    display: inline;
+}
+
+/* 関連カテゴリ */
+#detailrightbloc .relative_cat dd {
+    margin-left: 1em;
+}
+
+/* 買い物カゴ */
+
+#detailrightbloc .cartBox{
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+	
+}
+#detailrightbloc .cartBox.clearfix:after{
+	display: inline-block;
+}
+#detailrightbloc .cart_area {
+
+	    margin: 0;
+    background: #000;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: 0 0 0 20px;
+    font-size: 14px;
+	height: 40px;
+	float: left;
+	width: 64%;
+	    border-right: #ccc solid 1px;
+}
+#detailrightbloc .cart_area .attention{
+	line-height: 40px;
+	text-align: left;
+	color: #fff;
+	font-size: 12px;
+}
+#detailrightbloc .quantity dt,
+#detailrightbloc .quantity dd {
+    display: inline;
+}
+#detailrightbloc .cartin {
+    text-align: center;
+}
+#detailrightbloc .cartin_btn {
+    text-align: center;
+      margin: 0 0 0 100px;
+}
+#detailrightbloc .cartin_btn a{
+	background: #000;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    font-size: 13px;
+}
+#detailrightbloc .cartin_btn a span{
+	padding: 0 0 0 24px;
+	background: url(image/cart_w.svg) no-repeat 0 50%;
+}
+#detailrightbloc .favorite_btn span{
+	padding: 0 0 0 20px;
+	background:url(image/heart_w.svg) no-repeat 0 50%;
+}
+#detailrightbloc .favorite_btn {
+        float: right;
+    width: 36%;
+    background: #000;
+}
+#detailrightbloc .favorite_btn a{
+	margin-bottom: 0;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    font-size: 13px;
+}
+
+#detailrightbloc .favorite_btn #add_favorite_product{
+	    margin-bottom: 0;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    font-size: 13px;
+    background: #767676;
+}
+#detailrightbloc .quantity select {
+	border: none;
+    padding: 0 30px 0 10px;
+    background-color: #000;
+    color: #fff;
+	height: 40px;
+	box-sizing: border-box;
+	background-image: url(image/select_ar_w.svg);
+	background-repeat: no-repeat;
+	 background-position: 22% 50%;
+    position: absolute;
+    width: 140%;
+	
+}
+
+
+
+#detailrightbloc .quantity {
+    padding:0;
+    float :left;
+    text-align: left;
+	color: #fff;
+	box-sizing: border-box;
+	border-right: #ccc solid 1px;
+	 width: 100px;
+    overflow: hidden;
+	position: relative;
+	    height: 40px;
+    line-height: 40px;
+
+}
+#detailrightbloc .quantity .box {
+    width: 70px;
+}
+#detailrightbloc ul.subMessage{
+	display: block;
+	margin: 20px 0;
+	padding: 0;
+}
+#detailrightbloc ul.subMessage li{
+	display: block;
+	margin: 0 0 5px;
+	padding: 0;
+	list-style: none;
+	font-size: 13px;
+	float: none;
+	
+}
+#detailrightbloc ul.subMessage li.card span{
+	padding: 0 0 0 30px;
+	background: url(image/card.svg) no-repeat 0 50%;
+	
+}
+#detailrightbloc ul.subMessage li.wrapping span{
+	padding: 0 0 0 30px;
+	background: url(image/wrapping.svg) no-repeat 0 50%;
+	
+}
+#detailrightbloc .linkBox{
+	margin: 0;
+	padding: 0;
+}
+#detailrightbloc .linkBox a{
+	display: block;
+	border:#000 solid 1px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+	margin: 0 0 5px;
+	padding: 0;
+}
+/* お客様の声
+----------------------------------------------- */
+div#customervoice_area {
+    clear: both;
+    padding: 35px 0 0 0;
+}
+
+div#customervoice_area h2 {
+    margin-bottom: 20px;
+    padding: 6px 0 8px 10px;
+    border-top: solid 1px #f90;
+    background: url('../img/background/bg_tit_sub_01.jpg') repeat-x left bottom;
+}
+
+div#customervoice_area .review_bloc {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+
+div#customervoice_area .review_bloc p {
+    padding-top: 3px;
+    margin-right: 10px;
+    float: left;
+}
+
+div#customervoice_area .review_bloc .review_btn {
+    float: right;
+    width: 160px;
+}
+
+div#customervoice_area ul li {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    background: url("../img/background/line_dot_01.gif") repeat-x bottom ;
+}
+
+div#customervoice_area .voicetitle {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+div#customervoice_area .voicedate {
+    margin-bottom: 10px;
+}
+
+
+/* 関連商品（商品部分はbloc.cssのおすすめ商品と共通）
+----------------------------------------------- */
+div#whobought_area {
+    clear: both;
+    padding: 35px 0 0 0;
+}
+
+div#whobought_area h2 {
+    border-top: solid 1px #f90;
+    background: url('../img/background/bg_tit_sub_01.jpg') repeat-x left bottom;
+    padding: 5px 0 8px 10px;
+    font-size: 14px;
+}
+
+
+/* ***********************************************
+▼カートの中
+/*********************************************** */
+/* 現在のカゴの中
+----------------------------------------------- */
+div#undercolumn_cart {
+    width: 920px;
+    padding:0;
+    margin: 0 auto;
+	font-size: 13px;
+}
+
+div#undercolumn_cart .point_announce {
+  padding: 20px;
+    margin-bottom: 20px;
+    border: solid 1px #dddddd;
+    background: #fafafa;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.8em;
+}
+div#undercolumn_cart .totalmoney_area {
+    margin-bottom: 20px;
+}
+
+div#undercolumn_cart p {
+    margin: 10px 5px;
+}
+
+div#undercolumn ul#quantity_level li {
+    padding: 3px;
+    display: inline;
+}
+
+div#undercolumn .empty {
+    text-align: center;
+	padding: 100px 0;
+}
+
+div.form_area {
+    margin-bottom: 30px;
+}
+
+
+
+/* お客様情報入力
+----------------------------------------------- */
+.flow{
+	margin: 0 0 40px;
+}
+
+.information {
+    margin: 0 0 40px;
+}
+div#undercolumn_customer{
+	    margin: 0 auto;
+    width: 100%;
+    line-height: 1.8em;
+}
+
+
+div#undercolumn_customer h2 {
+   margin: 0 0 50px;
+    padding: 0 0 14px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    font-family: Georgia, "Times New Roman", 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    position: relative;
+}
+div#undercolumn_customer h2:after {
+    content: "";
+    display: block;
+    width: 30px;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -15px;
+}
+div#undercolumn_customer .customer_area{
+margin: 0 auto;
+    padding:0;
+    width: 920px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+div#undercolumn_customer .customer_area dl {
+    width: 920px;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
+    border-bottom: #ccc dotted 1px;
+}
+
+div#undercolumn_customer .customer_area dt {
+    width: 220px;
+    margin: 0px;
+    padding: 0px 10px;
+    float: left;
+    text-align: left;
+    line-height: 1.8em;
+}
+
+div#undercolumn_customer .customer_area dd {
+    width: 680px;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    text-align: left;
+    line-height: 1.8em;
+}
+
+
+.flow_area {
+    margin: 0 0 20px 0;
+}
+
+div#undercolumn_customer th em {
+    color: #000;
+    font-weight: bold;
+}
+
+div#undercolumn_customer .btn_area li input[type="submit"] {
+
+    height:60px;
+
+}
+/* お支払い方法・お届け時間等の指定
+----------------------------------------------- */
+div#undercolumn_shopping{
+width: 920px;
+    padding: 0;
+    margin: 0 auto;
+	text-align:left;
+	font-size: 14px;
+}
+
+div#undercolumn_shopping .pay_area {
+    margin: 0 auto 30px;
+    width: 100%;
+}
+div#undercolumn_shopping .pay_area02 {
+    margin: 40px auto 30px auto;
+}
+
+div#undercolumn_shopping .pay_area02 ul{
+	margin: 20px 0 0;
+    padding: 0;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    line-height: 0;
+}
+
+div#undercolumn_shopping .pay_area02 ul li{
+	float: left;
+	margin:0 0 2px;
+	list-style: none;
+	text-align: center;
+	   
+}
+div#undercolumn_shopping .pay_area02 ul li div{
+	 display: table;
+	width: 100%;
+	height: 100%;
+}
+
+div#undercolumn_shopping .pay_area02 ul li div .box{
+display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+
+div#undercolumn_shopping .pay_area02 ul li:first-child {
+    line-height: 0;
+    width: 10%;
+    box-sizing: border-box;
+    padding: 0 2px 0 0;
+}
+
+div#undercolumn_shopping .pay_area02 ul li:first-child img{
+	width: 100%;
+	height: auto;
+}
+
+div#undercolumn_shopping .pay_area02 ul li:nth-child(2){
+	width: 70%;
+	box-sizing: border-box;
+	    padding: 0 20px;
+    text-align: left;
+    background: #f8f8f8;
+}
+div#undercolumn_shopping .pay_area02 ul li:nth-child(3){
+	width: 20%;
+	box-sizing: border-box;
+    padding:0;
+	background: #f8f8f8;
+	border-left:#fff solid 2px;
+}
+.table07.svs .line04 {
+    height: 1px;
+    width: 100%;
+    border-bottom: #ccc dotted 1px;
+}
+.table07.mb{
+	margin-bottom: 20px;
+}
+.table07.mb p{
+padding: 10px;
+    border: #ccc dotted 1px;
+}
+.table07.svs th{
+	
+		width: 30%;
+	
+	}
+	.table07.svs td textarea {
+    margin: 10px 0 0;
+}
+	.table07.svs td{
+
+		width: auto;
+		font-size: 11px;
+	
+	}
+div#undercolumn_shopping .pay_area02 .txtarea {
+    margin: 5px 0 0 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+    width: 99%;
+    height: 150px;
+}
+div#undercolumn_shopping .pay_area02 .select-msg {
+    margin-bottom: 10px;
+}
+
+div#undercolumn_shopping .point_area {
+    margin: 40px auto 0 auto;
+}
+
+div#undercolumn_shopping .point_area .point_announce {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+div#undercolumn_shopping .point_area p {
+    margin-bottom: 20px;
+}
+div#undercolumn_shopping .point_area .point_announce p{
+		margin-bottom: 0;
+	}
+
+div#undercolumn_shopping .point_area ul{
+	margin: 30px 0 0;
+	padding: 0;
+	border-top:#ccc dotted 1px;
+}
+
+div#undercolumn_shopping .point_area ul li {
+	margin: 0;
+	padding: 10px 0;
+	border-bottom:#ccc dotted 1px;
+}
+div#undercolumn_shopping .point_area ul li  br.sp{
+	display: none;
+}
+div#undercolumn_shopping .point_area ul li label{
+	padding: 0 50px 0 0;
+}
+p.addbtn a{
+	-webkit-appearance: none;
+    background: #000;
+    height: 40px;
+    width: 200px;
+    color: #fff !important;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    display: block;
+    cursor: pointer;
+    line-height: 40px;
+    text-decoration: none !important;
+	text-align: center;
+	font-size: 12px;
+}
+
+/* お届け先の指定
+----------------------------------------------- */
+#address_area {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#address_area .information {
+    width: 100%;
+    float: left;
+}
+
+#undercolumn_shopping .information {
+    margin-bottom: 15px;
+}
+
+#address_area .add_multiple {
+    padding: 15px 10px;
+    border: 1px solid #ffcc62;
+    float: right;
+    width: 30%;
+    color: #555;
+    background: #fffaf0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#address_area .add_multiple p {
+    margin-bottom: 10px;
+}
+
+#address_area p.addbtn {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+
+/* ==============================================
+▼検索結果
+=============================================== */
+p.condition_area {
+    margin: 0 auto;
+    padding: 5px;
+    border: solid 1px #333;
+    width: 566px;
+}
+
+.navi{
+	text-align: center;
+	margin: 40px 0 0;
+	padding: 0;
+}
+
+.navi a{
+	display: inline-block;
+	height: 50px;
+    line-height: 50px;
+	text-align: center;
+	padding: 0 10px;
+	
+	text-decoration: none;
+	color: #000;
+	min-width: 30px;
+	box-sizing: border-box;
+	margin: 0 3px;
+	font-size: 12px;
+	border: #d0d0d0 solid 1px;
+}
+.navi a.lbtn{
+	float: left;
+	background: none;
+	font-size: 20px;
+	background-image: url(image/ar_left_black.svg);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-color: initial;
+    background-size: 10px auto;
+	padding: 0 0 0 20px;
+	border: none;
+}
+
+.navi a.rbtn{
+	float: right;
+	background: none;
+	font-size: 20px;
+	background-image: url(image/ar_right_black.svg);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-color: initial;
+    background-size: 10px auto;
+	padding: 0 20px 0 0;
+	border: none;
+}
+
+.navi strong{
+	    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+   padding: 0 10px;
+    background: #f4f4f4;
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+    min-width: 30px;
+	box-sizing: border-box;
+	margin: 0 3px;
+	font-size: 12px;
+	border: #d0d0d0 solid 1px;
+}
+@media print, screen and (min-width: 960px) and (max-width:1060px) {
+	div#undercolumn_login {
+    font-size: 13px;
+}
+	div#undercolumn_login .login_box{
+		width: auto;
+    margin: 0 auto;
+    padding: 0 30px;
+	}
+	div#undercolumn_login .login_area {
+    width: 49%;
+}
+		div#undercolumn_login .login_area2 {
+    width: 49%;
+}
+
+	div#undercolumn_cart{
+	width:100%;
+	padding:0px 30px;
+	margin:0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+	div#undercolumn_login .login_box {
+    margin: 0 auto;
+    padding: 0px 30px;
+	width:auto;
+		
+		
+}
+
+
+
+#container .login_area dl.formlist {
+    margin: 0 auto 8px;
+    width: 440px;
+}
+
+
+div#undercolumn_customer .customer_area{
+margin: 0 auto;
+    padding: 0px 30px;
+    width: auto;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+div#undercolumn_customer .customer_area .flow{
+	padding:0 20px;
+}
+
+div#undercolumn_customer .customer_area .flow img{
+	width:100%;
+	height:auto;
+}
+
+div#undercolumn_customer .customer_area dl {
+    width: auto;
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 15px 0px;
+    border-bottom: #ccc dotted 1px;
+}
+
+div#undercolumn_customer .customer_area dt {
+    width: 26%;
+ 
+}
+
+div#undercolumn_customer .customer_area dd {
+    width: 70%;
+
+}
+div#undercolumn_entry .kiyaku_area {
+    width: auto;
+    margin: 0 auto;
+    padding: 0px 30px 0px;
+}
+div#undercolumn_entry .kiyaku_area .kiyaku_text {
+    margin: 20px auto;
+    padding: 10px;
+    border: solid 1px #e3e3e3;
+    width: auto;
+    height: 500px;
+    overflow: auto;
+    background: none;
+	font-size: 13px;
+}
+
+div#undercolumn_entry .entry_area {
+   width: auto;
+    margin: 0 auto;
+    padding: 0px 30px ;
+}
+
+div#undercolumn_entry .entry_area dl {
+    width: 100%;
+}
+
+div#undercolumn_entry .entry_area dt {
+    width: 26%;
+}
+
+div#undercolumn_entry .entry_area dd {
+   width: 70%;
+}
+	div#undercolumn_entry .entry_area dd .box240 {
+    width: 48%;
+    box-sizing: border-box;
+}
+	
+	div#undercolumn_shopping {
+margin: 0 auto;
+    padding: 0px 30px;
+    width: auto;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+div#undercolumn_shopping .flow{
+	padding:0 20px;
+}
+
+div#undercolumn_shopping .flow img{
+	width:100%;
+	height:auto;
+}
+div#mypagecolumn {
+          width:auto;
+    margin:0 auto;
+	padding: 0 30px;
+}
+	
+	div#mypagecolumn dl {
+    width: 100%;
+}
+
+	div#mypagecolumn dt {
+    width: 22%;
+   
+}
+	div#mypagecolumn dd {
+    width: 74%;
+}
+div#mypagecolumn dd .box240 {
+  width: 48%;
+    box-sizing: border-box;
+}
+	
+div#undercolumn_contact {
+	padding: 0 30px;
+	box-sizing: border-box;
+}	
+div#undercolumn_contact dl {
+    width: 100%;
+}
+
+div#undercolumn_contact dt {
+    width: 22%;
+}
+
+div#undercolumn_contact dd {
+    width: 74%;
+}
+div#undercolumn_contact dd .box240 {
+  width: 48%;
+    box-sizing: border-box;
+}
+	
+	
+	div#undercolumn_order {
+	padding: 0 30px;
+	box-sizing: border-box;
+}	
+div#undercolumn_order dl {
+    width: 100%;
+}
+
+div#undercolumn_order dt {
+        width: 16%;
+}
+
+div#undercolumn_order dd {
+    width: 80%;
+
+}
+div#undercolumn_order dd .box240 {
+  width: 48%;
+    box-sizing: border-box;
+}
+
+}
+
+@media print, screen and (min-width: 960px) and (max-width: 1200px) {
+.landingBlock .wrap ul li .block .textBox h2 {
+    font-size: 18px;
+}
+}
+@media print, screen and (min-width: 960px) and (max-width: 1100px) {
+
+div.listphoto {
+    float: left;
+    width: 220px;
+    height: 220px;
+    line-height: 0;
+}
+div.listrightbloc .listcomment {
+	display: none;
+}
+	.detai_btn_box a.detail_btn{
+		font-size: 12px;
+	}
+	div.listrightbloc h4 {
+    font-size: 14px;
+}
+	div.listrightbloc {
+    margin: 0 0 0 240px;
+}
+	.pagenumber_area_top {
+    padding: 0;
+}
+#main_column.colnum1 div#detailphotobloc {
+    width: 400px;
+}
+	#main_column.colnum1 #detailrightbloc {
+    margin: 0 0 0 430px;
+
+}
+}
+
+
+/* ==============================================
+▼タブレット
+=============================================== */
+
+@media print, screen and (min-width: 768px) and (max-width:960px) {
+	div#undercolumn_cart{
+	width:100%;
+	padding:0px 30px;
+	margin:0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+	div#undercolumn_login .login_box {
+    margin: 0 auto;
+    padding: 0px 30px;
+	width:auto;
+		
+		
+}
+	.specBlock .specBox .musashiBlock .wrap h3 rb {
+    letter-spacing: 3px;
+}
+
+div#undercolumn_login .login_area {
+    float: none;
+    width:100%;
+    line-height: 1.8em;
+	margin:0 0 30px;
+	height: auto;
+}
+
+#container .login_area dl.formlist {
+    margin: 0 auto 8px;
+    width: 440px;
+}
+
+div#undercolumn_login .login_area2 {
+    float: none;
+    width:100%;
+    line-height: 1.8em;
+	margin:0;
+	height: auto;
+}
+div#undercolumn_customer .customer_area{
+margin: 0 auto;
+    padding: 0px 30px;
+    width: auto;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+div#undercolumn_customer .customer_area .flow{
+	padding:0 20px;
+}
+
+div#undercolumn_customer .customer_area .flow img{
+	width:100%;
+	height:auto;
+}
+
+div#undercolumn_customer .customer_area dl {
+    width: auto;
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 15px 0px;
+    border-bottom: #ccc dotted 1px;
+}
+
+div#undercolumn_customer .customer_area dt {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: none;
+    text-align: left;
+    line-height: 1.8em;
+}
+
+div#undercolumn_customer .customer_area dd {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: none;
+    text-align: left;
+    line-height: 1.8em;
+}
+div#undercolumn_entry .kiyaku_area {
+    width: auto;
+    margin: 0 auto;
+    padding: 0px 30px 0px;
+}
+div#undercolumn_entry .kiyaku_area .kiyaku_text {
+    margin: 20px auto;
+    padding: 10px;
+    border: solid 1px #e3e3e3;
+    width: auto;
+    height: 500px;
+    overflow: auto;
+    background: none;
+	font-size: 13px;
+}
+
+div#undercolumn_entry .entry_area {
+   width: auto;
+    margin: 0 auto;
+    padding: 0px 30px ;
+}
+
+div#undercolumn_entry .entry_area dl {
+    width: 100%;
+}
+
+div#undercolumn_entry .entry_area dt {
+    width: 100%;
+    margin: 0px 0 10px;
+    padding: 0px;
+    float: left;
+    text-align: left;
+    line-height: 1.8em;
+    font-weight: bold;
+}
+
+div#undercolumn_entry .entry_area dd {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    text-align: left;
+    line-height: 1.8em;
+}
+	div#undercolumn_entry .entry_area dd .box240 {
+    width: 48%;
+    box-sizing: border-box;
+}
+	
+	div#undercolumn_shopping {
+margin: 0 auto;
+    padding: 0px 30px;
+    width: auto;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+div#undercolumn_shopping .flow{
+	padding:0 20px;
+}
+
+div#undercolumn_shopping .flow img{
+	width:100%;
+	height:auto;
+}
+div#mypagecolumn {
+          width:auto;
+    margin:0 auto;
+	padding: 0 30px;
+}
+	
+	div#mypagecolumn dl {
+    width: 100%;
+}
+
+div#mypagecolumn dt {
+    width: 100%;
+    margin: 0px 0 10px;
+    padding: 0px;
+    float: left;
+    text-align: left;
+    line-height: 1.8em;
+    font-weight: bold;
+}
+
+div#mypagecolumn dd {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    text-align: left;
+    line-height: 1.8em;
+}
+div#mypagecolumn dd .box240 {
+  width: 48%;
+    box-sizing: border-box;
+}
+	
+div#undercolumn_contact {
+	padding: 0 30px;
+	box-sizing: border-box;
+}	
+div#undercolumn_contact dl {
+    width: 100%;
+}
+
+div#undercolumn_contact dt {
+    width: 100%;
+    margin: 0px 0 10px;
+    padding: 0px;
+    float: left;
+    text-align: left;
+    line-height: 1.8em;
+    font-weight: bold;
+}
+
+div#undercolumn_contact dd {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    text-align: left;
+    line-height: 1.8em;
+}
+div#undercolumn_contact dd .box240 {
+  width: 48%;
+    box-sizing: border-box;
+}
+	
+	
+	div#undercolumn_order {
+	padding: 0 30px;
+	box-sizing: border-box;
+}	
+div#undercolumn_order dl {
+    width: 100%;
+}
+
+div#undercolumn_order dt {
+    width: 100%;
+    margin: 0px 0 10px;
+    padding: 0px;
+    float: left;
+    text-align: left;
+    line-height: 1.8em;
+    font-weight: bold;
+}
+
+div#undercolumn_order dd {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    text-align: left;
+    line-height: 1.8em;
+}
+div#undercolumn_order dd .box240 {
+  width: 48%;
+    box-sizing: border-box;
+}
+
+	.detai_btn_box a.detail_btn {
+
+    font-size: 12px;
+}
+	div.listphoto {
+
+    width: 300px;
+    height: 300px;
+
+}
+	div.listrightbloc {
+    margin: 0 0 0 330px;
+    padding: 0;
+}
+	div.listrightbloc .listcomment {
+
+    font-size: 13px;
+    line-height: 1.8em;
+}
+	div.listrightbloc h4 {
+    font-size: 14px;
+  
+}
+	#main_column.colnum1 div#detailphotobloc {
+        width: 500px;
+    float: none;
+    margin: 0 auto;
+}
+	#detailarea p.read {
+   
+    margin: 0 0 30px;
+
+}
+	#main_column.colnum1 #detailrightbloc {
+    margin: 50px 0 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0px;
+}
+	.landingBlock .wrap ul li .block .textBox {
+
+    padding: 40px 35px 35px;
+
+}
+	.landingBlock .wrap ul li .block .textBox p {
+
+    font-size: 12px;
+    line-height: 1.8em;
+}
+	.landingBlock .wrap ul li .block .textBox h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+	.specBlock .specBox .musashiBlock .wrap h3 {
+
+    font-size: 22px;
+
+}
+	.specBlock .specBox .musashiBlock .wrap {
+    padding: 20px;
+
+}
+	.specBlock .specBox .leftBox ul.icons li .block p {
+    text-align: center;
+    font-size: 10px;
+}
+}
+
+/* ==============================================
+▼スマホ
+=============================================== */
+
+
+@media screen and (max-width: 767px) {
+	div#undercolumn_cart{
+	width: 100%;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    padding:0;
+    margin: 0 auto;
+	
+}
+.navi a{
+	display: none;
+}
+	.navi strong{
+	display: none;
+}
+.navi a.lbtn{
+	display: block;
+	font-size: 16px;
+}
+
+.navi a.rbtn{
+	display: block;
+	font-size: 16px;
+}
+div#undercolumn_cart h2 {
+        margin: 0 0 30px;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+div#undercolumn_cart .point_announce {
+ 
+    margin: 0 10px 20px;
+    
+}
+div#undercolumn_cart .form_area{
+	padding:0 20px;
+}
+.sp_p {
+    position: relative;
+}
+	.sp_p a.sp_del {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+	.muryo {
+    background: #ff6b35;
+    padding: 8px;
+    font-size: 11px;
+    text-align: left;
+    line-height: 1.8em;
+    margin: 0 0 8px;
+    color: #fff;
+		display: none;
+}
+	
+	div#undercolumn_login {
+    margin: 0 auto;
+    width: 100%;
+    line-height: 1.8em;
+    background: #fff;
+    font-size: 12px;
+}
+
+div#undercolumn_login h2 {
+        margin: 0 0 30px;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+div#undercolumn_login .login_box {
+    margin: 0 auto;
+    padding: 0px;
+	width:auto;
+}
+
+div#undercolumn_login .login_area {
+    float: none;
+    width:auto;
+    line-height: 1.8em;
+	    margin: 0 20px 20px;
+	padding:30px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: auto;
+}
+
+#container .login_area dl.formlist {
+    margin: 0 auto 8px;
+    width:100%;
+}
+
+div#undercolumn_login .login_area2 {
+    float: none;
+    width:auto;
+    line-height: 1.8em;
+	    margin: 0 20px 20px;
+	padding:30px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: auto;
+}
+div#undercolumn_login .btn_area li a{
+	display:block;
+	width:100%;
+	height:40px;
+	line-height:40px;
+	text-decoration:none;
+	font-size:14px;
+	text-align:center;
+	margin:8px 0 0;
+}
+
+div#undercolumn_login .btn_area li input[type="submit"] {
+    -webkit-appearance: none;
+    height:40px;
+	width:100%;
+    border-radius: 0;
+	margin:8px 0 0;
+}
+
+div#undercolumn_login .btn_area input[type="submit"] {
+    -webkit-appearance: none;
+    height:40px;
+	width:100%;
+    border-radius: 0;
+	margin:8px 0 0;
+}
+	
+	
+	div#undercolumn_customer{
+	    margin: 0 auto;
+    width: 100%;
+    line-height: 1.8em;
+    background: #fff;
+}
+
+
+div#undercolumn_customer .customer_area{
+margin: 0 auto;
+    padding: 0;
+    width: auto;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+div#undercolumn_customer h2 {
+       margin: 0 0 30px;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+div#undercolumn_customer .customer_area .flow{
+	display:none;
+}
+
+div#undercolumn_customer .customer_area .information{
+	padding:0 10px;
+}
+
+
+div#undercolumn_customer .customer_area dl {
+        width: auto;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 20px 20px 20px;
+}
+div#undercolumn_customer .customer_area dl .box240 {
+    width: 48%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div#undercolumn_customer .customer_area dt {
+    width: 100%;
+    margin: 0px 0 5px;
+    padding: 0px;
+    float: none;
+    text-align: left;
+    line-height: 1.8em;
+	font-weight:bold;
+	
+}
+
+div#undercolumn_customer .customer_area dd {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: none;
+    text-align: left;
+    line-height: 1.8em;
+}
+
+
+
+div#undercolumn_customer .btn_area li input[type="submit"] {
+    -webkit-appearance: none;
+    background: #000;
+    height:40px;
+	width:100%;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+	margin:8px 0 0;
+}
+	div#undercolumn_customer .btn_area{
+    display: block;
+    margin: 0;
+    padding: 0px 10px 10px;
+		box-sizing:border-box;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+div#undercolumn_entry .kiyaku_area{
+margin: 0 auto;
+    padding: 0;
+    width: auto;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+div#undercolumn_entry .kiyaku_area h2 {
+           margin: 0 0 10px;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+div#undercolumn_entry .kiyaku_area .kiyaku_text {
+    margin: 0px auto;
+    padding: 0 20px 20px;
+    border: none;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background: none;
+    font-size: 11px;
+    line-height: 1.8em;
+}
+
+div#undercolumn_entry .kiyaku_area .message {
+	margin:0;
+    font-weight: bold;
+	padding:10px 20px;
+}
+
+div#undercolumn_entry .kiyaku_area p{
+	margin:0;
+	padding:0 20px 20px;
+	line-height:1.8em;
+}
+div#undercolumn_entry .kiyaku_area .btn_area{
+	display:block;
+	margin:0;
+	padding:0 20px 20px;
+	width: auto;
+}
+
+
+div#undercolumn_entry .kiyaku_area .btn_area2{
+	display:block;
+	margin:0;
+	padding:0 20px 20px;
+}
+
+div#undercolumn_entry .kiyaku_area .btn_area2 li a{
+	display:block;
+	width:100%;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	text-decoration:none;
+	font-size:14px;
+	text-align:center;
+	margin:8px 0 0;
+}
+div#undercolumn_entry .kiyaku_area .btn_area2 li a.ag{
+background:#000;
+}
+
+div#undercolumn_entry .kiyaku_area .btn_area2 li a.nag{
+background:#666;
+}
+
+
+div#undercolumn_entry .entry_area{
+margin: 0 auto;
+    padding: 0;
+    width: auto;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+div#undercolumn_entry .entry_area h2 {
+           margin: 0 0 20px;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+div#undercolumn_entry .entry_area p {
+    margin: 0 0 10px;
+	padding:0 10px;
+}
+
+
+
+div#undercolumn_entry .entry_area dl {
+    width: auto;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 20px 20px 20px;
+    border-bottom: #ccc dotted 1px;
+}
+
+div#undercolumn_entry .entry_area dt {
+   width: 100%;
+    margin: 0px 0 5px;
+    padding: 0px;
+    float: none;
+    text-align: left;
+    line-height: 1.8em;
+    font-weight: bold;
+}
+
+div#undercolumn_entry .entry_area dd {
+        width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: none;
+    text-align: left;
+    line-height: 1.8em;
+}
+
+div#undercolumn_entry .entry_area .btn_area{
+	display:block;
+	margin:0;
+	padding:0 10px 10px;
+	width: auto;
+}
+
+div#undercolumn_entry .entry_area .btn_area2{
+	display:block;
+	margin:0;
+	padding:0 10px 10px;
+}
+
+div#undercolumn_entry .entry_area .btn_area2 li input[type="submit"] {
+    -webkit-appearance: none;
+    background: #000;
+    height:40px;
+	width:100%;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+	margin:8px 0 0;
+}
+
+div#undercolumn_entry .entry_area .btn_area2 li a{
+	display:block;
+	width:100%;
+	height:40px;
+	line-height:40px;
+	background:#6666;
+	color:#fff;
+	text-decoration:none;
+	font-size:14px;
+	text-align:center;
+	margin:8px 0 0;
+}	
+	
+	div#undercolumn_entry .entry_area dd  .box240{
+		width: 48%;
+		box-sizing: border-box;
+	}
+	
+	div#undercolumn_entry .entry_area dd  .box380{
+		width: 100%;
+		box-sizing: border-box;
+	}
+	div#undercolumn_entry .entry_area dd p.top {
+    margin: 0 0 5px;
+		padding: 0;
+}
+	div#undercolumn_entry .entry_area dd p.zipimg {
+		padding: 0;
+}
+div#complete_area {
+    padding: 20px 0px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.8em;
+}
+	div#complete_area p{
+		text-align: left;
+		    padding: 0 20px;
+	}
+	div#complete_area p br{
+		display: none;
+	}
+	div#complete_area .shop_information p{
+		padding: 0;
+	}
+	
+	div#undercolumn_entry div#complete_area .btn_area {
+    display: block;
+    margin: 0;
+    padding: 0 0px 10px;
+    width: auto;
+}
+	
+	div#undercolumn_shopping{
+margin: 0 auto;
+    padding: 0;
+    width: auto;
+    overflow: hidden;
+    font-size: 13px;
+		    line-height: 1.8em;
+}
+
+	
+
+div#undercolumn_shopping .flow{
+	display:none;
+}
+#undercolumn_shopping .information{
+	margin:0;
+	padding:0 20px;
+	    width: auto;
+	
+}
+#undercolumn_shopping .btn_area li input[type="submit"] {
+
+	width:100%;
+   
+}
+
+#undercolumn_shopping .btn_area li a{
+	
+	width:100%;
+	
+}
+#undercolumn_shopping .btn_area {
+    display: block;
+    margin: 0;
+    padding: 20px ;
+	width: auto;
+}
+	p.addbtn {
+		display: none;
+}
+	div#undercolumn_shopping .pay_area {
+    margin: 0 auto 30px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+	div#undercolumn_shopping .pay_area02 {
+    margin: 40px auto 30px auto;
+		padding: 0 20px;
+}
+	div#undercolumn_shopping .point_area {
+    margin: 40px auto 20px auto;
+		padding: 0 20px;
+}
+
+	div#undercolumn_shopping .point_area ul li  br.sp{
+	display: block;
+}
+	
+	div#undercolumn_shopping .cmfBlock {
+
+    padding: 0 20px 20px;
+
+}
+	div#mypagecolumn {
+        width: auto;
+    margin: 0 auto;
+    font-size: 12px;
+    padding: 30px 0 0;
+}
+	div#mynavi_area div.point_announce {
+   
+		margin: 0 20px 0px;
+    text-align: left;
+}
+	
+	div#mycontents_area {
+    box-sizing:border-box;
+		padding: 0 20px 20px;
+}
+	div#mypagecolumn table.list .sp {
+    display: none;
+}
+	
+		div#mypagecolumn dl {
+    width: 100%;
+}
+
+div#mypagecolumn dt {
+    width: 100%;
+    margin: 0px 0 10px;
+    padding: 0px;
+    float: left;
+    text-align: left;
+    line-height: 1.8em;
+    font-weight: bold;
+}
+
+div#mypagecolumn dd {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    text-align: left;
+    line-height: 1.8em;
+}
+div#mypagecolumn dd .box240 {
+  width: 48%;
+    box-sizing: border-box;
+}
+div#mypagecolumn dd .box300{
+	width:100%;
+	box-sizing:border-box;
+	}
+	div#mypagecolumn dd .box380{
+	width:100%;
+	box-sizing:border-box;
+	}
+	div#mypagecolumn div#complete_area .message{
+
+    font-size: 15px;
+}
+	.add_address a {
+
+    width: 100%;
+    
+}
+	div#mypagecolumn div#complete_area .refusalmessage{
+	margin:0;
+	padding: 0;
+    font-size: 14px;
+}
+	div#mynavi_area {
+    width: 100%;
+    margin: -10px 0 0;
+}
+	div#mynavi_area .mynavi_list {
+	margin: 0;
+	padding: 0;
+		border-top:#ababab solid 1px;
+	
+	
+}
+div#mynavi_area .mynavi_list li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border-bottom:#ababab solid 1px;
+	border-right:#ababab solid 1px;
+	width: 50%;
+}
+div#mynavi_area .mynavi_list li:nth-child(2),
+	div#mynavi_area .mynavi_list li:nth-child(4),
+	div#mynavi_area .mynavi_list li:nth-child(6){
+		border-right:none;
+	}
+div#mynavi_area .mynavi_list li a{
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #000;
+	background:#b9b9b9;
+	position: relative;
+}
+div#mynavi_area .mynavi_list li a:hover{
+color: #000;
+	background: #b9b9b9;
+}
+
+
+
+div#mynavi_area .mynavi_list li a.selected{
+	background: #000;
+	color: #fff;
+}
+div#mynavi_area .mynavi_list li a.selected:after{
+	display: none;
+}
+
+div#undercolumn_contact {
+	padding: 0 20px;
+	box-sizing: border-box;
+}	
+div#undercolumn_contact dl {
+    width: 100%;
+}
+
+div#undercolumn_contact dt {
+    width: 100%;
+    margin: 0px 0 10px;
+    padding: 0px;
+    float: left;
+    text-align: left;
+    line-height: 1.8em;
+    font-weight: bold;
+}
+
+div#undercolumn_contact dd {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    text-align: left;
+    line-height: 1.8em;
+}
+div#undercolumn_contact dd .box240 {
+  width: 48%;
+    box-sizing: border-box;
+}	
+	div#complete_area .shop_information p br{
+		display: block;
+	}
+	
+	
+div#undercolumn_order {
+	padding: 0 20px;
+	box-sizing: border-box;
+}	
+div#undercolumn_order dl {
+    width: 100%;
+}
+
+div#undercolumn_order dt {
+    width: 100%;
+    margin: 0px 0 10px;
+    padding: 0px;
+    float: left;
+    text-align: left;
+    line-height: 1.8em;
+    font-weight: bold;
+}
+
+div#undercolumn_order dd {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    text-align: left;
+    line-height: 1.8em;
+}
+div#undercolumn_order dd .box240 {
+  width: 48%;
+    box-sizing: border-box;
+}	
+div#undercolumn_order.privacy p{
+	font-size: 12px;
+	line-height: 1.6em;
+	}
+	
+div#undercolumn_shopping .pay_area02 ul li:first-child {
+    line-height: 0;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0 2px 0 0;
+}
+
+div#undercolumn_shopping .pay_area02 ul li:first-child img{
+	width: 100%;
+	height: auto;
+}
+
+div#undercolumn_shopping .pay_area02 ul li:nth-child(2){
+	width: 80%;
+	box-sizing: border-box;
+	    padding: 0 20px;
+    text-align: left;
+    background: #f8f8f8;
+	line-height: 1.4em;
+}
+div#undercolumn_shopping .pay_area02 ul li:nth-child(3){
+	width: 100%;
+	box-sizing: border-box;
+	background: #f8f8f8;
+	border-left:#fff solid 2px;
+	line-height: 1.4em;
+	padding: 5px 0;
+}	
+	.table07.svs th{
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 8px 8px;
+	}
+	.table07.svs td{
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 8px 8px;
+	}
+
+	
+	.pagenumber_area .change {
+    float: none;
+    text-align: center;
+    white-space: nowrap;
+}
+	.pagenumber_area .change a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 0px;
+    height: 30px;
+    width: 50%;
+    background: #ececec;
+    float: left;
+    line-height: 30px;
+    margin: 0;
+    box-sizing: border-box;
+}
+	.pagenumber_area .change b {
+    color: #fff;
+		font-weight: normal;
+   
+    display: block;
+    padding: 0px;
+    height: 30px;
+    width: 50%;
+    background: #000;
+    float: left;
+    line-height: 30px;
+    margin: 0;
+    box-sizing: border-box;
+}
+	.pagenumber_area .change a:first-child{
+		border-right:#fff solid 1px;
+	}
+	.pagenumber_area .change b:first-child{
+		border-right:#fff solid 1px;
+	}
+	.pagenumber_area_top {
+    padding: 0px 0 0px;
+}
+	div.listphoto {
+    float: none;
+    width: 100%;
+    height: auto;
+		margin: 0 0 20px;
+}
+	div.listrightbloc {
+    margin: 0;
+    padding: 0;
+}
+	div.listrightbloc .cartin {
+    display: none;
+}
+	.detai_btn_box {
+    float: none;
+    width: auto;
+    background: #000;
+}
+	div.listrightbloc .cart_area {
+
+    line-height: 0;
+}
+	a.detail_btn {
+        margin-bottom: 0;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    font-size: 14px;
+		    background: #000;
+}
+	div.listrightbloc h4 {
+    font-size: 14px;
+
+}
+	div.listrightbloc .listcomment {
+    font-size: 13px;
+    line-height: 1.8em;
+}
+	#main_column.colnum1 div#detailphotobloc {
+    max-width: 500px;
+    float: none;
+    margin: 0 auto;
+		width: 100%;
+}
+	#detailarea h1 {
+    
+    font-size: 16px;
+    margin: 0 0 20px;
+    padding: 0 20px;
+   
+    line-height: 1.8em;
+  
+}
+	#detailarea p.read {
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.8em;
+    margin: 0 0 30px;
+    padding: 0 20px;
+}
+	#detailarea .detailBlock {
+    margin: 0 auto;
+    padding: 0;
+}
+	#main_column.colnum1 #detailrightbloc {
+    margin: 0;
+padding: 0 20px;
+}
+	#detailrightbloc h2 {
+   
+    font-size: 15px;
+
+}
+	#detailrightbloc .pay dd span {
+    font-size: 16px;
+}
+	#detailrightbloc .point span {
+    font-size: 15px;
+}
+	#detailrightbloc .cart_area {
+    margin: 0 0 10px;
+    background: #000;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 14px;
+    height: 40px;
+    float: none;
+    width: 100%;
+    border-right: #ccc solid 1px;
+}
+	#detailrightbloc .favorite_btn {
+    float: none;
+    width: 100%;
+}
+	#detailrightbloc .cart_area .attention {
+ 
+    text-align: center;
+
+}
+	#detailrightbloc .quantity label{
+		padding: 0 0 0 10px;
+	}
+	.landingBlock {
+    padding: 0;
+
+}
+	.landingBlock .wrap {
+    margin: 0 auto;
+    padding: 0;
+}
+	.landingBlock .wrap ul li {
+    float: none;
+    width: auto;
+  
+}
+	
+	.landingBlock .wrap ul li .block {
+  
+    background: inherit;
+
+}
+	.landingBlock .wrap ul li .block .textBox {
+
+    padding: 60px 20px;
+
+}
+	.landingBlock .wrap ul li .block .textBox h2 {
+    font-weight: normal;
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 18px;
+}
+	.landingBlock .wrap ul li.pc{
+		display: none;
+	}
+	.landingBlock .wrap ul li.sm{
+		display: block;
+	}
+	.specBlock {
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+	.specBlock .specBox .leftBox {
+    float: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+	.specBlock .specBox .leftBox dl dt {
+
+    width: 80px;
+
+}
+	.specBlock .specBox .leftBox dl {
+
+    padding: 0 0 0 80px;
+
+}
+	.specBlock .specBox .leftBox dl.end {
+
+    padding: 0 0 0 80px;
+
+}
+	.specBlock .specBox .leftBox ul.icons li {
+
+    width: 25%;
+
+}
+	.specBlock .specBox .musashiBlock {
+    width: auto;
+    float: none;
+    margin: 20px 0 0;
+}
+	.specBlock .specBox .musashiBlock .wrap {
+    padding: 20px;
+    border: #000 solid 1px;
+    margin: 0;
+}
+	.specBlock .specBox .musashiBlock .wrap h3 {
+    margin: 0 0 20px;
+    padding: 100px 0 0 0px;
+    font-size: 22px;
+    background: url(image/634icon.svg) no-repeat 50% 0;
+    text-align: center;
+}
+	.specBlock .specBox .musashiBlock .wrap h3 rt {
+    font-size: 11px;
+}
+		
+	.specBlock .specBox .musashiBlock .wrap p {
+    font-size: 13px;
+    line-height: 1.8em;
+}
+	.specBlock .specBox {
+    margin: 0;
+    padding: 0 0 0px;
+}
+	.specBlock .notes {
+
+    border-top: none;
+
+}
+	div#mypagecolumn div#complete_area .message {
+
+    padding: 0px 0 0;
+  
+}
+	div#mypagecolumn div#complete_area .message br{
+		display: none;
+	}
+	div#complete_area .shop_information {
+    margin-top: 40px;
+    padding: 20px 20px 0;
+    border-top: #C5C5C5 solid 1px;
+    text-align: left;
+}
+	div#mycontents_area .message_area {
+  
+    padding: 30px 20px;
+
+}
+	div#undercolumn_shopping .pay_area02 ul li div .box {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+		padding: 8px 0;
+}
+	
+		div#undercolumn_shopping .point_area {
+    margin: 0px auto 20px auto;
+		padding: 0 20px;
+}
+	div#undercolumn_shopping .point_area h3 {
+    padding: 0px 0 10px!important;
+}
+}

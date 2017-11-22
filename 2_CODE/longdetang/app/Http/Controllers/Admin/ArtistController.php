@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\AsyncResult;
 use App\Models\Artist;
 use App\Repositorys\ArtistRepository;
-use Exception;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
 class ArtistController extends BaseController
 {

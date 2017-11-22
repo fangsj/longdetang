@@ -10,14 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use App\User;
-use App\Repositorys\UserRepository;
-use App\Repositorys\Product\ProductRepository;
 
-//Route::get('/', function (UserRepository $repository, ProductRepository $productRepository) {
-//    return view('product.list');
-//});
-
-//Auth::routes();
-//
-//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'IndexController@index');
+Route::get('/prod', 'ProdController@index');
+Route::get('/prod/categorys', 'ProdController@get_categorys');

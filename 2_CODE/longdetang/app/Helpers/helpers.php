@@ -43,3 +43,10 @@ if (!function_exists('admin_view')) {
         return view('admin.'.$view, $data, $mergeData);
     }
 }
+
+if (!function_exists('frontend_view')) {
+    function frontend_view($view = null, $data = [], $mergeData = [])
+    {
+        return view('frontend.'.$view, $data, $mergeData);
+    }
+}

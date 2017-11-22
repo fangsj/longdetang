@@ -9,6 +9,7 @@
 namespace App\Repositorys;
 
 
+use App\Models\Prod;
 use App\Models\ProdCategory;
 use App\Models\ProdSecondCategory;
 use Illuminate\Http\Request;
@@ -47,5 +48,18 @@ class ProdCategoryRespository implements IProdCategoryRepository
     {
         ProdCategory::where('id', $id)->update(['status' => 0]);
         ProdSecondCategory::where('parent_id', $id)->update(['status' => 0]);
+    }
+
+    /**
+     * 分组获取前几条商品
+     * @return mixed
+     */
+    public function getCategoryLimitProd()
+    {
+        $categorys = ProdCategory::where('status', 1)->get();
+        foreach ($categorys as $category) {
+            $category->prods = Prod::where('status', 1)->where('category_id', $category->id)->limit(4)->get();
+        }
+        return $categorys;
     }
 }

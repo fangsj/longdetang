@@ -1,0 +1,752 @@
+﻿@charset "utf-8";
+
+/************************************************
+ tables
+************************************************ */
+/* デフォルトテーブル
+----------------------------------------------- */
+table {
+    margin: 15px auto 20px auto;
+	 border-top: 1px solid #C5C5C5;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+table th {
+    padding: 15px 5px;
+    border-bottom: #C5C5C5 solid 1px;
+    font-weight: normal;
+}
+table td {
+    padding: 15px 0px 15px 5px;
+    border-bottom: #C5C5C5 solid 1px;
+}
+
+.table01 {
+    margin: 15px auto 20px auto;
+	 border-top: 1px solid #e3e3e3;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+.table01 th {
+    padding: 10px 0px;
+    border-bottom: 1px solid #e3e3e3;
+    font-weight: normal;
+	width:100px;
+}
+.table01 td {
+    padding: 10px 0px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.table02 {
+    margin: 15px auto 0px auto;
+	 border-top: none;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+.table02 th {
+    padding: 0px 0px;
+    border-bottom: none;
+    font-weight: normal;
+	width:100px;
+}
+.table02 td {
+    padding: 0px 0px;
+    border-bottom: none;
+}
+
+.table03 {
+    margin: 0px;
+	 border-top: none;
+    border-collapse: collapse;
+    text-align: left;
+	width:auto;
+}
+.table03 th {
+    padding: 0px 0px;
+    border-bottom: none;
+    font-weight: normal;
+}
+.table03 td {
+    padding: 0px 0px;
+    border-bottom: none;
+}
+
+.table04 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+
+}
+
+.table04 th {
+padding: 0px 12px;
+border-right: none;
+border-bottom: none;
+color: #000;
+font-weight: normal;
+}
+
+.table04 td {
+padding: 8px 12px;
+border-right: none;
+border-bottom: none;
+background-color: #efefef;
+}
+
+.table05 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+
+}
+
+.table05 th {
+padding: 4px 12px;
+border-right: none;
+border-bottom: none;
+color: #000;
+font-weight: normal;
+}
+
+.table06 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+
+}
+
+.table06 th {
+padding: 0px 5px 0px 0px;
+border-right: none;
+border-bottom: none;
+color: #000;
+font-weight: normal;
+	line-height: 0;
+}
+
+.table06 td {
+padding: 8px 12px;
+border-right: none;
+border-bottom: none;
+background-color: #efefef;
+}
+
+.table07 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.table07 th {
+padding: 8px;
+border-right: none;
+border-bottom: none;
+color: #333;
+background-color:#efefef;
+font-weight: normal;
+}
+
+.table07 td {
+padding: 8px;
+border-right: none;
+border-bottom: none;
+width:70%;
+}
+
+.table08 {
+margin: 20px auto 0px auto;
+border-top: none;
+border-left: none;
+border-bottom: #ccc solid 2px;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.table08 th {
+padding: 8px 12px;
+border-bottom: #ccc solid 2px;
+border-right: #ccc dotted 1px;
+background: #efefef;
+font-weight: normal;
+}
+.table08 td {
+padding: 8px 12px;
+border-bottom: #ccc dotted 1px;
+border-right: #ccc dotted 1px;
+}
+
+.table09 {
+margin: 20px auto 0px auto;
+border-top: #ccc solid 2px;
+border-left: none;
+border-bottom: #ccc solid 2px;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.table09 th {
+padding: 8px 12px;
+border-bottom: #ccc dotted 1px;
+border-right: #ccc dotted 1px;
+background: #efefef;
+font-weight: normal;
+}
+.table09 td {
+padding: 8px 12px;
+border-bottom: #ccc dotted 1px;
+border-right: #ccc dotted 1px;
+}
+
+.table10 {
+    margin: 0px auto 20px auto;
+	 border-top: 1px solid #ebebeb;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+.table10 th {
+    padding: 10px 20px;
+    border-bottom: 4px solid #ebebeb;
+    font-weight: normal;
+	width:100px;
+	background:#fff;
+}
+.table10 td {
+    padding: 10px 20px 10px 0;
+    border-bottom: 4px solid #ebebeb;
+	background:#fff;
+}
+
+.table10 td p{
+	margin:0;
+	padding:0 0 0 20px;
+	border-left: solid 3px #cfcfcf;
+}
+
+
+.table11 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+
+}
+
+.table11 th {
+padding: 0px ;
+border-right: none;
+border-bottom: none;
+color: #000;
+font-weight: normal;
+}
+
+.table11 td {
+padding: 8px 12px;
+border-right: none;
+border-bottom: none;
+background-color: #efefef;
+}
+
+.table11 a.btn{
+	display: inline-block;
+	padding: 3px 0;
+	background: #000;
+	color: #fff;
+	width: 96%;
+}
+
+.pdnon {
+padding: 1px 0px 2px 0px !important;
+}
+
+.mb5 {
+margin-bottom: 5px;
+}
+
+.mt5 {
+margin-top: 5px;
+}
+
+.pd0 {
+padding: 0px !important;
+}
+
+.br_non {
+border-right: none !important;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.line04 {
+    height: 1px;
+    width: 100%;
+    border-bottom: #ccc solid 1px;
+}
+
+
+.mt15 {
+    margin-top: 15px!important;
+}
+
+.mb2 {
+    margin-bottom: 2px;
+}
+
+/* 見出し
+----------------------------------------------- */
+div#undercolumn_shopping table th[scope=col] {
+    text-align: center;
+}
+div#undercolumn_shopping table.delivname th {
+    width: 155px;
+}
+
+/* MYページ */
+div#mycontents_area table th {
+    text-align: left;
+}
+div#mycontents_area table th.alignR {
+    text-align: right;
+}
+div#mycontents_area table th.alignL {
+    text-align: left;
+}
+div#mycontents_area table th.alignC {
+    text-align: center;
+}
+div#mycontents_area table th.resulttd {
+    text-align: right;
+}
+div#mycontents_area table caption {
+    padding: 8px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    color: #000;
+    background-color: #f0f0f0;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+/* その他
+----------------------------------------------- */
+table select {
+    margin-bottom:0;
+
+}
+
+.table10 select {
+    margin-bottom: 0px !important;
+    border: solid 1px #ccc;
+}
+.table06 td	span.sp{
+		display: none;
+	}
+@media print, screen and (min-width: 960px) and (max-width:1060px) {
+.table04 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.table04 th {
+padding: 0px 12px;
+border-right: none;
+border-bottom: none;
+color: #000;
+font-weight: normal;
+}
+
+.table04 td {
+padding: 8px 12px;
+border-right: none;
+border-bottom: none;
+background-color: #efefef;
+}
+
+.table05 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+
+}
+
+.table05 th {
+padding: 4px 12px;
+border-right: none;
+border-bottom: none;
+color: #000;
+font-weight: normal;
+}
+
+
+.table06 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.table06 th {
+padding: 0px 5px 0px 0px;
+border-right: none;
+border-bottom: none;
+color: #000;
+font-weight: normal;
+}
+
+.table06 th img{
+	width:100%;
+	height:auto;
+}
+
+.table06 td {
+padding: 8px 12px;
+border-right: none;
+border-bottom: none;
+background-color: #efefef;
+}
+
+
+.table08 {
+margin: 20px auto 0px auto;
+border-top: none;
+border-left: none;
+border-bottom: #ccc solid 2px;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.table08 th {
+padding: 8px 12px;
+border-bottom: #ccc solid 2px;
+border-right: #ccc dotted 1px;
+background: #efefef;
+font-weight: normal;
+}
+.table08 td {
+padding: 8px 12px;
+border-bottom: #ccc dotted 1px;
+border-right: #ccc dotted 1px;
+}
+
+}
+@media print, screen and (min-width: 768px) and (max-width:960px) {
+.table04 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.table04 th {
+padding: 0px 12px;
+border-right: none;
+border-bottom: none;
+color: #000;
+font-weight: normal;
+}
+
+.table04 td {
+padding: 8px 12px;
+border-right: none;
+border-bottom: none;
+background-color: #efefef;
+}
+
+.table05 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+
+}
+
+.table05 th {
+padding: 4px 12px;
+border-right: none;
+border-bottom: none;
+color: #000;
+font-weight: normal;
+}
+
+
+.table06 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.table06 th {
+padding: 0px 5px 0px 0px;
+border-right: none;
+border-bottom: none;
+color: #000;
+font-weight: normal;
+}
+
+.table06 th img{
+	width:100%;
+	height:auto;
+}
+
+.table06 td {
+padding: 8px 12px;
+border-right: none;
+border-bottom: none;
+background-color: #efefef;
+}
+
+
+.table08 {
+margin: 20px auto 0px auto;
+border-top: none;
+border-left: none;
+border-bottom: #ccc solid 2px;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.table08 th {
+padding: 8px 12px;
+border-bottom: #ccc solid 2px;
+border-right: #ccc dotted 1px;
+background: #efefef;
+font-weight: normal;
+}
+.table08 td {
+padding: 8px 12px;
+border-bottom: #ccc dotted 1px;
+border-right: #ccc dotted 1px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+.table04 {
+	display:none;
+}
+
+.table05 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: auto;
+border-collapse: collapse;
+text-align: left;
+font-size:12px;
+float: none;
+width:100%;
+}
+
+.table05 th {
+padding: 4px 12px;
+border-right: none;
+border-bottom: none;
+color: #000;
+font-weight: normal;
+}
+
+
+.table06 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+font-size:12px;
+}
+
+.table06 th {
+padding: 0px 5px 0px 0px;
+border-right: none;
+border-bottom: none;
+color: #000;
+font-weight: normal;
+}
+	
+.table06 td	#quantity_level{
+		display: none;
+	}
+.table06 th img{
+	width:100%;
+	height:auto;
+}
+.table06 td.spname{
+		width: 60%;
+    line-height: 1.8em;
+	}
+.table06 td {
+padding: 8px;
+border-right: none;
+border-bottom: none;
+background-color: #efefef;
+}
+.table06 td	span.sp{
+		display:inline!important;
+	}
+.sp{
+	display:none;
+}
+
+.table07 {
+margin: 0px auto 0px auto;
+border-top: none;
+border-left: none;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+font-size:12px;
+}
+
+.table07 select{
+	    border: 1px solid #ccc;
+}
+
+.table07 th {
+padding: 8px;
+border-right: none;
+border-bottom: none;
+color: #333;
+background-color:#efefef;
+font-weight: normal;
+	line-height: 1.8em;
+}
+
+.table07 th label{
+	padding:8px;
+}
+
+.table07 td {
+padding: 8px;
+border-right: none;
+border-bottom: none;
+	line-height: 1.8em;
+}
+
+.table08 {
+margin: 20px auto 0px auto;
+border-top: none;
+border-left: none;
+border-bottom: #ccc solid 2px;
+border-top: #ccc solid 2px;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+font-size:11px;
+}
+
+.table08 th {
+padding: 8px;
+border-bottom: #ccc solid 2px;
+border-right: #ccc dotted 1px;
+background: none;
+font-weight: normal;
+}
+.table08 td {
+padding: 8px;
+border-bottom: #ccc dotted 1px;
+border-right: #ccc dotted 1px;
+}
+
+.table09 {
+margin: 10px auto 0px auto;
+border-top: #ccc solid 2px;
+border-left: none;
+border-bottom: #ccc solid 2px;
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+font-size:11px;
+}
+
+.table09 th {
+padding: 8px 4px;
+border-bottom: #ccc dotted 1px;
+border-right: #ccc dotted 1px;
+background: #efefef;
+font-weight: normal;
+}
+.table09 td {
+padding: 8px 4px;
+border-bottom: #ccc dotted 1px;
+border-right: #ccc dotted 1px;
+}
+.table11 td {
+padding: 8px 8px;
+border-right: none;
+border-bottom: none;
+background-color: #efefef;
+	font-size: 12px;
+	line-height: 1.8em;
+}
+	
+	.table11.delive td{
+	display: block;
+		padding: 0px 10px 8px;
+		line-height: 1.6em;
+		    font-size: 12px;
+}
+	.table11.delive td:nth-child(2){
+		padding: 8px 10px;
+	}
+.table11.delive td.sp{
+	display: none;
+}
+	.table11 a.btn {
+    display: block;
+    padding:0;
+    background: #000;
+    color: #fff;
+    width: 100%;
+		height: 40px;
+		line-height: 40px;
+}
+	.table11.delive colgroup{
+		display: none;
+	}
+	table td {
+    padding: 15px 5px 15px 5px;
+}
+}

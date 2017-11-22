@@ -1,0 +1,1098 @@
+@charset "utf-8";
+/************************************************
+ 共通設定
+************************************************ */
+body {
+	color: #000;
+	font-family: 'Roboto', sans-serif, 微软雅黑;
+	background-color: #ffff;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	line-height: 1.8em;
+	-webkit-text-size-adjust:100%;
+}
+/* 写真 */
+
+/* Breadcrumb
+================================================== */
+.Breadcrumb {
+	margin: 0;
+	padding: 0;
+	height: 28px;
+	/* border-bottom: #dddddd solid 1px; */
+	text-align: left;
+	font-family: 'Roboto', 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-weight: 300;
+	background: #2f2f2f;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+}
+.Breadcrumb ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.Breadcrumb ul li {
+	background: #a9a9a9;
+	float: left;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	margin: 0 0 0 0;
+	padding: 0 30px;
+	-moz-transform-origin: 0 100%;
+	-webkit-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+	-moz-transform: skewX(25deg);
+	-webkit-transform: skewX(25deg);
+	transform: skewX(25deg);
+	font-size: 11px;
+	list-style: none;
+	border-left: #2f2f2f solid 1px;
+	max-width: 25%;
+	box-sizing: border-box;
+}
+.Breadcrumb ul li:last-child {
+	background: #2f2f2f;
+	color: #fff;
+	border-left: none;
+}
+.Breadcrumb ul li span {
+	-moz-transform: skewX(-25deg);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+}
+.Breadcrumb ul li a {
+	text-decoration: none;
+	color: #2f2f2f;
+}
+/* ==============================================
+ フレーム
+=============================================== */
+/* 全体を包括 */
+.frame_outer {
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+/* コンテンツ */
+#container {
+	margin: 0 auto;
+	padding: 80px 0 60px ;
+	background: #fff;
+	text-align: left;
+	position: relative;
+}
+/* ==============================================
+ カラム指定
+=============================================== */
+
+/* メイン部
+----------------------------------------------- */
+#main_column {
+	padding: 0;
+}
+/* 1カラム時 */
+#main_column.colnum1 {
+	margin: 0 auto;
+}
+/* 2カラム時 (共通) */
+#main_column.colnum2 {
+	width: 78%;
+}
+/* 2カラム時 (メイン部が左) */
+#main_column.colnum2.left {
+	padding-left: 1.5%;
+	float: left;
+}
+/* 2カラム時 (メイン部が右) */
+#main_column.colnum2.right {
+	padding-right: 1.5%;
+	float: right;
+}
+/* 3カラム時 */
+#main_column.colnum3 {
+	padding-left: 0.5%;
+	width: 59%;
+	float: left;
+}
+/* サイドカラム
+----------------------------------------------- */
+.side_column {
+	padding: 10px 0 0;
+}
+#leftcolumn {
+	float: left;
+	width: 20%;
+}
+#rightcolumn {
+	float: right;
+	width: 20%;
+}
+/* 他
+----------------------------------------------- */
+/* ヘッダーとフッターの上下 */
+#topcolumn, #bottomcolumn, #footerbottomcolumn {
+	margin: 0px;
+	background: #fff;
+	text-align: left;
+	clear: both;
+}
+/* 下層コンテンツ */
+#undercolumn {
+	width: 100%;
+	margin: 0 0 30px 0;
+}
+/* ==============================================
+ ユーティリティ
+=============================================== */
+/* フロート回り込み解除
+----------------------------------------------- */
+.clearfix:after {
+	display: block;
+	clear: both;
+	height: 0px;
+	line-height: 0px;
+	visibility: hidden;
+	content: ".";
+}
+.clearfix {
+	display: block; /* for IE8 */
+}
+.clear {
+	clear: both;
+}
+/* リンク指定
+----------------------------------------------- */
+a {
+	color: #000;
+	text-decoration: none;
+}
+/* フォント
+----------------------------------------------- */
+
+.sale_price {
+	color: #f00;
+}
+.normal_price {
+	font-size: 90%;
+}
+.point {
+	font-weight: bold;
+}
+.user_name {
+	font-weight: bold;
+}
+.recommend_level {
+	color: #ecbd00;
+}
+.attention {
+	color: #f00;
+}
+.attentionSt {
+	color: #f00;
+	font-weight: bold;
+}
+.st {
+	font-weight: bold;
+}
+.mini {
+	font-size: 90%;
+}
+/* 行揃え
+----------------------------------------------- */
+.alignC {
+	text-align: center;
+}
+.alignR {
+	text-align: right;
+}
+.alignL {
+	text-align: left;
+}
+.pricetd em {
+	font-weight: bold;
+}
+/* フォーム
+----------------------------------------------- */
+select {
+	border: dotted 1px #aeaeae;
+	padding: 10px 40px 10px 5px;
+	background-color: #f8f8f8;
+	-webkit-appearance: none;
+	background-image: url(image/select_ar_b.svg);
+	background-repeat: no-repeat;
+	background-position: 94% 50%;
+	box-sizing: border-box;
+	border-radius: 0;
+}
+input[type='text'], input[type='password'] {
+	border: dotted 1px #aeaeae;
+	padding: 10px 5px;
+	background: #f8f8f8;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+	border-radius: 0;
+}
+textarea {
+	border: dotted 1px #aeaeae;
+	padding: 10px 5px;
+	background: #f8f8f8;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+	border-radius: 0;
+}
+input[type="submit"] {
+	-webkit-appearance: none;
+	background: #000;
+	height: 40px;
+	width: 200px;
+	color: #fff;
+	border: none;
+	border-radius: 0;
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+	border-radius: 0;
+}
+.box40 {
+	width: 40px;
+}
+.box60 {
+	width: 60px;
+}
+.box100 {
+	width: 100px;
+}
+.box120 {
+	width: 120px;
+}
+.box140 {
+	width: 140px;
+}
+.box145 {
+	width: 145px;
+}
+.box150 {
+	width: 150px;
+}
+.box240 {
+	width: 240px;
+}
+.box240r {
+	width: 240px;
+}
+.box300 {
+	width: 300px;
+}
+.box320 {
+	width: 320px;
+}
+.box350 {
+	width: 350px;
+}
+.box380 {
+	width: 380px;
+}
+.box100p {
+	width: 100%;
+	box-sizing: border-box;
+}
+/* フォームが縦に重なり合う場合に併用する余白 */
+.top { /* FIXME 簡素な単語は、単独で、込み入った指定に使用しない */
+	margin-bottom: 12px;
+}
+/* タイトル
+----------------------------------------------- */
+div.title {
+	margin: 0 0 50px;
+	padding: 0 0 14px;
+	font-size: 24px;
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	font-family: Georgia, "Times New Roman", 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+	position: relative;
+}
+div.title:after {
+	content: "";
+	display: block;
+	width: 30px;
+	border-bottom: 2px solid #000;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -15px;
+}
+h1.title {
+	margin: 0 0 50px;
+	padding: 0 0 14px;
+	font-size: 24px;
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	font-family: Georgia, "Times New Roman", 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+	position: relative;
+	z-index: 5;
+}
+h1.title:after {
+	content: "";
+	display: block;
+	width: 30px;
+	border-bottom: 2px solid #000;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -15px;
+}
+h1.title span.ct {
+	display: block;
+	font-size: 12px;
+}
+h2.title {
+	margin: 0 0 50px;
+	padding: 0 0 14px;
+	font-size: 24px;
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	font-family: Georgia, "Times New Roman", 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+	position: relative;
+}
+h2.title:after {
+	content: "";
+	display: block;
+	width: 30px;
+	border-bottom: 2px solid #000;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -15px;
+}
+h3.title {
+	font-size: 18px;
+	margin: 0 0 20px;
+	padding: 0 0 5px;
+	border-bottom: #ccc dotted 1px;
+	font-weight: normal;
+}
+#main_column .sub_area h3, #undercolumn_login .login_area h3, #undercolumn_shopping h3, #mypagecolumn h3, #undercolumn_cart h3 {
+	margin: 0 0 20px 0;
+	padding: 30px 0 10px;
+	color: #000;
+	border-bottom: 3px solid #e6e6e6;
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+}
+div#undercolumn_login .login_area h4 {
+	padding-left: 15px;
+	background: url("../img/icon/ico_arrow_05.gif") no-repeat left;
+}
+/* ==============================================
+ ヘッダー
+=============================================== */
+/* レイアウト
+----------------------------------------------- */
+header {
+	margin: 0;
+	padding: 60px 0 0;
+	position: relative;
+}
+header .logo {
+	position: absolute;
+	left: 30px;
+	top: 12px;
+}
+header nav.memberNavi {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 60px;
+}
+header nav.memberNavi ul {
+	margin: 0;
+	padding: 0;
+}
+header nav.memberNavi ul li {
+	float: right;
+	margin: 0;
+	padding: 0 0 0 35px;
+	height: 60px;
+	line-height: 60px;
+	font-family: "Times New Roman", Times, "serif";
+}
+header nav.memberNavi ul li a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 0 0 26px;
+	margin: 0;
+	font-size: 13px;
+}
+header nav.memberNavi ul li a.login {
+	background: url(image/lock.svg) no-repeat 0 50%;
+}
+header nav.memberNavi ul li a.logout {
+	background: url(image/lock.svg) no-repeat 0 50%;
+}
+header nav.memberNavi ul li a.signup {
+	background: url(image/account.svg) no-repeat 0 50%;
+}
+header nav.memberNavi ul li a.account {
+	background: url(image/account.svg) no-repeat 0 50%;
+}
+header nav.memberNavi ul li a.wish {
+	background: url(image/heart.svg) no-repeat 0 50%;
+}
+header nav.memberNavi ul li a.cart {
+	background: url(image/cart.svg) no-repeat 0 50%;
+}
+header nav.memberNavi ul li span.search {
+	width: 60px;
+	height: 60px;
+	background-image: url(image/search.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-color: #000;
+	background-size: 24px 24px;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+/* ヘッダーナビ
+----------------------------------------------- */
+
+nav.gNavi {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: 60px;
+	border-bottom: #dddddd solid 1px;
+	border-top: #dddddd solid 1px;
+	text-align: center;
+}
+nav.gNavi ul {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+nav.gNavi ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 60px;
+	line-height: 60px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+nav.gNavi ul li a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 40px;
+	margin: 0;
+	font-size: 12px;
+}
+nav.topNavi {
+	margin: 0 0 86px;
+	padding: 0;
+	position: relative;
+	height: 60px;
+	text-align: center;
+}
+nav.topNavi ul {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+nav.topNavi ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 60px;
+	line-height: 60px;
+	font-family: "Times New Roman", Times, "serif";
+}
+nav.topNavi ul li a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 50px;
+	margin: 0;
+	font-size: 13px;
+}
+/* ==============================================
+ フッター
+=============================================== */
+footer {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 0 50px;
+}
+footer nav.fNavi {
+	margin: 0;
+	padding: 0 0 16px;
+	border-bottom: #dddddd solid 1px;
+	position: relative;
+}
+footer nav.fNavi ul.sub {
+	margin: 0;
+	padding: 0;
+}
+footer nav.fNavi ul.sub li {
+	float: left;
+	margin: 0 95px 0 0;
+	list-style: none;
+	padding: 0;
+	font-size: 12px;
+}
+footer nav.fNavi ul.sub li a {
+	color: #000;
+	text-decoration: none;
+}
+footer nav.fNavi ul.sns {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+footer nav.fNavi ul.sns li {
+	float: left;
+	margin: 0 0 0 15px;
+	list-style: none;
+	padding: 0;
+	line-height: 0;
+}
+footer .logo {
+	padding: 40px 0 20px;
+	margin: 0;
+	line-height: 0;
+	text-align: center;
+}
+footer p.copyright {
+	font-size: 10px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 1px;
+}
+/* ==============================================
+ パーツ
+=============================================== */
+/* ボタン
+----------------------------------------------- */
+.btn_area {
+	margin-top: 30px;
+	width: 100%;
+	text-align: center;
+}
+.btn_area ul {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+.btn_area li {
+	float: left;
+	margin: 0 16px;
+	padding: 0;
+}
+.btn_area a {
+	-webkit-appearance: none;
+	background: #666;
+	height: 40px;
+	width: 200px;
+	color: #fff !important;
+	border: none;
+	border-radius: 0;
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+	line-height: 40px;
+	text-decoration: none !important;
+}
+/* 完了メッセージ
+----------------------------------------------- */
+div#complete_area {
+	margin-bottom: 20px;
+}
+div#complete_area .message, div#undercolumn_entry .message {
+	margin-bottom: 20px;
+	line-height: 150%;
+	font-weight: bold;
+	font-size: 120%;
+}
+div#complete_area .shop_information {
+	margin-top: 40px;
+	padding: 20px 0 0 0;
+	border-top: solid 1px #ccc;
+}
+div#complete_area .shop_information .name {
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+}
+.mt5 {
+	margin-top: 5px;
+}
+.mb5 {
+	margin-bottom: 5px;
+}
+.mb20 {
+	margin-bottom: 20px;
+}
+.line04 {
+	height: 1px;
+	width: 100%;
+	border-bottom: #C5C5C5 solid 1px;
+}
+.sp_s {
+	display: none;
+}
+.sp_st {
+	display: none;
+}
+.spNavi {
+	display: none;
+}
+header nav.memberNavi ul li:last-child {
+	display: none;
+}
+
+@media print, screen and (min-width: 960px) and (max-width:1060px) {
+footer {
+	width: 100%;
+	margin: 0;
+	padding: 0 30px 50px;
+	box-sizing: border-box;
+}
+footer nav.fNavi ul.sub li {
+	margin: 0 44px 0 0;
+}
+nav.gNavi ul li a {
+	padding: 0 30px;
+}
+}
+
+/* ==============================================
+▼タブレット
+=============================================== */
+
+@media print, screen and (min-width: 768px) and (max-width:960px) {
+#container {
+	padding: 70px 0 40px;
+}
+nav.topNavi ul li a {
+	padding: 0 34px;
+}
+nav.topNavi {
+	margin: 0 0 40px;
+}
+footer {
+	width: 100%;
+	margin: 0;
+	max-width: auto;
+	padding: 0 30px 50px;
+	box-sizing: border-box;
+}
+footer nav.fNavi ul.sub li {
+	margin: 0 44px 0 0;
+}
+nav.gNavi ul li a {
+	padding: 0 30px;
+}
+div.title {
+	margin: 0 0 30px;
+}
+}
+
+/* ==============================================
+▼スマホ
+=============================================== */
+@media screen and (max-width: 767px) {
+#container {
+	padding: 10px 0 0px;
+}
+	.Breadcrumb{
+		display: none;
+	}
+header {
+	height: 50px;
+	padding: 50px 0 0;
+	position: relative;
+	z-index: 9995;
+}
+header .logo {
+	    position: absolute;
+    left: 50%;
+    top: 76px;
+    line-height: 0;
+    margin-left: -100px;
+}
+
+header nav.memberNavi {
+	position: fixed;
+	top: 0px;
+	right: 0;
+	left: 0;
+	height: 50px;
+	text-align: center;
+	border-bottom: #dddddd solid 1px;
+	z-index: 9999;
+	background: #fff;
+}
+header nav.memberNavi ul li {
+	width: 20%;
+	box-sizing: border-box;
+}
+header nav.memberNavi ul li:nth-child(3) {
+	display: none;
+}
+
+header nav.memberNavi ul li:last-child {
+	display: block;
+}
+header nav.memberNavi ul li {
+	float: right;
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	line-height: 50px;
+	font-family: "Times New Roman", Times, "serif";
+	border-left: #dddddd solid 1px;
+}
+header nav.memberNavi ul li:nth-child(1) {
+	border-left: none;
+}
+header nav.memberNavi ul li a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	height: 50px;
+	width: auto;
+	text-align: center;
+	line-height: 1.6em;
+	padding: 30px 0 0 0;
+	margin: 0;
+	font-size: 10px;
+	box-sizing: border-box;
+}
+	header nav.memberNavi ul li a.logout {
+    background: url(image/lock.svg) no-repeat 50% 10px;
+}
+header nav.memberNavi ul li a.login {
+	background: url(image/lock.svg) no-repeat 50% 10px;
+}
+header nav.memberNavi ul li a.signup {
+	background: url(image/account.svg) no-repeat 50% 10px;
+}
+header nav.memberNavi ul li a.account {
+	background: url(image/account.svg) no-repeat 50% 10px;
+}
+header nav.memberNavi ul li a.cart {
+	background: url(image/cart.svg) no-repeat 50% 10px;
+}
+nav.gNavi {
+	display: none;
+}
+.sp_s {
+	display: block;
+}
+.sp_st {
+	display: table;
+}
+.btn_area li a {
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #666;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+}
+.btn_area li input[type="submit"] {
+	-webkit-appearance: none;
+	background: #000;
+	height: 40px;
+	width: 100%;
+	color: #fff;
+	border: none;
+	border-radius: 0;
+}
+.btn_area li {
+	margin: 0 0 8px;
+	padding: 0px;
+	display: block;
+	float: none;
+}
+.btn_area {
+	margin-top: 15px;
+	width: 100%;
+	text-align: center;
+}
+.btn_area ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+h2.title {
+	    margin: 0 0 30px;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+textarea {
+	border: dotted 1px #aeaeae;
+	padding: 10px 5px;
+	background: #f8f8f8;
+	height: 200px;
+}
+.DSbtn {
+	position: relative;
+	-webkit-transition: ease .5s;
+	transition: ease .5s;
+	cursor: pointer;
+	display: block;
+	width: auto;
+	height: 50px;
+}
+.DSbtn .hambarg:nth-child(1) {
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background: #000;
+	-webkit-transition: ease .5s;
+	transition: ease .5s;
+	height: 2px;
+	width: 22px;
+}
+.DSbtn .hambarg:nth-child(2) {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	height: 2px;
+	width: 22px;
+	background: #000;
+	-webkit-transition: ease .5s;
+	transition: ease .5s;
+}
+.DSbtn .hambarg:nth-child(3) {
+	position: absolute;
+	top: 62%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	height: 2px;
+	width: 22px;
+	background: #000;
+	-webkit-transition: ease .5s;
+	transition: ease .5s;
+}
+.DSbtn.action .hambarg:nth-child(1) {
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+.DSbtn.action .hambarg:nth-child(2) {
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+.DSbtn.action .hambarg:nth-child(3) {
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%) rotate(-45deg);
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+nav.topNavi {
+	display: none;
+}
+footer nav.fNavi ul.sub {
+	border-top: #ccc dotted 1px;
+}
+footer nav.fNavi ul.sub li {
+	float: none;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	height: 40px;
+	font-size: 12px;
+	line-height: 40px;
+	border-bottom: #ccc dotted 1px;
+	text-align: left;
+}
+footer nav.fNavi ul.sub li a {
+	color: #000;
+	text-decoration: none;
+	padding: 0 20px;
+	height: 40px;
+}
+footer nav.fNavi ul.sns {
+	position: static;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	padding: 20px 0;
+}
+footer nav.fNavi ul.sns li {
+	float: left;
+	margin: 0 10px;
+	list-style: none;
+	padding: 0;
+	line-height: 0;
+}
+footer .logo {
+	padding: 0px 0 20px;
+}
+footer {
+	    padding: 0 0 20px;
+    background: #fff;
+    position: relative;
+    z-index: 3;
+}
+.spNavi {
+	display: none;
+	position: fixed;
+	top: 51px;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+.spNavi ul {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+.spNavi ul li {
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	text-align: left;
+	display: block;
+	border-bottom: #afafaf dotted 1px;
+}
+.spNavi ul li:last-child {
+	border-bottom: #dddddd solid 1px;
+}
+.spNavi ul li a {
+	color: #000;
+	text-decoration: none;
+	padding: 0 20px;
+	height: 40px;
+	display: block;
+}
+	header .logo img {
+    width: 200px;
+    height: auto;
+}
+	#undercolumn {
+
+    padding: 30px 0 0;
+}
+	input[type='text'], input[type='password'] {
+
+	padding: 14px 5px;
+
+}
+	select {
+
+	padding: 14px 40px 14px 5px;
+
+}
+	.box300 {
+	width: 100%;
+}
+	.box60 {
+    width: 80px;
+}
+	.box240r {
+    width: 100%;
+}
+	h1.title {
+    margin: 0 0 30px;
+    padding: 0 0 10px;
+    font-size: 16px;
+   
+}
+	div.title {
+    margin: 0 0 30px;
+    padding: 0 0 10px;
+    font-size: 16px;
+}
+	
+	header nav.memberNavi ul li span.search {
+
+     background-image: url(image/serach2.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    background-size: 14px 14px;
+		background-color: inherit;
+    display: block;
+    overflow: hidden;
+    text-indent: inherit;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    height: 50px;
+    width: auto;
+    text-align: center;
+    line-height: 1.6em;
+    padding: 30px 0 0 0;
+    margin: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+	#main_column .sub_area h3, #undercolumn_login .login_area h3, #undercolumn_shopping h3, #mypagecolumn h3, #undercolumn_cart h3 {
+    margin: 0 0 10px 0;
+    padding: 30px 0 10px;
+    color: #000;
+    border-bottom: 3px solid #e6e6e6;
+    font-size: 16px;
+
+}
+	div#undercolumn_shopping .pay_area h3{
+		    padding: 0px 0 10px!important;
+	}
+	div#undercolumn_shopping .pay_area02 h3{
+		    padding: 0px 0 10px!important;
+	}
+	input[type="submit"] {
+   
+    width: 100%;
+   
+}
+	h1,h2,h3,h4,section.dictionaryBanner .wrap .titleBlock,nav.dic_category ul li,nav.m_category ul li,section.dictionaryFront .front .label .open{
+		font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif!important;
+	}	
+}

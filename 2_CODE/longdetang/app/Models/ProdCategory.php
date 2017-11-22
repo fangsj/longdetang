@@ -18,5 +18,11 @@ class ProdCategory extends Model
 
     public $child = [];
 
+    protected $appends = ['child'];
+
+    public function getChildAttribute()
+    {
+        return $this->child;
+    }
     use SoftDeletes;
 }

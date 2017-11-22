@@ -1,0 +1,8 @@
+<ul class="clearfix">
+    <li><a href="/">首页</a></li>
+    <li><a href="products/list.php">新事</a></li>
+    <li><a href="contents/dictionary/index.html">作品</a></li>
+    <li><a href="guide/guide01.php">艺术家</a></li>
+    <li><a href="contact.1">泽峰说</a></li>
+    <li><a href="contact.1">关于我们</a></li>
+</ul>

@@ -1,0 +1,3926 @@
+@charset "utf-8";
+
+/************************************************
+ トップページ
+************************************************ */
+
+section.top{
+	margin:-50px 0 0;
+	padding: 0;
+
+}
+
+
+section.top .main{
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	position: relative;
+	height: 635px;
+}
+
+section.top .main .logo{
+	margin: 0 0 42px;
+	padding: 0;
+	line-height: 0;
+	text-align: center;
+}
+section.top .main .mainImage{
+	width: 82%;
+	position: absolute;
+	height:448px; 
+	top:187px;
+	right:0;
+	background-image: url(image/main_001.jpg);
+	background-repeat: no-repeat;
+	background-position:100% 50%;
+	background-size: cover;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+section.top .main #stage {
+width: 82%;
+	position: absolute;
+	height:448px; 
+	top:187px;
+	right:0;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+section.top .main #stage.sp{
+	display: none;
+}
+
+section.top .main #stage .pic {
+position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+}
+section.top .main #stage .pic div {
+width: 100%;
+height: 448px;
+opacity:0;
+	background-repeat: no-repeat;
+	background-position:100% 50%;
+	background-size: cover;
+-moz-animation: imgTrans 24s infinite;
+-webkit-animation: imgTrans 24s ease-in infinite;
+animation: imgTrans 24s infinite;
+}
+section.top .main #stage #photo1 div {
+-moz-animation-delay: 0s;
+-webkit-animation-delay: 0s;
+animation-delay: 0s;
+}
+section.top .main #stage #photo2 div {
+-moz-animation-delay: 8s;
+-webkit-animation-delay: 8s;
+animation-delay: 8s;
+}
+section.top .main #stage #photo3 div {
+-moz-animation-delay: 16s;
+-webkit-animation-delay: 16s;
+animation-delay: 16s;
+}
+
+@-webkit-keyframes imgTrans {
+0% { opacity:0; }
+7% { opacity:1; }
+35% { opacity:1; }
+45% { opacity:0; }
+100% { opacity:0; }
+}
+@-moz-keyframes imgTrans {
+0% { opacity:0; }
+7% { opacity:1; }
+35% { opacity:1; }
+45% { opacity:0; }
+100% { opacity:0; }
+}
+@keyframes imgTrans {
+0% { opacity:0; }
+7% { opacity:1; }
+35% { opacity:1; }
+45% { opacity:0; }
+100% { opacity:0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+section.top .main .mainBox{
+	max-width:1120px;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	position: relative;
+} 
+
+section.top .main h1{
+line-height: 64px;
+    letter-spacing: 4px;
+    font-size: 25px;
+	z-index: 10;
+    margin: 0;
+    padding: 0;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    height: 440px;
+    /* text-align: left; */
+    position: absolute;
+    right:82%;
+	margin-right: -130px;
+    top: 100px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    font-weight: 500;
+	font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+	}
+
+
+section.top .contentsBlock{
+	padding: 416px 0 0;
+	margin: 0 0 110px;
+	position: relative;
+	z-index:3;
+}
+
+section.top .contentsBlock .titleBlock{
+	width: 470px;
+	height: 420px;
+	position: absolute;
+	top:40px;
+	background: #fff;
+	box-sizing: border-box;
+	z-index: 10;
+	padding: 70px;
+}
+
+section.top .contentsBlock .titleBlock h2{
+	font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-size: 30px;
+    margin: 0 0 30px;
+    padding: 0 0 70px;
+    background: url(image/matsu.svg) no-repeat bottom center;
+    font-weight: normal;
+    line-height: 1em;
+    text-align: center;
+    position: relative;
+    letter-spacing: 3px;
+}
+section.top .contentsBlock .titleBlock h2 span{
+	font-family: Times New Roman, Times, serif;
+	font-size: 17px;
+	letter-spacing: normal;
+}
+
+section.top .contentsBlock .titleBlock h2:after{
+	    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -75px;
+}
+section.top .contentsBlock .titleBlock p.read{
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 0 5px;
+	padding: 0;
+}
+section.top .contentsBlock .titleBlock p{
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+section.top .contentsBlock .items{
+	margin: 0;
+	padding: 130px 0 54px;
+	text-align: center;
+}
+section.top .contentsBlock .items ul{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	list-style: none;
+}
+
+section.top .contentsBlock .items ul li{
+	float: left;
+	width: 235px;
+	margin: 0;
+	padding: 0 10px;
+}
+
+section.top .contentsBlock .items ul li .thumb{
+	margin: 0 0 5px;
+	padding: 0;
+	line-height: 0;
+}
+
+section.top .contentsBlock .items ul li .thumb img{
+	width: 100%;
+	height: auto;
+}
+
+section.top .contentsBlock .items ul li p{
+	font-size: 13px;
+	color: #fff;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+section.top .contentsBlock .mainImage{
+	width: 72%;
+	position: absolute;
+	height:500px; 
+	top:0px;
+	background-repeat: no-repeat;
+	background-position:0% 50%;
+	background-size: cover;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+
+
+
+section.top .contents01 .titleBlock{
+	left:72%;
+	margin-left: -235px;	
+}
+
+section.top .contents01 .mainImage{
+
+	left:0;
+	/*background-image: url(image/main_002.jpg);*/
+	
+}
+
+section.top .contents01 .items{
+
+	background: #183734;
+
+}
+
+
+
+
+section.top .contents02 .titleBlock{
+	right:72%;
+	margin-right: -235px;	
+}
+
+section.top .contents02 .mainImage{
+	
+	right:0;
+	/*background-image: url(image/main_003.jpg);*/
+	
+}
+
+section.top .contents02 .items{
+
+	background: #1e445b;
+}
+
+
+section.dictionaryBanner{
+	background-image:url(image/main_004.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	padding: 42px 0;
+	position: relative;
+	margin: 0;
+}
+section.dictionaryBanner a{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index: 5;
+}
+section.dictionaryBanner .wrap{
+	width: 486px;
+	height: 354px;
+	margin: 0 auto;
+	padding: 70px 80px;
+	box-sizing:border-box;
+	background-color: rgba(255,255,255,0.8);
+}
+section.dictionaryBanner .wrap .open{
+padding: 0 0 20px;
+    margin: 0;
+    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-weight: normal;
+    font-size: 15px;
+	text-align: center;
+}
+section.dictionaryBanner .wrap .titleBlock{
+	margin: 0 0 10px;
+	padding: 0 0 60px;
+	font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-size: 30px;
+    background: url(image/book.svg) no-repeat bottom center;
+    font-weight: normal;
+    line-height: 1em;
+    text-align: center;
+    position: relative;
+    letter-spacing: 3px;
+}
+section.dictionaryBanner .wrap .titleBlock span{
+	font-family: Times New Roman, Times, serif;
+    font-size: 17px;
+    letter-spacing: normal;
+}
+
+section.dictionaryBanner .wrap .titleBlock:after{
+	content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    bottom: 44px;
+    left: 50%;
+    margin-left: -75px;
+}
+
+section.dictionaryBanner .wrap  p.read {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 5px;
+    padding: 0;
+	text-align: center;
+}
+
+section.dictionaryBanner .wrap  p {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+	text-align: center;
+}
+
+section.sep{
+	padding: 0;
+	line-height: 0;
+	margin: 0;
+	background-image:url(image/main_005.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	height: 435px;
+}
+
+section.magazineLatest{
+	margin: 0;
+	padding: 60px 0;
+	background: #f4f4f4;
+	position: relative;
+	z-index: 3;
+}
+section.magazineLatest.mg{
+	margin: 0 0 60px;
+}
+
+section.magazineLatest.wh{
+	background: #fff;
+	padding: 60px 0 0;
+}
+section.magazineLatest.wh  ul li {
+	margin: 0;
+}
+section.magazineLatest h2{
+	margin: 0 0 60px;
+    padding: 0 0 18px;
+    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1em;
+    text-align: center;
+    position: relative;
+    letter-spacing: 3px;
+}
+section.magazineLatest h2 span {
+    font-family: Times New Roman, Times, serif;
+    font-size: 17px;
+    letter-spacing: normal;
+}
+section.magazineLatest h2:after {
+    content: "";
+    display: block;
+    width: 100px;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+}
+section.magazineLatest ul{
+	margin: 0;
+    padding: 0;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+section.magazineLatest ul li {
+    float: left;
+    width: 25%;
+    margin: 0 0 60px;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+section.magazineLatest ul li .block{
+	margin: 0;
+    padding: 0;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+	border-right:#e6e6e6 solid 1px;
+	
+}
+section.magazineLatest ul li:nth-child(4n) .block{
+	border-right:none;
+}
+section.magazineLatest ul li .block .thumb {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+	    background-size: cover;
+    background-position: 50% 50%;
+}
+section.magazineLatest ul li .block .thumb img {
+    width: 100%;
+    height: auto;
+}
+
+
+section.magazineLatest ul li .block .caption {
+    padding: 0px 35px;
+	margin: 30px 0;
+    min-height: 80px;
+    position: relative;
+}
+
+section.magazineLatest ul li .block .caption h3{
+	font-size: 16px;
+	margin: 0 ;
+	padding: 0;
+	font-weight: bold;
+}
+
+section.magazineLatest ul li .block .caption p.date{
+	margin: 0 0 10px;
+	padding: 0;
+	font-size: 12px;
+	color:#666666;
+}
+
+section.magazineLatest ul li .block .caption p{
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+}
+
+section.magazineLatest a.more{
+	display: block;
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	font-family: Times New Roman, Times, serif;
+	text-decoration: none;
+	background: #000;
+	margin: 0 auto;
+	font-size: 13px;
+	
+}
+
+section.concept{
+	margin: 0;
+	padding: 98px 0 90px;
+	text-align: center;
+}
+
+section.concept .logo{
+	margin: 0 0 60px;
+	padding: 0;
+	line-height: 0;
+}
+
+section.concept .logo img{
+	width: 275px;
+	height: auto;
+}
+
+section.concept h2{
+	margin: 0 0 50px;
+    padding: 0;
+    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 1em;
+    text-align: center;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+section.concept p.jp{
+	font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 2.2em;
+    margin: 0 0 30px;
+    padding: 0;
+}
+	section.concept p.jp br.sp{
+		display:none;
+	}
+section.concept p.en{
+	font-size: 15px;
+	letter-spacing: 1px;
+	line-height: 1.8em;
+	margin: 0;
+	padding: 0;
+	font-family: Times New Roman, Times, serif;
+}
+
+.intro{
+	text-align: center;
+	margin: -30px 0 50px;
+	padding: 0;
+	font-size: 14px;
+	line-height: 2.2em;
+}
+
+.intro h2{
+	    padding: 50px 0 0;
+    margin: 0 0 15px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-size: 26px;
+    font-weight: normal;
+    background-size: auto 40px;
+    letter-spacing: 3px;
+}
+
+.intro h2.introIcon01{
+	    background-image: url(image/s_icon01.svg);   
+}
+.intro h2.introIcon02{
+	    background-image: url(image/s_icon02.svg);   
+}
+.intro h2.introIcon03{
+	    background-image: url(image/s_icon03.svg);   
+}
+
+.listWrapper{
+	    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px 100px 310px;
+	position: relative;
+	min-height: 1602px;
+	box-sizing: border-box;
+}
+
+.itemList h3.title{
+	font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+}
+
+.listWrapper .serchBlock{
+	width: 210px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top:0;
+	left:50px;
+
+}
+
+
+.itemSerchBlock input[type='text']{
+    border: dotted 1px #757575;
+    padding: 10px 5px;
+    background: initial;
+    -webkit-appearance: none;
+	    width: 50%;
+}
+	
+	.itemSerchBlock {
+    width: auto;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+        padding: 40px 40px;
+        background-color: rgba(255, 255, 255, 1);
+    z-index: 50;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+		opacity:0;
+		display: none;
+}
+.itemSerchBlock p {
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+.itemSerchBlock .wrap{
+display: block;
+    border: #757575 dotted 1px;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 50px 40px;
+	max-width: 880px;
+	position: relative;
+	opacity:0;
+	}
+
+	.itemSerchBlock .side_block ul.filteritem li{
+		display: inline-block;
+    padding: 0 20px 0 0;
+    font-size: 14px;
+	}
+	.itemSerchBlock .side_block .filter_title {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: #757575 dotted 1px;
+
+}
+	.itemSerchBlock .side_block {
+    margin: 0 0 0px;
+    padding: 0 0 40px;
+   border-bottom:none;
+}
+	.itemSerchBlock .side_title {
+    font-family: Georgia, "Times New Roman", Times, "serif";
+    font-size: 24px;
+    margin: 0 0 10px;
+    padding: 0;
+    border-bottom: none;
+    text-align: center;
+}
+	.itemSerchBlock .cls{
+	display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    position: absolute;
+       top: 20px;
+    right: 20px;
+}
+	
+
+
+
+
+@media screen and (min-width: 960px) {
+	.listWrapper .serchBlock{
+	opacity:1!important;
+	display: block!important;
+}
+	.listWrapper .serchBlock form{
+		opacity:1!important;
+	}
+}
+.listWrapper .itemList{
+	margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0px;
+}
+.listWrapper input[type='text']{
+	width: 100%;
+	box-sizing: border-box;
+}
+.listWrapper input[type="submit"] {
+    -webkit-appearance: none;
+    background: #000;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+	font-size: 13px;
+}
+.listWrapper .serchBlock .side_title{
+	font-family: Georgia, "Times New Roman", Times, "serif";
+    font-size: 18px;
+    margin: 0 0 20px;
+    padding: 0 0 5px;
+    border-bottom: #ccc dotted 1px;
+}
+
+.listWrapper .serchBlock .side_block{
+	margin: 0 0 10px;
+	padding: 0 0 15px;
+	border-bottom: #ccc dotted 1px;
+}
+
+.listWrapper .serchBlock .side_block p{
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+}
+
+.listWrapper .serchBlock .side_block .filter_title{
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	border-bottom: #ccc dotted 1px;
+	font-size: 14px;
+}
+
+.listWrapper .serchBlock .side_block ul.filteritem li{
+	font-size: 13px;
+	margin: 0 0 5px;
+	
+}
+#recommend_area {
+    margin: 0 auto;
+    padding: 0 0 60px;
+    text-align: center;
+	max-width: 1020px;
+}
+
+#recommend_area h2 {
+    margin: 0 0 60px;
+    padding: 0 0 18px;
+    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1em;
+    text-align: center;
+    position: relative;
+    letter-spacing: 3px;
+}
+#recommend_area h2 span {
+    font-family: Times New Roman, Times, serif;
+    font-size: 17px;
+    letter-spacing: normal;
+}
+
+#recommend_area h2:after {
+    content: "";
+    display: block;
+    width: 100px;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+}
+
+#recommend_area ul{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	list-style: none;
+}
+
+#recommend_area ul li{
+	float: left;
+	width: 235px;
+	margin: 0;
+	padding: 0 10px;
+}
+
+#recommend_area ul li .thumb{
+	margin: 0 0 5px;
+	padding: 0;
+	line-height: 0;
+}
+
+#recommend_area ul li .thumb img{
+	width: 100%;
+	height: auto;
+}
+#recommend_area ul li .caption{
+	line-height: 1.4em;
+}
+#recommend_area ul li .caption h3{
+	font-size: 12px;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+#recommend_area ul li .caption p{
+	font-size: 13px;
+	color: #000;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+ul.itemlistBlock{
+	margin: 0;
+	padding: 0;
+}
+
+ul.itemlistBlock li{
+	margin: 0;
+	padding: 0 0 86px 0;
+}
+
+ul.itemlistBlock.c_layout{
+	margin: 0 0 0 -30px;
+    padding: 0;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+ul.itemlistBlock.c_layout li{
+	float: left;
+    width: 33.3333333333333%;
+    margin: 0;
+    padding: 0 0 30px 30px;
+    box-sizing: border-box;
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+}
+ul.itemlistBlock.c_layout.fav{
+	padding: 30px 0 0;
+}
+
+ul.itemlistBlock.c_layout.fav li{
+
+    width: 25%;
+   position: relative;
+	
+}
+ul.itemlistBlock.c_layout.fav li .del{
+	position: absolute;
+    z-index: 5;
+    top: 5px;
+    right: 10px;
+    font-size: 24px;
+    line-height: 1;
+}
+ul.itemlistBlock.c_layout.fav h4 {
+    font-size: 13px!important;
+    margin: 0!important;
+    padding: 0!important;
+    border-bottom: none!important;
+}
+
+ul.itemlistBlock.c_layout li div.listphoto {
+    float: none;
+    width: 100%;
+    height: auto;
+    line-height: 0;
+	margin: 0 0 10px;
+}
+ul.itemlistBlock.c_layout li  div.listrightbloc {
+       margin: 0!important;
+    padding: 0;
+}
+ul.itemlistBlock.c_layout li div.listrightbloc h4 {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+}
+ul.itemlistBlock.c_layout li div.listrightbloc ul.category,
+ul.itemlistBlock.c_layout li div.listrightbloc .listcomment,
+ul.itemlistBlock.c_layout li div.listrightbloc .cart_area{
+	display: none;
+}
+ul.itemlistBlock.c_layout li div.listrightbloc .pricebox {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: normal;
+	display: inline-block;
+}
+ul.itemlistBlock.c_layout li a.detail_btn{
+	display: none;
+}
+
+ul.itemlistBlock li .cartbtn.attention{
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	margin: 5px 0 0;
+	    background: #fb8585;
+}
+ul.itemlistBlock.c_layout li .cartbtn.attention {
+    font-size: 12px;
+    color:#FF5154;
+    text-align: center;
+    margin: 0;
+    background:none;
+	display: inline-block;
+	padding: 0 0 0 5px;
+}
+h3.title{
+	position: relative;
+}
+
+h3.title .swich{
+	position: absolute;
+	top:-10px;
+	right:0;
+}
+h3.title .swich ul{
+	margin: 0;
+	padding: 0;
+}
+h3.title .swich ul li{
+	float: left;
+	margin: 0;
+	padding: 0 10px;
+	list-style: none;
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	text-indent: -9999px;
+	cursor: pointer;
+	
+}
+
+h3.title .swich ul li.sw01{
+
+	background: url(image/list.svg) no-repeat 50% 50%;
+	opacity:0.5;
+}
+h3.title .swich ul li.sw02{
+
+	background: url(image/thumb.svg) no-repeat 50% 50%;
+	opacity:0.5;
+}
+h3.title .swich ul li.sw01.active{
+	border-right: #000 solid 1px;
+	opacity:1;
+}
+h3.title .swich ul li.sw02.active{
+	border-left: #000 solid 1px;
+	opacity:1;
+}
+h3.title .swich ul li.sw01:hover{
+	opacity:1!important;
+}
+h3.title .swich ul li.sw02:hover{
+	opacity:1!important;
+}
+.c_icon01{
+	padding: 0px 0 0px 30px;
+	background-image: url(image/c_icon01.svg);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	line-height: 30px;
+	height: 30px;
+	display: inline-block;
+}
+.c_icon02{
+	padding: 0px 0 0px 30px;
+	background-image: url(image/c_icon02.svg);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	line-height: 30px;
+	height: 30px;
+	display: inline-block;
+}
+.c_icon03{
+	padding: 0px 0 0px 30px;
+	background-image: url(image/c_icon03.svg);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	line-height: 30px;
+	height: 30px;
+	display: inline-block;
+}
+.c_icon04{
+	padding: 0px 0 0px 30px;
+	background-image: url(image/c_icon04.svg);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	line-height: 30px;
+	height: 30px;
+	display: inline-block;
+}
+.c_icon05{
+	padding: 0px 0 0px 30px;
+	background-image: url(image/c_icon05.svg);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	line-height: 30px;
+	height: 30px;
+	display: inline-block;
+}
+.c_icon06{
+	padding: 0px 0 0px 30px;
+	background-image: url(image/c_icon06.svg);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	line-height: 30px;
+	height: 30px;
+	display: inline-block;
+}
+
+.s_icon01,
+span.cate1{
+	padding: 0px 0 0px 28px;
+	background-image: url(image/s_icon01.svg);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	line-height: 28px;
+	height: 28px;
+	display: inline-block;
+}
+
+.s_icon02,
+span.cate2{
+	padding: 0px 0 0px 28px;
+	background-image: url(image/s_icon02.svg);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	line-height: 28px;
+	height: 28px;
+	display: inline-block;
+}
+.s_icon03,
+.s_icon06,
+span.cate6{
+	padding: 0px 0 0px 28px;
+	background-image: url(image/s_icon03.svg);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	line-height: 28px;
+	height: 28px;
+	display: inline-block;
+}
+
+.pagenumber_area.clearfix:after{
+	    display: initial;
+}
+div.list_area.clearfix:after{
+	    display: initial;
+}
+
+#detailrightbloc .category{
+	margin: 0 0 20px;
+	padding: 0;
+}
+
+#detailrightbloc .category a.cate{
+	height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    background-color: #eae8dc;
+    font-size: 12px;
+    margin: 0 3px 0 0;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+section.related_item {
+        max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px 64px;
+	text-align: center;
+
+}
+
+section.related_item h2 {
+    margin: 0 0 60px;
+    padding: 0 0 18px;
+    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1em;
+    text-align: center;
+    position: relative;
+    letter-spacing: 3px;
+}
+section.related_item h2 span {
+    font-family: Times New Roman, Times, serif;
+    font-size: 17px;
+    letter-spacing: normal;
+}
+
+section.related_item h2:after {
+    content: "";
+    display: block;
+    width: 100px;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+}
+
+section.related_item ul{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	list-style: none;
+}
+
+section.related_item ul li{
+	float: left;
+	width: 235px;
+	margin: 0;
+	padding: 0 10px;
+}
+
+section.related_item ul li .thumb{
+	margin: 0 0 5px;
+	padding: 0;
+	line-height: 0;
+}
+
+section.related_item ul li .thumb img{
+	width: 100%;
+	height: auto;
+}
+section.related_item ul li .caption{
+	line-height: 1.4em;
+}
+section.related_item ul li .caption h3{
+	font-size: 12px;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+section.related_item ul li .caption p{
+	font-size: 13px;
+	color: #000;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+nav.m_category{
+	margin: 0 0 30px;
+	padding: 0;
+	text-align: center;
+}
+
+nav.m_category ul{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+
+nav.m_category ul li{
+	float: left;
+	padding: 0 40px;
+	list-style: none;
+	margin: 0;
+	line-height: 1;
+	border-right:#ccc solid 1px;
+	font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+	font-size: 13px;
+}
+
+nav.m_category ul li:first-child{
+	border-left:#ccc solid 1px;
+}
+
+
+
+
+/* pager classes
+----------------------------------------------------------------------*/
+.navigation {
+	clear: both;
+	text-align: center;
+	margin:0;
+}
+.navigation span.current {
+	text-decoration: none;
+    background: #666;
+    padding: 0;
+    margin: 2px;
+    color: #FFF;
+    font-size: 12px;
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+.navigation .page-numbers {
+	text-decoration: none;
+	background: #ccc;
+	margin: 2px;
+	color: #FFF;
+	font-size: 12px;
+	display: inline-block;
+	 width: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.navigation .page-numbers.prev{
+	background-image: url(image/ar_left_w.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 6px auto;
+	text-indent: -99999px;
+}
+.navigation .page-numbers.next{
+	background-image: url(image/ar_right_w.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 6px auto;
+	text-indent: -99999px;
+}
+
+.navigation a {
+	text-decoration: none!important;
+}
+.navigation .page-numbers:hover {
+	text-decoration: none!important;
+	background-color: #222;
+}
+
+
+.navigation .back a{
+	display: block;
+	background: #000;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.navigation .page_box .left{
+	float: left;
+}
+.navigation .page_box .left a{
+	background-image: url(image/ar_left.png);
+	background-repeat:no-repeat;
+	background-position: 0 50%;
+	margin: 0;
+	padding: 0 0 0 50px;
+	font-family: Georgia, Times New Roman, Times, serif;
+	color: #000;
+}
+
+
+
+.navigation .page_box .right{
+	float: right;
+}
+.navigation .page_box .right a{
+	background-image: url(image/ar_right.png);
+	background-repeat:no-repeat;
+	background-position:100% 50%;
+	margin: 0;
+	padding: 0 50px 0 0;
+	font-family: Georgia, Times New Roman, Times, serif;
+	color: #000;
+}
+
+.pager_area {
+	border-bottom: #DDDDDD solid 1px;
+	background: #fff;
+	margin: 0;
+	padding: 1px;
+	display: none;
+}
+.pager_area .page_box {
+	background: #F5F5F5;
+	margin: 0;
+	padding: 20px 200px;
+	position: relative;
+}
+.pager_area .sing {
+	padding: 20px 250px !important;
+	background: url(https://ki-do-ri.jp/user_data/packages/default/css/image/line_001.png) no-repeat center #F5F5F5 !important;
+}
+.pager_area .page_box .left {
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 10;
+	height: 20px;
+	line-height: 20px;
+}
+.pager_area .page_box a {
+	color: #333333;
+	text-decoration: none;
+	display: block;
+	height: 20px;
+}
+.pager_area .page_box .left a {
+	padding: 0 0 0 25px;
+	background: url(https://ki-do-ri.jp/user_data/packages/default/css/image/icon_003.svg) no-repeat left;
+}
+.pager_area .page_box .right a {
+	padding: 0 25px 0 0;
+	background: url(https://ki-do-ri.jp/user_data/packages/default/css/image/icon_002.svg) no-repeat right;
+}
+.pager_area .page_box .right {
+	float: right;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 10;
+	height: 20px;
+	line-height: 20px;
+}
+.pager_area .page_box .pagenum {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 5;
+	height: 20px;
+	line-height: 20px;
+	color: #333333;
+}
+.pager_area .page_box .back {
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	height: 20px;
+	line-height: 20px;
+	z-index: 11;
+}
+.pager_area .page_box .back a {
+	padding: 0 0 0 25px;
+	background: url(https://ki-do-ri.jp/user_data/packages/default/css/image/icon_003.svg) no-repeat left;
+	display: block;
+}
+
+.wp_rp_footer{
+	display: none;
+}
+
+section.single{
+	max-width: 1000px;
+	margin: 0 auto 150px;
+	padding: 0 30px;
+}
+
+section.single h1 {
+    margin: 0 0 5px;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    position: relative;
+}
+section.single .date{
+	margin: 0 0 50px;
+    padding: 0;
+    font-size: 12px;
+    color: #666666;
+	text-align: center;
+}
+section.single .post{
+	max-width: 810px;
+	margin: 0 auto;
+	padding: 0 30px 80px;
+	box-sizing: border-box;
+}
+section.single .post p{
+	font-size: 14px;
+	margin: 0 0 20px;
+	padding: 0;
+	line-height: 2.2em;
+}
+section.single .post img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+
+section.dictionaryList{
+	max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px 100px;
+	
+}
+
+section.dictionaryList ul{
+	margin: 0 0 0 -22px;
+    padding: 0;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+section.dictionaryList ul li {
+    float: left;
+    width: 25%;
+    margin: 0 0 22px;
+    padding: 0 0 0 22px;
+    box-sizing: border-box;
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+section.dictionaryList ul li .block{
+	margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+	
+}
+
+section.dictionaryList ul li .block .thumb {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+section.dictionaryList ul li .block .thumb img {
+    width: 100%;
+    height: auto;
+}
+
+
+section.dictionaryList ul li .block .caption {
+    padding:20px 0;
+	margin: 0;
+    position: relative;
+}
+
+section.dictionaryList ul li .block .caption h3{
+	font-size: 14px;
+	margin: 0 0 20px;
+	padding: 0;
+	font-weight: bold;
+}
+section.dictionaryList ul li .block .caption ol.tags{
+	margin: 0;
+	padding: 0;
+}
+
+section.dictionaryList ul li .block .caption ol.tags li{
+	    float: left;
+    margin: 0 3px 3px 0;
+    padding: 0;
+    list-style: none;
+    width: auto;
+    font-size: 12px;
+}
+
+section.dictionaryList ul li .block .caption ol.tags li a{
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	color: #fff;
+	padding: 0 10px;
+	text-decoration: none;
+	background: #a2a2a2;
+}
+
+
+section.dictionaryDetail{
+	    max-width: 1000px;
+    margin: 0 auto 150px;
+    padding: 0 30px;
+}
+
+section.dictionaryDetail .spec{
+	margin: 0 0 80px;
+	padding: 0;
+}
+section.dictionaryDetail .spec .photo{
+	display: block;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+	float: left;
+	width: 500px;
+}
+section.dictionaryDetail .spec .photo img{
+	width: 100%;
+	height: auto;
+}
+
+section.dictionaryDetail .spec .specInfo{
+	float: right;
+	width: 450px;
+	margin: 0;
+	padding: 0;
+}
+
+section.dictionaryDetail .spec .specInfo h1{
+	margin: 0 0 26px;
+	padding: 0 0 10px;
+	border-bottom: #ccc dotted 1px;
+	font-size: 20px;
+}
+
+section.dictionaryDetail .spec .specInfo .plantInfo{
+	margin: 0 0 26px;
+	padding:  0 0 20px;
+	border-bottom: #ccc dotted 1px;
+}
+
+section.dictionaryDetail .spec .specInfo .plantInfo dl{
+	margin: 0 0 6px;
+	padding: 0 0 0 70px;
+	position: relative;
+		font-size: 14px;
+}
+section.dictionaryDetail .spec .specInfo .plantInfo dl dt{
+	position: absolute;
+	top:0;
+	left:0;
+	height: 24px;
+	padding: 0;
+	background: #008563;
+	color: #fff;
+	line-height: 24px;
+	font-size: 13px;
+	width: 60px;
+	text-align: center;
+
+}
+section.dictionaryDetail .spec .specInfo .plantInfo dl dd{
+	margin: 0;
+	padding:0;
+}
+
+section.dictionaryDetail .spec .specInfo .icons{
+	margin: 0;
+	padding: 0;
+}
+
+section.dictionaryDetail .spec .specInfo .icons ul{
+	    margin: 0 0 0 -16px;
+    padding: 0;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+section.dictionaryDetail .spec .specInfo .icons ul li{
+	float: left;
+    width: 16.666666%;
+    margin: 0 0 20px;
+    padding: 0 0 0 16px;
+    box-sizing: border-box;
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+section.dictionaryDetail .spec .specInfo .icons ul li .block{
+	margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+section.dictionaryDetail .spec .specInfo .icons ul li .block .thumb{
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+section.dictionaryDetail .spec .specInfo .icons ul li .block .thumb img{
+	width: 100%;
+	height: auto;
+}
+section.dictionaryDetail .spec .specInfo .icons ul li .block p{
+	font-size: 11px;
+	text-align: center;
+	margin: 0;
+	padding: 5px 0 0;
+}
+section.dictionaryDetail .spec .specInfo p{
+	font-size: 13px;
+}
+section.dictionaryDetail .spec .specInfo p.sub a{
+	text-decoration: underline;
+}
+section.dictionaryDetail h2{
+	font-size: 16px;
+	margin: 0 0 20px;
+	padding: 0;
+	text-align: center;
+}
+
+section.dictionaryDetail p.read{
+	text-align: center;
+	font-size: 14px;
+	margin: 0 0 50px;
+	padding: 0;
+	line-height: 2.2em;
+}
+
+section.dictionaryDetail table{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border-top:#ccc dotted 1px;
+	font-size: 14px;
+	line-height: 2.2em;
+}
+section.dictionaryDetail table tr{
+	border-bottom:#ccc dotted 1px;
+}
+section.dictionaryDetail table th{
+	margin: 0;
+	padding: 40px;
+	text-align: left;
+	vertical-align: middle;
+	background: #f0f0ea;
+	width: 30%;
+}
+section.dictionaryDetail table td{
+	margin: 0;
+	padding: 40px 0 40px 40px;
+	text-align: left;
+	vertical-align: middle;
+	width: 70%;
+}
+section.dictionaryDetail .conditions{
+	margin: 0 0 50px;
+	
+}
+section.dictionaryDetail table th span.cond01{
+	background: url(image/dicon01.svg) no-repeat left;
+	padding: 5px 0px 5px 40px;
+	
+}
+section.dictionaryDetail table th span.cond02{
+	background: url(image/dicon02.svg) no-repeat left;
+	padding: 5px 0px 5px 40px;
+	
+}
+section.dictionaryDetail table th span.cond03{
+	background: url(image/dicon03.svg) no-repeat left;
+	padding: 5px 0px 5px 40px;
+	
+}
+section.dictionaryDetail table th span.cond04{
+	background: url(image/dicon04.svg) no-repeat left;
+	padding: 5px 0px 5px 40px;
+	
+}
+section.dictionaryDetail table th span.cond05{
+	background: url(image/dicon05.svg) no-repeat left;
+	padding: 5px 0px 5px 40px;
+	
+}
+
+section.guide {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px 100px;
+    position: relative;
+}
+
+section.guide .sidebar {
+    width: 210px;
+    box-sizing: border-box;
+    float: left;
+}
+section.guide .sidebar .side_header .side_title {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    padding: 0 0 20px;;
+}
+section.guide .sidebar .side_block {
+    font-size: 13px;
+    border-top: 2px solid #dddddd;
+}
+
+section.guide .sidebar .side_block .side_title {
+    padding: 20px 0px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    font-size: 13px;
+}
+section.guide .sidebar .side_block li{
+	margin: 0;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: #ccc dotted 1px;
+}
+section.guide .sidebar .side_block li a{
+	display: block;
+	height: 50px;
+	padding: 0 30px 0 0;
+	background: url(image/guide_ar.svg) no-repeat right;
+}
+section.guide .guideInfo {
+   margin: 0 0 0 280px;
+    padding: 20px;
+    background: #f1f1f1;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+ 
+}
+
+section.guide .guideInfo .guideArea {
+        padding: 50px;
+    border-radius: 3px;
+    margin: 0;
+    vertical-align: middle;
+    background: #ffffff;
+    border: #f1f1f1 solid 1px;
+}
+section.guide .guideInfo .headline_title {
+    padding: 0 0 20px;
+    margin: 0 0 30px;
+    border-bottom: 1px solid #dddddd;
+}
+section.guide .guideInfo h2.t_main {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+section.guide .guideInfo .guideArea .box_header h3 {
+    text-align: left;
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 18px;
+}
+section.guide .guideInfo .guideArea .box .block {
+    border-bottom: #ccc dotted 1px;
+    margin: 0 0 30px;
+    padding: 0 0 30px;
+}
+section.guide .guideInfo .guideArea .box h4.step {
+    font-size: 15px;
+    margin: 0 0 8px;
+    padding: 0;
+    display: block;
+	   
+}
+section.guide .guideInfo .guideArea .box p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 2.0em;
+}
+section.guide .guideInfo .guideArea .box p.mini{
+	font-size: 12px;
+}
+section.guide .guideInfo .guideArea .box .block .pict{
+	padding: 20px 0 0;
+	line-height: 0;
+}
+section.guide .guideInfo .guideArea .box .block .pict img{
+	max-width: 100%;
+	height: auto;
+}
+
+section.guide .guideInfo .guideArea .box p a{
+	text-decoration: underline;
+}
+
+section.guide .guideInfo .guideArea .box ul.flowbox{
+	margin: 0 0 20px;
+	padding: 0;
+}
+section.guide .guideInfo .guideArea .box ul.flowbox li{
+	margin: 0 0 20px;
+	padding: 0 0 30px 140px;
+	list-style: none;
+	position: relative;
+	background: url(image/arrow.svg) no-repeat 54px 100%;
+	min-height: 130px;
+}
+section.guide .guideInfo .guideArea .box ul.flowbox li:last-child{
+	background: none;
+}
+
+section.guide .guideInfo .guideArea .box ul.flowbox li .icon{
+	position: absolute;
+	top:0;
+	left:0;
+	line-height: 0;
+}
+
+
+section.guide .guideInfo .guideArea .box ul.icons {
+    margin: 20px 0 0;
+    padding: 0;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+section.guide .guideInfo .guideArea .box ul.icons li {
+    float: left;
+    width: 16.666666%;
+    margin: 0 0 16px;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+}
+section.guide .guideInfo .guideArea .box ul.icons li .blocks {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+section.guide .guideInfo .guideArea .box ul.icons li .blocks .thumb {
+    padding: 0 10px;
+    margin: 0 0 3px;
+    line-height: 0;
+    text-align: center;
+}
+section.guide .guideInfo .guideArea .box ul.icons li .blocks .thumb img {
+    max-width: 100%;
+    height: auto;
+}
+section.guide .guideInfo .guideArea .box ul.icons li .blocks p {
+    text-align: center;
+    font-size: 12px;
+}
+
+section.guide .guideInfo .guideArea .box .profilebox{
+	margin: 30px 0 0;
+	padding: 0 0 0 330px;
+	position: relative;
+	min-height: 235px;
+	
+}
+section.guide .guideInfo .guideArea .box .profilebox .musashi{
+	width: 300px;
+	height: auto;
+	line-height: 0;
+	position: absolute;
+	top:0;
+	left:0;
+}
+section.guide .guideInfo .guideArea .box .profilebox .musashi img{
+	width: 100%;
+	height: auto;
+}
+section.guide .guideInfo .guideArea .box .profilebox .profileTitle{
+	font-family: Georgia, "Times New Roman", Times, "serif";
+	font-size: 18px;
+	margin: 0 0 5px;
+	padding: 0;
+}
+
+section.guide .guideInfo .guideArea .box .profilebox .name{
+	font-size: 22px;
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+	border-bottom: #ccc dotted 1px;
+}
+section.guide .guideInfo .guideArea .box .profilebox .name span{
+	font-size: 14px;
+}
+
+section.guide .guideInfo .guideArea .box ul.time {
+    margin: 0;
+    padding: 20px 0;
+}
+section.guide .guideInfo .guideArea .box ul.time li {
+    list-style: none;
+    background: #e1e4e3;
+    color: #000;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    line-height: 100px;
+    text-align: center;
+    float: left;
+    font-size: 14px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+section.guide .guideInfo .guideArea table.pc{
+	width: 100%;
+	margin: 10px 0 10px;
+	padding: 0;
+	font-size: 13px;
+	border-collapse: collapse;
+	border-top: inherit;
+}
+
+section.guide .guideInfo .guideArea table.pc th{
+	background: #dbdbdb;
+	padding: 8px 8px;
+	text-align: center;
+	font-weight: normal;
+	border-right:#ffffff solid 1px;
+	border-bottom: inherit;
+	border-top: inherit;
+}
+section.guide .guideInfo .guideArea table.pc th:last-child{
+	border-right:inherit;
+}
+
+section.guide .guideInfo .guideArea table.pc td{
+	margin: 0;
+	padding: 8px 8px;
+	text-align: center;
+	border-right:#e1e1e1 solid 1px;
+	border-bottom:#e1e1e1 solid 1px;
+	background: #f6f6f6;
+}
+section.guide .guideInfo .guideArea table.pc td:first-child{
+	background: #e8e4dd;
+	    width: 50px;
+}
+section.guide .guideInfo .guideArea table.pc td:nth-child(2){
+	text-align: left;
+}
+section.guide .guideInfo .guideArea table.pc td:last-child{
+	border-right:inherit;
+}
+section.guide .guideInfo .guideArea table.sp{
+	display: none;
+}
+
+
+section.guide .guideInfo .guideArea table.wrapping{
+	width: 100%;
+	margin: 10px 0 10px;
+	padding: 0;
+	font-size: 13px;
+	border-collapse: collapse;
+	border-top: inherit;
+}
+
+section.guide .guideInfo .guideArea table.wrapping th{
+	background: #dbdbdb;
+	padding: 8px 8px;
+	text-align: center;
+	font-weight: normal;
+	border-right:#ffffff solid 1px;
+	border-bottom: inherit;
+	border-top: inherit;
+}
+section.guide .guideInfo .guideArea table.wrapping th:last-child{
+	border-right:inherit;
+}
+
+section.guide .guideInfo .guideArea table.wrapping td{
+	margin: 0;
+	padding: 8px 8px;
+	text-align: center;
+	border-right:#e1e1e1 solid 1px;
+	border-bottom:#e1e1e1 solid 1px;
+	background: #f6f6f6;
+}
+section.guide .guideInfo .guideArea table.wrapping td:first-child{
+	background: #e8e4dd;
+	    width: 50%;
+	border-right:#fff solid 1px;
+	border-bottom:#fff solid 1px;
+}
+
+section.guide .guideInfo .guideArea table.wrapping td:last-child{
+	border-right:inherit;
+}
+section.guide .guideInfo .guideArea table.wrapping td.non{
+	border-bottom:inherit;
+}
+
+
+section.dictionaryFront{
+	margin: -60px 0 50px;
+	padding: 0;
+}
+
+section.dictionaryFront .front{
+	height: 678px;
+	background: url(image/dictionary_bg.jpg) repeat-x center top;
+	position: relative;
+}
+section.dictionaryFront .front .label{
+	position: absolute;
+	width: 447px;
+	height: 352px;
+	box-sizing:border-box;
+	margin: -170px 0 0 -223.5px;
+	padding: 60px;
+	text-align: center;
+	top:50%;
+	left: 50%;
+	background: url(image/frame.png) no-repeat 50% 50%;
+	
+}
+
+section.dictionaryFront .front .label a{
+	display: block;
+	z-index: 10;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+section.dictionaryFront .front .label h2{
+	    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-weight: normal;
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 34px;
+    letter-spacing: 10px;
+    line-height: 1.1em;
+}
+section.dictionaryFront .front .label h2 span{
+	display: block;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+section.dictionaryFront .front .label p.read{
+	        font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 5px;
+    padding: 0;
+    text-align: center;
+}
+section.dictionaryFront .front .label p{
+	    font-size: 13px;
+    margin: 0 0 16px;
+    padding: 0;
+    line-height: 2.0em;
+}
+section.dictionaryFront .front .label .open{
+	padding: 40px 0 0;
+	margin: 0;
+	font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+	font-weight: normal;
+	font-size: 15px;
+	background: url(image/book.svg) no-repeat top center;
+
+}
+nav.dic_category{
+	margin: 0 0 30px;
+	padding: 0;
+	text-align: center;
+}
+
+nav.dic_category ul{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+
+nav.dic_category ul li{
+	float: left;
+	padding: 0 40px;
+	list-style: none;
+	margin: 0;
+	line-height: 1;
+	border-right:#ccc solid 1px;
+	font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+	font-size: 14px;
+}
+
+nav.dic_category  ul li:first-child{
+	border-left:#ccc solid 1px;
+}
+.itemSerchBtn {
+	display: none;
+}
+.listWrapper .serchBlock .cls{
+	display: none;
+}
+#payment_form .information{
+	margin: 0 0 30px;
+}
+#payment_form dl.top{
+	border-top: #ccc dotted 1px;
+	padding: 20px 0px 20px 170px;
+	
+}
+#payment_form dl.top dt{
+	 padding: 30px 10px 0;
+}
+
+#payment_form dl {
+    max-width: 920px;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 20px 170px;
+    border-bottom: #ccc dotted 1px;
+	position: relative;
+}
+
+#payment_form dt {
+    width: 150px;
+    margin: 0px;
+    padding: 10px 10px 0;
+    text-align: left;
+    line-height: 1.8em;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+#payment_form dd {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    line-height: 1.8em;
+}
+
+#payment_form .stt {
+    text-align: center;
+    margin: 20px 0;
+    padding: 0;
+}
+#payment_form ul.sel{
+	margin: 0;
+	padding: 0;
+}
+
+#payment_form ul.sel li{
+	list-style: none;
+	padding: 20px 0;
+	border-top:#ccc dotted 1px;
+	
+}
+	
+@media print, screen and (min-width: 960px) and (max-width: 1366px) {
+	section.top .main #stage {
+
+    height: 368px;
+
+}
+	section.top .main #stage .pic div {
+
+    height: 368px;
+
+}
+	section.top .main {
+
+    height: 560px;
+}
+	section.top .main h1 {
+    line-height: 50px;
+    font-size: 20px;
+    right: 85%;
+  
+}
+}
+@media print, screen and (min-width: 960px) and (max-width: 1140px) {
+section.related_item {
+
+    padding: 0 30px 64px;
+
+}
+	section.related_item ul {
+    margin: 0 0 0 -20px;
+    display: block;
+}
+	section.related_item ul li {
+    width: 25%;
+    margin: 0;
+    padding: 0 0 30px 20px;
+		box-sizing: border-box;
+}
+}
+@media print, screen and (min-width: 960px) and (max-width: 1100px) {
+.listWrapper input[type="submit"] {
+    font-size: 12px;
+}
+	ul.itemlistBlock li {
+    padding: 0 0 30px 0;
+}
+	section.guide .guideInfo {
+    margin: 0 0 0 220px;
+	padding: 16px;
+
+}
+	section.guide .guideInfo .guideArea {
+    padding: 30px;
+  
+}
+	section.guide .guideInfo h2.t_main {
+
+    font-size: 17px;
+
+}
+	section.guide .guideInfo .guideArea .box_header h3 {
+
+    font-size: 16px;
+}
+	section.guide .guideInfo .guideArea .box h4.step {
+    font-size: 14px;
+    
+}
+	section.guide .guideInfo .guideArea .box p {
+ 
+    font-size: 13px;
+    line-height: 1.8em;
+}
+	section.guide .sidebar .side_block {
+font-size: 12px;
+}
+	section.guide .sidebar {
+    width: 190px;
+}
+	section.dictionaryDetail .spec .photo{
+		width: 50%;
+		
+	}
+	section.dictionaryDetail .spec .specInfo {
+
+    width: 47%;
+
+}
+	section.dictionaryDetail .spec .specInfo .icons ul li {
+    
+    width: 20%;
+   
+}
+	section.dictionaryDetail .spec .specInfo .plantInfo dl {
+    margin: 0 0 3px;
+    font-size: 13px;
+}
+}
+@media print, screen and (min-width: 960px) and (max-width: 1080px) {
+	section.top .contentsBlock .items {
+    margin: 0;
+    padding: 130px 30px 54px;
+    text-align: center;
+}
+	section.top .contentsBlock .items ul {
+    margin: 0 0 0 -20px;
+    display: block;
+}
+	section.top .contentsBlock .items ul li {
+    width: 25%;
+    padding: 0 0 0 20px;
+		box-sizing: border-box;
+}
+	#recommend_area {
+    padding: 0 30px 60px;
+}
+	#recommend_area ul {
+    display:block;
+     margin: 0 0 0 -20px;
+}
+	#recommend_area ul li {
+    width: 25%;
+    padding: 0 0 0 20px;
+		box-sizing: border-box;
+}
+	section.magazineLatest ul li .block .caption {
+    padding: 0px 20px;
+}
+	section.magazineLatest ul li .block .caption p {
+    line-height: 1.8em;
+}
+	section.magazineLatest ul li .block .caption h3 {
+    font-size: 14px;
+}
+	
+	ul.itemlistBlock.c_layout li div.listrightbloc h4 {
+    font-size: 12px;
+    line-height: 1.8em;
+}
+	div.listrightbloc .pricebox span {
+    font-size: 15px;
+}
+	section.guide .guideInfo .guideArea .box .profilebox .name span {
+    font-size: 14px;
+		display: block;
+}
+	nav.m_category ul li {
+   
+    padding: 0 30px;
+ 
+}
+	nav.dic_category ul li{
+	padding: 0 30px;
+}
+	section.guide .guideInfo .guideArea table.pc{
+		font-size: 12px;
+	}
+}
+
+@media print, screen and (min-width: 768px) {
+	section.guide .guideInfo .guideArea .box ul.flowbox li:last-child p{
+		padding: 50px 0 0;
+	}
+	
+	section.guide .guideInfo .guideArea .box ul.flowbox li:first-child p{
+	    padding: 32px 0 0;
+	}
+}
+
+@media print, screen and (min-width: 768px) and (max-width: 959px) {
+	section.top .main {
+    height: auto;
+}
+	section.top .main h1 {
+    line-height: 46px;
+    letter-spacing: 4px;
+    font-size: 18px;
+    right: initial;
+    left: 40px;
+    margin-right:0;
+   top: 62px;
+		height: 340px;
+}
+	
+section.top .main #stage {
+    width: 100%;
+    position: relative;
+    height: 348px;
+    top: 0;
+    right: 0;
+}
+	section.top .main .logo img{
+	width: 120px;
+		height: auto;
+	}
+	section.top .contentsBlock {
+    padding: 450px 0 0;
+		margin: 0 0 60px;
+   
+}
+	section.top .contentsBlock .mainImage {
+    width: 100%;
+    height: 450px;
+    top: 0px;
+
+}
+section.top .contents01 .titleBlock {
+    left:inherit;
+    right: 30px;
+    margin-left:0;
+}
+	section.top .contentsBlock .titleBlock {
+        width: 320px;
+    height: auto;
+    top: 51px;
+    background-color: rgba(255,255,255,0.8);
+    box-sizing: border-box;
+    padding: 40px;
+}
+	section.top .contentsBlock .titleBlock h2 {
+   
+    font-size: 24px;
+ 
+}
+	section.top .contentsBlock .titleBlock p.read {
+    font-size: 14px;
+
+}
+	section.top .contentsBlock .titleBlock p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+		line-height: 1.8em;
+}
+	
+	section.top .contentsBlock .items ul {
+    margin: 0 0 0 -20px;
+    display: block;
+}
+	section.top .contentsBlock .items ul li {
+    width: 25%;
+    padding: 0 0 0 20px;
+		box-sizing: border-box;
+}
+	section.top .contentsBlock .items {
+
+    padding:80px 30px;
+
+}
+	
+	section.top .contentsBlock .items ul li p {
+    font-size: 12px;
+    line-height: 1.8em;
+}
+	
+section.top .contents02 .titleBlock {
+    right: inherit;
+    left: 30px;
+    margin-right: 0;
+}	
+	
+	
+	#recommend_area {
+    padding: 0 30px 60px;
+}
+	#recommend_area ul {
+    display:block;
+     margin: 0 0 0 -20px;
+}
+	#recommend_area ul li {
+    width: 25%;
+    padding: 0 0 0 20px;
+		box-sizing: border-box;
+}
+	
+	#recommend_area h2 {
+		    font-size: 24px;
+    margin: 0 0 30px;
+    padding: 0 0 18px;
+   
+}
+	
+	section.magazineLatest h2 {
+		    font-size: 24px;
+    margin: 0 0 30px;
+    padding: 0 0 18px;
+}
+	section.magazineLatest {
+
+    padding: 40px 0;
+
+}
+
+	section.magazineLatest ul li .block .caption {
+    padding: 0px 20px;
+		    margin: 20px 0;
+    min-height: auto;
+}
+	section.magazineLatest ul li .block .caption p {
+    line-height: 1.8em;
+		display: none;
+}
+	section.magazineLatest ul li .block .caption p.date {
+margin: 0;
+		display:block;
+}
+	section.magazineLatest ul li .block .caption h3 {
+    font-size: 13px;
+		line-height: 1.8em;
+}
+	
+section.concept h2 {
+    margin: 0 0 30px;
+    font-size: 22px;
+   
+}	
+	section.concept p.jp {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 2.0em;
+    margin: 0 0 20px;
+    padding: 0;
+}
+section.concept p.en {
+    font-size: 13px;
+    
+}	
+	
+	.listWrapper {
+
+    padding: 0 30px 0px 30px;
+		min-height:inherit;
+
+}
+	
+	.listWrapper input[type="submit"] {
+  
+    font-size: 12px;
+}
+	ul.itemlistBlock li {
+    margin: 0;
+    padding: 0 0 30px 0;
+}
+	.itemSerchBtn {
+   height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #000;
+    background: #ececec;
+    display: block;
+    border: #dddddd solid 1px;
+    margin: 0 0 50px;
+}
+	.listWrapper .serchBlock input[type='text']{
+    border: dotted 1px #757575;
+    padding: 10px 5px;
+    background: initial;
+    -webkit-appearance: none;
+}
+	
+	.listWrapper .serchBlock {
+    width: auto;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+        padding: 40px 40px;
+        background-color: rgba(255, 255,255, 1);
+    z-index: 10;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+		opacity:0;
+		display: none;
+}
+	.listWrapper .serchBlock .side_block ul.filteritem li{
+		display: inline-block;
+		padding: 0 10px 0 0;
+		font-size: 12px;
+	}
+	.listWrapper .serchBlock .side_block .filter_title {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: #757575 dotted 1px;
+
+}
+	.listWrapper .serchBlock .side_block {
+    margin: 0 0 0px;
+    padding: 0 0 30px;
+   border-bottom:none;
+}
+	.listWrapper .serchBlock .side_title {
+    font-family: Georgia, "Times New Roman", Times, "serif";
+    font-size: 24px;
+    margin: 0 0 10px;
+    padding: 0;
+    border-bottom: none;
+    text-align: center;
+}
+	.listWrapper .serchBlock .cls{
+	display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    position: absolute;
+       top: 20px;
+    right: 20px;
+}
+	.listWrapper .serchBlock form{
+		opacity:0;
+	}
+	.itemSerchBtn span {
+    padding: 0 30px 0 0;
+    background-image: url(image/serach2.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 16px 16px;
+    -webkit-appearance: none;
+}
+	
+	
+	section.related_item {
+
+    padding: 0 30px 30px;
+
+}
+	section.related_item ul {
+    margin: 0 0 0 -20px;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+	section.related_item ul li {
+    width: 25%;
+    margin: 0;
+    padding: 0 0 30px 20px;
+		box-sizing: border-box;
+}
+	section.related_item h2 {
+    margin: 0 0 40px;
+  
+    font-size: 24px;
+  
+}
+	section.dictionaryList {
+
+    padding: 0 30px 50px;
+}
+	section.dictionaryDetail .spec .photo {
+
+    margin: 0 auto 60px;
+    float: none;
+		text-align: center;
+
+}
+	section.dictionaryDetail .spec .specInfo {
+    float: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+	section.dictionaryDetail .spec .specInfo h1 {
+
+    font-size: 18px;
+}
+	section.dictionaryDetail .spec .specInfo .icons ul li {
+
+    width: 12.5%;
+    padding: 0 0 0 20px;
+   
+}
+	section.dictionaryDetail .spec {
+    margin: 0 0 50px;
+    padding: 0;
+}
+	section.dictionaryDetail table th {
+ 
+       padding: 30px 20px;
+    
+}
+	section.dictionaryDetail table td {
+ 
+       padding: 30px 20px;
+    
+}
+	section.dictionaryDetail table {
+   
+    font-size: 13px;
+    line-height: 2.0em;
+}
+	
+	section.guide {
+    padding: 0 30px 30px;
+}
+	section.guide .sidebar .side_block li {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: #fff solid 1px;
+    border-right: #fff solid 1px;
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    background: #f1f1f1;
+}
+	
+	section.guide .sidebar .side_block li:nth-child(4){
+		border-right:none;
+	}
+	section.guide .sidebar .side_block li:nth-child(8){
+		border-right:none;
+	}
+	
+	
+	section.guide .sidebar {
+    width: auto;
+    box-sizing: border-box;
+    float: none;
+}
+	section.guide .sidebar .side_block li a {
+    display: block;
+    height: 50px;
+    padding: 0 0 0 0;
+    text-align: center;
+    background: none;
+}
+	section.guide .guideInfo {
+    margin: 0;
+    padding: 16px;
+    background: #f1f1f1;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+	section.guide .guideInfo .guideArea {
+    padding: 50px 30px;
+   
+}
+	h1.title {
+    margin: 0 0 40px;
+   
+}
+	.itemSerchBlock .side_block ul.filteritem li{
+		display: inline-block;
+		padding: 0 10px 0 0;
+		font-size: 12px;
+	}
+.itemSerchBlock .side_block {
+    margin: 0 0 0px;
+    padding: 0 0 30px;
+   border-bottom:none;
+}
+	.itemSerchBlock input[type='text'] {
+
+    width: 100%;
+}
+	.itemSerchBlock .wrap {
+    display: block;
+    border: none;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 0;
+    max-width: 880px;
+    position: static;
+    opacity: 0;
+}
+	nav.m_category ul li {
+    
+    padding: 0 26px;
+    
+}
+		nav.dic_category ul li{
+	padding: 0 26px;
+			font-size: 13px;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+	.pager_area{
+	display: block;
+}
+.navigation .back {
+
+    padding:5px 0 0;
+	    padding: 40px 0 0;
+}
+	
+	section.top {
+    margin: -30px 0 0;
+}
+	section.top .main .logo {
+    margin: 0 0 30px;
+  
+}
+	section.top .main .logo img{
+		width: 120px;
+		height: auto;
+	}
+	section.top .main h1{
+		display: none;
+	}
+	section.top .main #stage {
+    width: 100%;
+    position: relative;
+    height: 348px;
+    top: 0;
+    right: 0;
+}
+	section.top .main {
+    height:auto;
+		    position: fixed;
+    left: 0;
+    right: 0;
+    top: 80px;
+		bottom:0;
+}
+	section.top .main #stage {
+    width: 100%;
+    position: absolute;
+    height: auto;
+    top: 130px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+		overflow: hidden;
+}
+	section.top .contentsBlock {
+    padding: 0;
+    margin: 0;
+    position: relative;
+		
+}
+	section.top .contents01 .titleBlock {
+    margin-left: 0;
+    width: auto;
+    height: auto;
+    position: static;
+    padding: 30px;
+}
+	section.top .contents02 .titleBlock {
+    margin-right: 0;
+    width: auto;
+    height: auto;
+    position: static;
+    padding: 30px;
+}
+	section.top .contentsBlock .mainImage{
+		width: auto;
+		position: static;
+    height: 200px;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: cover;
+    overflow: hidden;
+    text-indent: -9999px;
+	}
+	section.top .contentsBlock .items {
+    margin: 0;
+    padding: 30px 20px 10px;
+    text-align: center;
+}
+	
+	section.top .contentsBlock .items ul {
+    margin: 0 0 0 -20px;
+    display: block;
+}
+	section.top .contentsBlock .items ul li {
+    width: 50%;
+    padding: 0 0 20px 20px;
+		box-sizing: border-box;
+}
+
+	
+	section.top .contentsBlock .items ul li p {
+    font-size: 11px;
+    line-height: 1.8em;
+}
+	section.top .contentsBlock .titleBlock {
+    width: auto;
+    height: auto;
+    position:static;
+}
+	section.top .contentsBlock .titleBlock h2 {
+   
+    font-size: 20px;
+   
+    line-height: 1.2em;
+    
+}
+	section.top .contentsBlock .titleBlock h2 span {
+   
+    font-size: 15px;
+
+}
+	#recommend_area h2 {
+    margin: 0 0 30px;
+   
+    font-size: 22px;
+   
+}
+	#recommend_area {
+
+    padding: 30px 20px;
+		    position: relative;
+    background: #fff;
+ 
+}
+	#recommend_area ul {
+    display: block;
+    margin: 0 0 0 -20px;
+}
+	#recommend_area ul li {
+    width: 50%;
+    padding: 0 0 20px 20px;
+    box-sizing: border-box;
+}
+	section.magazineLatest h2 {
+       margin: 0 0 30px;
+    font-size: 18px;
+    line-height: 1.4em;
+   
+
+	}
+	section.magazineLatest {
+    margin: 0;
+    padding: 30px 20px;
+    background: #f4f4f4;
+}
+	section.magazineLatest ul li {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px;
+   
+}
+	section.magazineLatest ul li .block .caption {
+    padding: 0px 20px;
+    margin: 20px 0;
+    min-height: auto;
+}
+	section.magazineLatest ul li .block .caption h3 {
+    font-size: 13px;
+    line-height: 1.8em;
+}
+	section.magazineLatest ul li .block .caption p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.8em;
+}
+	section.concept {
+    margin: 0;
+    padding: 50px 20px;
+    text-align: center;
+		position: relative;
+		z-index: 3;
+		background: #fff;
+}
+	section.concept .logo {
+    margin: 0 0 30px;
+}
+	section.concept .logo img {
+    width: 220px;
+    height: auto;
+}
+	section.concept h2 {
+    margin: 0 0 30px;
+    font-size: 20px;
+		line-height: 1.8em;
+}
+section.concept p.jp {
+    font-size: 13px;
+}
+	section.concept p.jp br.sp{
+		display:block;
+	}
+	section.concept p.en {
+    font-size: 14px;
+		text-align: left;
+}
+	section.concept p.en br{
+		display: none;
+	}
+	section.dictionaryBanner {
+    background-image: url(image/main_004.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 42px 0;
+    position: relative;
+    margin: 0;
+}
+	section.dictionaryBanner .wrap {
+    width: auto;
+    height: auto;
+    margin: 0 20px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.8);
+}
+	footer nav.fNavi {
+    margin: 0;
+    padding: 0;
+    border-bottom:none;
+    position: relative;
+		    text-align: center;
+}
+	
+	.listWrapper {
+
+    padding: 0 20px;
+		min-height:inherit;
+
+}
+	
+	.listWrapper input[type="submit"] {
+  
+    font-size: 12px;
+}
+	ul.itemlistBlock li {
+    margin: 0;
+    padding: 0 0 50px 0;
+}
+	.itemSerchBtn {
+   height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #000;
+    background: #ececec;
+    display: block;
+    border: #dddddd solid 1px;
+    margin: 0 0 30px;
+}
+	.listWrapper .serchBlock input[type='text']{
+    border: dotted 1px #757575;
+    padding: 10px 5px;
+    background: initial;
+    -webkit-appearance: none;
+}
+	
+	.listWrapper .serchBlock {
+    width: auto;
+    margin: 0;
+    position: fixed;
+    top: 51px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+        padding: 30px 20px;
+        background-color: rgba(255, 255,255, 1);
+       z-index: 9998;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+		opacity:0;
+		display: none;
+}
+	.listWrapper .serchBlock .side_block ul.filteritem:after{
+		    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+	}
+	
+	.listWrapper .serchBlock .side_block ul.filteritem li{
+		    display: block;
+    padding: 0 10px 0 0;
+        font-size: 11px;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+	}
+	.listWrapper .serchBlock .side_block .filter_title {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: #757575 dotted 1px;
+
+}
+	.listWrapper .serchBlock .side_block {
+    margin: 0 0 0px;
+    padding: 0 0 30px;
+   border-bottom:none;
+}
+	.listWrapper .serchBlock .side_title {
+    font-family: Georgia, "Times New Roman", Times, "serif";
+    font-size: 16px;
+    margin: 0 0 10px;
+    padding: 0;
+    border-bottom: none;
+    text-align: center;
+}
+	.listWrapper .serchBlock .cls{
+	display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    position: absolute;
+       top: 20px;
+    right: 20px;
+}
+	.listWrapper .serchBlock .cls img{
+		width: 40px;
+		height: 40px;
+	}
+	
+	.listWrapper .serchBlock form{
+		opacity:0;
+	}
+	ul.itemlistBlock.c_layout {
+    margin: 0 0 0 -20px;
+}
+	ul.itemlistBlock.c_layout li {
+   
+    width: 50%;
+  
+    padding: 0 0 20px 20px;
+    
+}
+	ul.itemlistBlock.c_layout li div.listrightbloc h4 {
+    font-size: 13px;
+    line-height: 1.8em;
+}
+	ul.itemlistBlock.c_layout li div.listrightbloc .pricebox {
+
+    font-size: 10px;
+
+}
+	div.listrightbloc .pricebox span {
+    font-size: 14px;
+}
+	section.dictionaryBanner .wrap .titleBlock {
+   
+    font-size: 24px;
+   
+}
+	section.dictionaryBanner .wrap .titleBlock span {
+   
+    font-size: 14px;
+
+}
+	#detailrightbloc .category a.cate {
+  
+    padding: 0 8px;
+  
+    font-size: 12px;
+    margin: 0 0px 0 0;
+   
+}
+	section.related_item h2 {
+        margin: 0 0 30px;
+    padding: 0 0 10px;
+    font-size: 18px;
+    line-height: 1.4em;
+   
+}
+	section.related_item h2 span {
+
+    font-size: 14px;
+
+}
+	section.related_item {
+
+    padding: 0 20px 30px;
+ 
+}
+	section.related_item ul {
+    margin: 0 0 0 -20px;
+    display: block;
+}
+	section.related_item ul li {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0 0 20px 20px;
+    box-sizing: border-box;
+}
+	section.magazineLatest h2 span {
+  
+    font-size: 14px;
+
+}
+	.itemSerchBtn span {
+    padding: 0 30px 0 0;
+    background-image: url(image/serach2.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 16px 16px;
+    -webkit-appearance: none;
+}
+	.itemSerchBlock {
+   
+    top: 50px;
+    padding: 0px;
+    
+}
+	.itemSerchBlock .wrap {
+      border: none;
+    padding: 30px 20px;
+    
+}
+	.itemSerchBlock .cls img {
+    width: 40px;
+    height: 40px;
+}
+	
+	.itemSerchBlock .side_title {
+   
+    font-size: 16px;
+    margin: 0 0 10px;
+
+}
+	.itemSerchBlock input[type='text'] {
+
+    width: 100%;
+}
+	.itemSerchBlock .side_block ul.filteritem li {
+    display: block;
+    padding: 0 20px 0 0;
+    font-size: 11px;
+    width: 50%;
+    float: left;
+		box-sizing: border-box;
+}
+	.itemSerchBlock .side_block ul.filteritem:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+	.pager_area {
+        border-bottom:none;
+    background: inherit;
+    margin: 0;
+    padding: 1px;
+    display: none;
+}
+	.pager_area .page_box {
+   background: inherit;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+	section.related_item ul {
+    margin: 0 0 0 -20px;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+	section.related_item ul li .caption p {
+    font-size: 11px;
+    color: #000;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+	section.single h1 {
+  
+    font-size: 16px;
+    letter-spacing: normal;
+}
+
+	section.single {
+
+    margin: 0 auto 30px;
+    padding: 0 20px;
+}
+	section.single .post {
+  
+    margin: 0 auto;
+    padding: 0;
+
+}
+	section.magazineLatest.wh {
+    background: #fff;
+    padding: 30px 0 0;
+}
+	section.single .post p {
+  
+    line-height: 2.0em;
+}
+	section.dictionaryFront .front .label {
+    position: absolute;
+    width: 280px;
+    height: 224px;
+    box-sizing: border-box;
+    margin: -112px 0 0 -140px;
+    padding: 40px 20px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    background-size: 100%;
+}
+	section.dictionaryFront .front .label h2 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 18px;
+    letter-spacing: 10px;
+    line-height: 1.2em;
+}
+	section.dictionaryFront .front .label h2 span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+	section.dictionaryFront .front .label p {
+		display: none;
+}
+	section.dictionaryFront .front .label .open {
+    padding: 35px 0 0;
+    font-size: 13px;
+}
+	section.dictionaryFront .front {
+    height: 400px;
+    background: url(image/dictionary_bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+}
+	section.dictionaryFront {
+    margin: -40px 0 0px;
+    padding: 0;
+}
+
+	nav.dic_category ul {
+    display: block;
+		border-top:#ccc dotted 1px;
+}
+	nav.dic_category ul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+	nav.dic_category ul li:first-child {
+    border-left:inherit;
+}
+
+nav.dic_category ul li {
+    float: left;
+    padding: 0;
+    list-style: none;
+    line-height: 40px;
+	height: 40px;
+    border-right:#ccc dotted 1px;
+	border-bottom:#ccc dotted 1px;
+    font-size: 14px;
+    font-weight: normal;
+	width: 20%;
+	box-sizing: border-box;
+}
+	nav.dic_category ul li:nth-child(5n){
+		border-right:inherit;
+	}
+	
+	nav.m_category ul {
+   display: block;
+		border-top:#ccc dotted 1px;
+}
+	nav.m_category ul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+	nav.m_category ul li:first-child {
+    border-left:inherit;
+}
+
+	
+nav.m_category ul li {
+    float: left;
+    padding: 0;
+    list-style: none;
+    line-height: 40px;
+	height: 40px;
+    border-right:#ccc dotted 1px;
+	border-bottom:#ccc dotted 1px;
+    font-size: 14px;
+    font-weight: normal;
+	width: 20%;
+	box-sizing:border-box;
+}
+	nav.m_category ul li:nth-child(5n){
+		border-right:none;
+	}
+	nav.m_category ul:after{
+		display: block;
+    clear: both;
+    height: 0px;
+    line-height: 0px;
+    visibility: hidden;
+    content: ".";
+	}
+	
+	section.dictionaryList {
+
+    padding: 0 20px 30px;
+}
+	section.dictionaryList ul {
+    margin: 0 0 0 -10px;
+   
+}
+	section.dictionaryList ul li {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0 0 20px 10px;
+}
+	section.dictionaryList ul li .block .caption {
+    padding: 10px 0 0;
+
+}
+	section.dictionaryList ul li .block .caption h3 {
+    font-size: 12px;
+    margin: 0;
+		line-height: 1.8em;
+  
+}
+	section.dictionaryList ul li .block .caption ol.tags {
+		display: none;
+}
+	section.dictionaryDetail {
+    margin: 0 auto 50px;
+    padding: 0 20px;
+}
+	
+	section.dictionaryDetail .spec .photo {
+
+    margin: 0 auto 20px;
+    float: none;
+    width: 100%;
+    max-width: 500px;
+		text-align: center;
+}
+	section.dictionaryDetail .spec .photo img{
+		display: block;
+		margin: 0 auto;
+	}
+	section.dictionaryDetail .spec .specInfo {
+    float: none;
+    width: auto;
+}
+	section.dictionaryDetail .spec .specInfo h1 {
+    margin: 0 0 20px;
+    font-size: 16px;
+}
+	section.dictionaryDetail .spec .specInfo .plantInfo dl {
+    margin: 0 0 6px;
+    padding: 0 0 6px 70px;
+    font-size: 13px;
+    border-bottom: #ccc dotted 1px;
+}
+	section.dictionaryDetail .spec .specInfo .plantInfo {
+    margin: 0 0 26px;
+    padding: 0;
+    border-bottom: inherit;
+}
+	section.dictionaryDetail .spec .specInfo .icons ul li {
+    width: 25%;
+    padding: 0 0 0 10px;
+
+}
+	section.dictionaryDetail .spec {
+    margin: 0 0 30px;
+    padding: 0;
+}
+	section.dictionaryDetail p.read {
+    text-align: left;
+    margin: 0 0 30px;
+    line-height: 2.0em;
+}
+	section.dictionaryDetail p.read br{
+		display: none;
+	}
+	section.dictionaryDetail table th {
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+    background: #f0f0ea;
+    width: auto;
+    display: block;
+}
+	section.dictionaryDetail table td {
+    margin: 0;
+    padding: 20px 5px 20px 5px;
+    text-align: left;
+    vertical-align: middle;
+    width: auto;
+    display: block;
+}
+	section.dictionaryDetail table {
+
+    border-top: #c5c5c5 solid 1px;
+    font-size: 13px;
+    line-height: 2.0em;
+}
+	section.dictionaryDetail .conditions {
+    margin: 0 0 0px;
+}
+	nav.dic_category ul li a{
+		display: block;
+	}
+	nav.m_category ul li a{
+		display: block;
+	}
+	
+	
+	
+	
+	
+	
+	section.guide .sidebar .side_block li {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: #fff solid 1px;
+    border-right: #fff solid 1px;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    background: #f1f1f1;
+		font-size: 12px;
+}
+	section.guide .sidebar .side_block li:nth-child(2n){
+		 border-right: inherit;
+	}
+	
+	section.guide .sidebar .side_block li a{
+		display: block;
+		padding: 0 20px;
+	}
+	
+	section.guide .sidebar {
+    width: auto;
+    box-sizing: border-box;
+    float: none;
+}
+	section.guide .sidebar .side_block li a {
+    display: block;
+    height: 50px;
+    padding: 0 0 0 0;
+    text-align: center;
+    background: none;
+}
+	section.guide .guideInfo {
+    margin: 0;
+    padding: 20px;
+    background: #f1f1f1;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+	section.guide .guideInfo .guideArea {
+        padding: 30px 20px;
+   
+}
+	section.guide {
+  
+    padding: 30px 0px 30px;
+
+
+}
+	section.guide .side_header{
+		display: none;
+	}
+	section.guide .sidebar .side_block {
+    font-size: 13px;
+    border-top: inherit;
+}
+	section.guide .guideInfo .headline_title {
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+  
+}
+	section.guide .guideInfo h2.t_main {
+
+    font-size: 16px;
+ font-family: 'Roboto', 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif!important;
+}
+	section.guide .guideInfo .guideArea .box_header h3 {
+ font-family: 'Roboto', 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif!important;
+    font-size: 15px;
+}
+	section.guide .guideInfo .guideArea .box h4{
+    font-size: 14px;
+    margin: 0 0 5px;
+   font-family: 'Roboto', 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif!important;
+}
+	section.guide .guideInfo .guideArea .box p {
+
+    font-size: 13px;
+    line-height: 1.8em;
+}
+	section.guide .guideInfo .guideArea .box .block {
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+}
+	section.guide .guideInfo .guideArea .box ul.time{
+		text-align: center;
+	}
+	section.guide .guideInfo .guideArea .box ul.time li {
+
+    float:none;
+    font-size: 14px;
+    margin: 0 5px 10px;
+    padding: 0;
+		display: inline-block;
+
+}
+
+	section.guide .guideInfo .guideArea ol.list_number li {
+    font-size: 13px;
+}
+	section.guide .guideInfo .guideArea ol.list_number li:before{
+		 content: "■ ";
+	}
+	.intro {
+    margin: -20px 0 20px;
+    padding: 0 20px;
+    font-size: 13px;
+    line-height: 1.8em;
+		text-align: left;
+}
+	.intro br{
+		display: none;
+	}
+	.intro h2 {
+    text-align: center;
+    font-size: 20px;
+    
+}
+	section.guide .guideInfo .guideArea .box ul.icons li {
+
+    width: 25%;
+    
+}
+	section.guide .guideInfo .guideArea .box .profilebox {
+    margin: 20px 0 0;
+    padding: 0;
+    min-height:auto;
+}
+	section.guide .guideInfo .guideArea .box .profilebox .musashi {
+    width: auto;
+    height: auto;
+    position: static;
+    margin: 0 0 20px;
+}
+	section.guide .guideInfo .guideArea .box ul.flowbox li {
+
+    padding: 0 0 30px;
+       background: url(image/arrow.svg) no-repeat 50% 100%;
+}
+	section.guide .guideInfo .guideArea .box ul.flowbox li .icon {
+    position: static;
+    margin: 0 0 10px;
+    text-align: center;
+}
+	ul.itemlistBlock.c_layout.fav li{
+
+    width: 50%;
+   position: relative;
+	
+}
+	ul.itemlistBlock.c_layout.fav h4 {
+  font-family: 'Roboto', 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif!important;
+}
+
+	
+	section.top .main #stage{
+		text-indent: inherit;
+	}
+	section.top .main #stage.pc{
+	display: none;
+}
+	section.top .main #stage.sp{
+	display:block;
+}
+
+	section.top .main #stage .pic div {
+    width: 100%;
+    height: auto;
+
+}
+	section.top .main #stage .pic div img{
+		width: 100%;
+		height: auto;
+	}
+	
+	section.guide .guideInfo .guideArea table.pc{
+		display: none;
+	}
+	section.guide .guideInfo .guideArea table.sp{
+	width: 100%;
+	margin: 10px 0 10px;
+	padding: 0;
+	font-size: 12px;
+	border-collapse: collapse;
+	border-top: inherit;
+		display: table;
+}
+
+section.guide .guideInfo .guideArea table.sp th{
+	background: #dbdbdb;
+	padding: 8px 8px;
+	text-align: center;
+	font-weight: normal;
+	border-right:#ffffff solid 1px;
+	border-bottom: inherit;
+	border-top: inherit;
+}
+section.guide .guideInfo .guideArea table.sp th:last-child,
+	section.guide .guideInfo .guideArea table.sp td:last-child{
+	border-right:inherit;
+}
+
+section.guide .guideInfo .guideArea table.sp td{
+	margin: 0;
+	padding: 8px 8px;
+	text-align: center;
+	border-right:#e1e1e1 solid 1px;
+	border-bottom:#e1e1e1 solid 1px;
+	background: #f6f6f6;
+}
+section.guide .guideInfo .guideArea table.sp td.top{
+	background: #e8e4dd;
+}
+	#payment_form dl.top {
+    padding: 20px 0px 20px 0px;
+}
+
+#payment_form dl {
+    margin: 0px 20px 20px 20px;
+	padding: 0px 0px 20px 0px;
+
+}
+	#payment_form dl.top dt {
+    padding: 0px 0px 10px;
+}
+	#payment_form dl dt{
+		position: static;
+		width: auto;
+		padding: 0 0 10px;
+	}
+	
+	#payment_form .box240 {
+    width: 48%;
+}
+		#payment_form .box240.w100 {
+    width: 100%;
+			box-sizing: border-box;
+}
+	#payment_form dd img{
+		width: 40%;
+		height: auto;
+	}
+	#payment_form .stt {
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+	
+	#payment_form ul.sel{
+	margin: 0 20px;
+	padding: 0;
+}
+	.information{
+		line-height: 1.8em;
+		    margin: 0 0 20px;
+	}
+	.table07.w100{
+		display: block;
+	}
+	.table07.w100 th{
+		display: block;
+		padding: 18px 0 5px;
+		background: inherit;
+	}
+	.table07.w100 td{
+		display: block;
+		padding: 0 0  18px;
+		width: 100%;
+
+	}
+	.table07.w100 td .box240{
+		width: 48%;
+	}
+	.table07.w100 td .box240.w100{
+		width: 100%;
+		box-sizing: border-box;
+	}
+	section.dictionaryFront .front .label p.read {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 15px;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+	section.dictionaryBanner .wrap p.read {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+	section.dictionaryBanner .wrap .open {
+    padding: 0 0 10px;
+       font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro",'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif!important;
+}
+}
+
+
+
