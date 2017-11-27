@@ -61,3 +61,13 @@ Route::get('prod/edit', 'ProdController@initEdit');
 Route::post('prod/edit', 'ProdController@edit');
 Route::post('prod/delete', 'ProdController@delete');
 Route::post('prod/status', 'ProdController@switchStatus');
+
+// 新事管理
+Route::get('article', 'ArticleController@index');
+Route::post('article', 'ArticleController@query');
+Route::post('article/delete', 'ArticleController@delete');
+Route::get('article/add', 'ArticleController@initAdd');
+Route::post('article/add', 'ArticleController@add');
+Route::get('article/edit', 'ArticleController@initEdit');
+Route::post('article/edit', 'ArticleController@edit');
+Route::post('article/status', 'ArticleController@switchStatus');

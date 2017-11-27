@@ -17,6 +17,7 @@ class CreateProdCategorysTable extends Migration
             $table->increments('id');
             $table->string('name', 32);
             $table->string('code', 32);
+            $table->string('bg_color', 32)->comment('背景色')->nullable();
             $table->string('pinyin', 32)->nullable();
             $table->string('thumbnail', 256)->nullable();
             $table->string('pic', 256)->nullable();

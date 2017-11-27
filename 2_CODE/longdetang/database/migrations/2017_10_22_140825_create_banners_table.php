@@ -17,6 +17,7 @@ class CreateBannersTable extends Migration
             $table->increments('id');
             $table->string('title', 32);
             $table->string('pic', 256)->comment('图片地址')->nullable();
+            $table->string('mobile_pic', 256)->comment('手机图片地址')->nullable();
             $table->boolean('drillable')->comment('是否可钻取')->nullable();
             $table->string('drill_module', 16)->comment('钻取模块')->nullable();
             $table->string('drill_display', 16)->comment('钻取展示：0：列表，1：明细')->nullable();
