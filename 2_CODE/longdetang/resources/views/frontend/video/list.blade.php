@@ -71,7 +71,7 @@
                         <ul>
                             <li v-for="item in videos.rows">
                                 <div class="video">
-                                    <video v-on:pause="pause($event, item)" v-on:play="play($event, item)" controls preload="none" :src="$storage + item.url" :poster="$storage + item.pic" style="width: 100%;">
+                                    <video v-on:pause="pause($event, item)" v-on:play="play($event, item)" controls preload="metadata" :src="$storage + item.url" :poster="$storage + item.pic" style="width: 100%;">
                                     </video>
                                 </div>
                                 <article>@{{item.description || ''}}</article>
