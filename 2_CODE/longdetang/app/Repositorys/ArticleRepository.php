@@ -14,7 +14,7 @@ use App\Models\Artist;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class ArticleRepository implements IArtiCleRepository
+class ArticleRepository implements IArticleRepository
 {
     public function paginate($params)
     {
