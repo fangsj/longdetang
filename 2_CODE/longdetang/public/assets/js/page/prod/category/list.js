@@ -1,4 +1,9 @@
 $(function () {
+    $('#bgColorInputField').colorpicker().on('changeColor', function (e) {
+        $(this).css({
+            'background': e.color.toHex()
+        })
+    });
     $('.fisrtsort:last td').css("border-bottom", "0");
 
     $("tr[id*=treetable]").click(function () {
@@ -63,6 +68,9 @@ $(function () {
         resetForm: function () {
             $('#previewThumbnail').attr('src', assets('/img/noimage.png'));
             $('#picThumbnail').attr('src', assets('/img/noimage.png'));
+            $('#bgColorInputField').css({
+                background: 'white',
+            });
         },
         url: function () {
             return url($('#categoryIdInputField').val() ? '/prod/category/edit' : '/prod/category/add');
@@ -190,6 +198,9 @@ function editCategory(id) {
         $('#adSloganInputField').val(resp.data.ad_slogan || '');
         $('#explainInputField').val(resp.data.explain || '');
         $('#categoryIdInputField').val(resp.data.id);
+        $('#bgColorInputField').val(resp.data.bg_color).css({
+            'background': resp.data.bg_color
+        });
         $('#categoryFormModal').modal();
     });
 }

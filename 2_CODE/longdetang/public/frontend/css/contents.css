@@ -736,7 +736,7 @@ div.listrightbloc .listcomment {
 
 .detai_btn_box{
 	float: right;
-	width: 30%;
+	width: 75%;
 	background: #000;
 }
 
@@ -807,7 +807,7 @@ div.listrightbloc dd p.attention {
 div.listrightbloc .cartin {
         margin: 0;
     float: left;
-    width: 70%;
+    width: 25%;
     background: #000;
     line-height: 0;
     box-sizing: border-box;
@@ -1546,7 +1546,7 @@ font-size: 12px;
     font-size: 14px;
 	height: 40px;
 	float: left;
-	width: 64%;
+	width: 20%;
 	    border-right: #ccc solid 1px;
 }
 #detailrightbloc .cart_area .attention{
@@ -1589,7 +1589,7 @@ font-size: 12px;
 }
 #detailrightbloc .favorite_btn {
         float: right;
-    width: 36%;
+    width: 80%;
     background: #000;
 }
 #detailrightbloc .favorite_btn a{
@@ -3740,4 +3740,212 @@ padding: 0 20px;
 	div#undercolumn_shopping .point_area h3 {
     padding: 0px 0 10px!important;
 }
+}
+
+.artist_list {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px 100px;
+}
+.artist_list ul{
+    margin: 0 0 0 -22px;
+    padding: 0;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.artist_list ul li {
+    width: 25%;
+    float: left;
+    margin: 0 0 22px;
+    padding: 0 0 0 22px;
+    box-sizing: border-box;
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+}
+.artist_list .block {
+    width: 100%;
+    float: left;
+}
+
+.artist_list .block img {
+    width: 100%;
+}
+.artist_list ul li .block .caption {
+    padding: 3px 0;
+    margin: 0;
+    position: relative;
+}
+
+.artist_list ul li .block .caption h3{
+    font-size: 14px;
+    /*margin: 0 0 20px;*/
+    padding: 0;
+    font-weight: 500;
+}
+
+@media print, screen and (max-width: 959px) and (min-width: 768px) {
+    .artist_list {
+        padding: 0 30px 50px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .artist_list {
+        padding: 0 20px 30px
+    }
+    .artist_list ul{
+        margin: 0 0 0 -10px;
+    }
+
+    .artist_list ul li {
+        float: left;
+        width: 50%;
+        margin: 0;
+        padding: 0 0 20px 10px;
+    }
+    .artist_list ul li .block .caption {
+        padding: 10px 0 0;
+    }
+    .artist_list ul li .block .caption h3{
+        font-size: 12px;
+        margin: 0;
+        line-height: 1.8em;
+    }
+}
+
+
+.artist_detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 36%;
+}
+.artist_detail article {
+    margin: 0 -10% 10%;
+    font-weight: 300;
+}
+
+.LC_Page_Artists_Detail .related_item ul{
+    margin: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.LC_Page_Artists_Detail .related_item ul li {
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.LC_Page_Artists_Detail .related_item .caption {
+    margin-bottom: 1%;
+}
+@media print, screen and (max-width: 959px) and (min-width: 600px) {
+    .artist_detail {
+        padding: 0 32%;
+    }
+}
+
+@media print, screen and (max-width: 700px) and (min-width: 450px) {
+    .artist_detail {
+        padding: 0 25%;
+    }
+    .artist_detail article {
+        margin: 0 -12% 10%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .artist_detail {
+        padding: 0 20px 30px;
+    }
+    .artist_detail article {
+        margin: 0%;
+    }
+}
+
+@media print, screen and (max-width: 959px) and (min-width: 768px){
+    .LC_Page_Artists_Detail .related_item ul {
+        margin: 0 0 0 -20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .LC_Page_Artists_Detail .related_item ul li {
+        width: 50%;
+    }
+    .LC_Page_Artists_Detail .related_item ul {
+        margin: 0 0 0 -20px;
+    }
+}
+
+.zefengshuo_list {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px 100px;
+}
+.zefengshuo_list ul{
+    margin: 0 12%;
+    padding: 0;
+}
+.zefengshuo_list ul li {
+    width: 100%;
+    margin: 0 0 22px;
+    box-sizing: border-box;
+    list-style: none;
+    display: block;
+    margin-bottom: 6%;
+}
+
+.zefengshuo_list ul li article{
+    font-size: 14px;
+}
+
+.zefengshuo_list ul li .video {
+    position: relative;
+}
+
+.zefengshuo_list ul li .video .play_btn {
+    position: absolute;
+    margin:auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+}
+
+@media print, screen and (max-width: 959px) and (min-width: 768px) {
+    .zefengshuo_list {
+        padding: 0 40px 40px;
+    }
+    .zefengshuo_list ul{
+        margin: 0 10%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .zefengshuo_list {
+        padding: 0 20px 20px;
+    }
+    .zefengshuo_list ul{
+        margin: 0 1%;
+        padding: 0;
+    }
 }

@@ -27,7 +27,7 @@ $(function () {
                 field: 'pic',
                 width: '23%',
                 formatter: function (val, row) {
-                    return "<img src='" + file(val) + "' style='width: 30px; max-height: 30px;'/>&nbsp;&nbsp;";
+                    return "<img src='" + file(val) + "' style='max-height: 30px;'/>&nbsp;&nbsp;";
                 }
             }, {
                 title: "状态",

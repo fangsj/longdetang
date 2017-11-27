@@ -85,8 +85,8 @@
                             <h2 style="background-image: url('{{storage_url($category->thumbnail)}}')">{{$category->name}}
                                 <br>
                                 <span>{{$category->pinyin}}</span></h2>
-                            <p class="read">{{$category->explain}}</p>
-                            <p>{{$category->ad_slogan}}</p>
+                            <p class="read">{{$category->ad_slogan}}</p>
+                            <p>{{$category->explain}}</p>
                         </div>
                         <div class="mainImage"
                              style="background-image:url({{storage_url($category->pic)}});">

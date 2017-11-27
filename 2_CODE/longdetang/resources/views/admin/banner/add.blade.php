@@ -43,7 +43,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label class="control-label col-md-4">上传图片<span class="required" aria-required="true">*&nbsp; </span>: </label>
+                            <label class="control-label col-md-4">上传PC图片<span class="required" aria-required="true">*&nbsp; </span>: </label>
                             <div class="col-md-5">
                                 <div style="width:100%">
                                     <button id="choisePicBtn" type="button" class="btn grey start">
@@ -54,9 +54,30 @@
                                 </div>
                                 <div id="pic-preview" class="img-preview" style="display: {{isset($pic) ? 'block' : 'none'}};margin-top: 5px;">
                                     <input type="hidden" name="pic" value="{{$pic or ''}}"/>
-                                    <img width="190" height="148" src="{{isset($pic) ? storage_url($pic) : ''}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <img width="100%" src="{{isset($pic) ? storage_url($pic) : ''}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
                                 </div>
-                                <span class="help-block m-b-none text-danger my_clearfix_both">推荐尺寸(px):160*160</span>
+                                <span class="help-block m-b-none text-danger my_clearfix_both">推荐尺寸(px):2000*598</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="control-label col-md-4">上传手机图片<span class="required" aria-required="true">*&nbsp; </span>: </label>
+                            <div class="col-md-5">
+                                <div style="width:100%">
+                                    <button id="choiseMobilePicBtn" type="button" class="btn grey start">
+                                        <i class="fa fa-upload"></i><span> 选择图片上传</span>
+                                    </button>
+                                    <input type="file" id="mobilePicInput" name="mobilePicInput" accept="image/*" style="display: none"/>
+                                    <span class="upload-loading"></span>
+                                </div>
+                                <div id="mobilePic-preview" class="img-preview" style="display: {{isset($mobile_pic) ? 'block' : 'none'}};margin-top: 5px;">
+                                    <input type="hidden" name="pic" value="{{$mobile_pic or ''}}"/>
+                                    <img width="100%" src="{{isset($mobile_pic) ? storage_url($mobile_pic) : ''}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+                                <span class="help-block m-b-none text-danger my_clearfix_both">推荐尺寸(px):828*1052</span>
                             </div>
                         </div>
                     </div>

@@ -7,8 +7,16 @@
     @push('styles')
         <link href="{{asset('/assets/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css')}}"
         rel="stylesheet" type="text/css">
+        <link href="{{asset('/assets/css/plugins/colorpicker/bootstrap-colorpicker.min.css')}}"
+              rel="stylesheet" type="text/css">
+        <style>
+            .colorpicker.dropdown-menu {
+                z-index: 1060;
+            }
+        </style>
     @endpush
     @push('scripts')
+        <script src="{{asset('/assets/js/plugins/colorpicker/bootstrap-colorpicker.min.js')}}"></script>
         <script src="{{asset('/assets/js/page/prod/category/list.js')}}">
         </script>
     @endpush
@@ -247,7 +255,18 @@
                                         <label class="control-label col-md-3">广告语:
                                         </label>
                                         <div class="col-md-9">
-                                            <input type="text" id="adSloganInputField" name="ad_slogan" class="form-control" maxlength="9" placeholder="请输入简短广告语">
+                                            <input type="text" id="adSloganInputField" name="ad_slogan" class="form-control" maxlength="15" placeholder="请输入简短广告语">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">背景色:
+                                        </label>
+                                        <div class="col-md-9">
+                                            <input type="text" id="bgColorInputField" name="bg_color" class="form-control" maxlength="9" placeholder="">
                                         </div>
                                     </div>
                                 </div>

@@ -17,4 +17,5 @@ interface IProdRepository
     public function delete($param, Request $request = null);
     public function save($param, Request $request = null);
     public function switch_status($params);
+    public function paginate_frontend($params);
 }

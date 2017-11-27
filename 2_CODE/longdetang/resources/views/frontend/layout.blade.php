@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no, email=no, address=no">
-    <title>龙德堂-商品列表</title>
+    <title>龙德堂</title>
 
     <link rel="shortcut icon" href="{{asset('frontend/img/common/favicon.ico')}}"/>
     <link rel="icon" type="image/vnd.microsoft.icon" href="{{asset('frontend/img/common/favicon.ico')}}"/>
@@ -14,12 +14,20 @@
     {{--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">--}}
     {{--<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">--}}
     <link rel="stylesheet" href="{{asset('frontend/css/import.css')}}" type="text/css" media="all"/>
-
+    @stack('jquery-ui')
     <script src="{{asset('frontend/js/jquery-2.1.1.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('frontend/js/eccube.js')}}"></script>
     <script type="text/javascript" src="{{asset('frontend/js/eccube.legacy.js')}}"></script>
     @stack('scripts')
     <script type="text/javascript">
+        var baseURL = '{{url('/')}}/'
+        var storage = '{{storage_url('')}}'
+        function file(url) {
+            return storage + '/' + url;
+        }
+        function url(relaURL) {
+            return baseURL + relaURL
+        }
     </script>
 </head>
 <body class="@yield('body_class')">
@@ -52,7 +60,7 @@
         @yield('content')
         @include('frontend.footer')
     </div>
-    <script type="text/javascript" src="{{asset('frontend/js/swich.js')}}"></script>
+    @stack('bottom-scripts')
     <script type="text/javascript" src="{{asset('frontend/js/common.js')}}"></script>
 </body>
 </html>

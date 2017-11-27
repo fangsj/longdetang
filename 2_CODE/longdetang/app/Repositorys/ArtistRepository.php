@@ -28,8 +28,9 @@ class ArtistRepository implements IArtistRepository
             'pageSize' => $paginate->perPage(),
             'pageNumber' => $paginate->currentPage(),
             'rows' => $paginate->items(),
-            'pages' => $paginate->lastPage(),
-            'total' => $paginate->total()
+            'pages' => $paginate->total() == 0 ? 0 : $paginate->lastPage(),
+            'total' => $paginate->total(),
+            'nextPage' => $paginate->previousPageUrl()
         ];
     }
 

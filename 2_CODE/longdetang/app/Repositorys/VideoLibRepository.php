@@ -32,7 +32,7 @@ class VideoLibRepository implements IVideoLibRepository
             'pageSize' => $paginate->perPage(),
             'pageNumber' => $paginate->currentPage(),
             'rows' => $paginate->items(),
-            'pages' => $paginate->lastPage(),
+            'pages' => $paginate->total() == 0 ? 0 : $paginate->lastPage(),
             'total' => $paginate->total()
         ];
     }

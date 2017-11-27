@@ -43,6 +43,7 @@ class ProdCategoryController extends BaseController
             $category->seq = $request->seq;
             $category->ad_slogan = $request->ad_slogan;
             $category->explain = $request->explain;
+            $category->bg_color = $request->bg_color;
             $category->save();
             return response()->json(AsyncResult::successWithMsg('分类保存成功！'));
         } catch (Exception $exception) {

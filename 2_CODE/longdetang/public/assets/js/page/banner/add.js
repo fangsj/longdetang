@@ -3,6 +3,10 @@ $(function () {
         $("#picInput").trigger('click');
     });
 
+    $('#choiseMobilePicBtn').click(function () {
+        $("#picInput").trigger('click');
+    });
+
     $("#picInput").fileupload({
         url: url('/upload'),
         singleFileUploads: false,
@@ -11,6 +15,22 @@ $(function () {
         done: function (e, resp) {
             if (resp.result) {
                 with($('#pic-preview').show()) {
+                    find('img').attr("src", file(resp.result[0].url));
+                    find('input').val(resp.result[0].url);
+                }
+            }
+            $(e.target).next('.upload-loading').hide();
+        }
+    });
+
+    $("#mobilePicInput").fileupload({
+        url: url('/upload'),
+        singleFileUploads: false,
+        formData: {"kind": "banner"},
+        paramName: "files[]",
+        done: function (e, resp) {
+            if (resp.result) {
+                with($('#mobilePic-preview').show()) {
                     find('img').attr("src", file(resp.result[0].url));
                     find('input').val(resp.result[0].url);
                 }

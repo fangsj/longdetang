@@ -70,4 +70,38 @@ class ProdRepository implements IProdRepository
     public function switch_status($params) {
         Prod::where('id', $params['id'])->update(['status' => $params['status']]);
     }
+
+    /**
+     * 前端商品分页
+     * @param $params
+     * @return array
+     */
+    public function paginate_frontend($params)
+    {
+        $query = Prod::select(['prods.*']);
+        $query->leftJoin("artists", function ($join) {
+            $join->on("prods.artist_id", '=', 'artists.id')->whereNull('artists.deleted_at');
+        });
+        // 过滤商品名称
+        if (!empty($params['name'])) {
+            $query->where('prods.name', 'like', "%" . $params['name'] . "%");
+        }
+        if (!empty($params['second_category_id'])) {
+            $query->where('prods.second_category_id', $params['second_category_id']);
+        }
+        if (!empty($params['artist'])) {
+            $query->where('artists.name', 'like', "%" . $params['artist'] . "%");
+        }
+        if (!empty($params['sortName'])) {
+            $query->orderBy($params['sortName'], (!empty($params['sortOrder']) ? $params['sortOrder'] : 'desc'));
+        }
+        $paginate = $query->paginate($params['pageSize'], ['prods.id'], 'pageNumber');
+        return [
+            'pageSize' => $paginate->perPage(),
+            'pageNumber' => $paginate->currentPage(),
+            'rows' => $paginate->items(),
+            'pages' => $paginate->total() == 0 ? 0 : $paginate->lastPage(),
+            'total' => $paginate->total()
+        ];
+    }
 }
