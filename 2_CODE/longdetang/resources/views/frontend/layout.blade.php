@@ -36,7 +36,7 @@
         <header>
             <div class="logo">
                 <a href="/">
-                    <img src="{{asset('frontend/img/common/logo.svg')}}" alt="龙德堂">
+                    <img style="width: 165px;height: auto;" src="{{asset('frontend/img/common/logo.svg')}}" alt="龙德堂">
                 </a>
             </div>
             <nav class="memberNavi">

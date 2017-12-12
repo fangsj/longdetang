@@ -4,7 +4,7 @@
 ************************************************ */
 body {
     color: #000;
-    font-family: 'Roboto', sans-serif, 微软雅黑;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     background-color: #ffff;
     margin: 0;
     padding: 0;
@@ -24,7 +24,7 @@ body {
     height: 28px;
     /* border-bottom: #dddddd solid 1px; */
     text-align: left;
-    font-family: 微软雅黑, 'Roboto', sans-serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     font-weight: 500;
     background: #2f2f2f;
     position: absolute;
@@ -377,7 +377,7 @@ div.title {
     text-align: center;
     font-weight: normal;
     letter-spacing: 0.1em;
-    font-family: Georgia, "Times New Roman", 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     position: relative;
 }
 
@@ -399,7 +399,7 @@ h1.title {
     text-align: center;
     font-weight: normal;
     letter-spacing: 0.1em;
-    font-family: Georgia, "Times New Roman", 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     position: relative;
     z-index: 5;
 }
@@ -427,7 +427,7 @@ h2.title {
     text-align: center;
     font-weight: normal;
     letter-spacing: 0.1em;
-    font-family: Georgia, "Times New Roman", 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     position: relative;
 }
 
@@ -458,7 +458,7 @@ h3.title {
     font-size: 18px;
     font-weight: normal;
     letter-spacing: 0.1em;
-    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
 }
 
 div#undercolumn_login .login_area h4 {
@@ -480,7 +480,7 @@ header {
 header .logo {
     position: absolute;
     left: 30px;
-    top: 12px;
+    top: 8px;
 }
 
 header nav.memberNavi {
@@ -501,7 +501,7 @@ header nav.memberNavi ul li {
     padding: 0 0 0 35px;
     height: 60px;
     line-height: 60px;
-    font-family: "Times New Roman", Times, "serif";
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
 }
 
 header nav.memberNavi ul li a {
@@ -578,7 +578,7 @@ nav.gNavi ul li {
     padding: 0;
     height: 60px;
     line-height: 60px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
 }
 
 nav.gNavi ul li a {
@@ -612,7 +612,7 @@ nav.topNavi ul li {
     padding: 0;
     height: 60px;
     line-height: 60px;
-    font-family: "Times New Roman", Times, "serif";
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
 }
 
 nav.topNavi ul li a {
@@ -635,30 +635,28 @@ footer {
     margin: 0 auto;
     padding: 0 0 50px;
 }
-
 footer nav.fNavi {
-    margin: 0;
-    padding: 0 0 16px;
+    margin: 0 auto;
+    padding: 0 0 30px;
     border-bottom: #dddddd solid 1px;
     position: relative;
+    width:80%;
 }
-
 footer nav.fNavi ul.sub {
-    margin: 0;
+    width:50%;
+    margin: 0 auto;
     padding: 0;
 }
-
 footer nav.fNavi ul.sub li {
+    width:33.3%;
     float: left;
-    margin: 0 95px 0 0;
     list-style: none;
     padding: 0;
     font-size: 12px;
 }
-
-footer nav.fNavi ul.sub li a {
-    color: #000;
-    text-decoration: none;
+footer nav.fNavi ul.sub li img {
+    width:50%;
+    display:block;
 }
 
 footer nav.fNavi ul.sns {
@@ -666,7 +664,6 @@ footer nav.fNavi ul.sns {
     top: 0;
     right: 0;
 }
-
 footer nav.fNavi ul.sns li {
     float: left;
     margin: 0 0 0 15px;
@@ -674,14 +671,15 @@ footer nav.fNavi ul.sns li {
     padding: 0;
     line-height: 0;
 }
-
 footer .logo {
     padding: 40px 0 20px;
     margin: 0;
     line-height: 0;
     text-align: center;
 }
-
+footer .logo img {
+    width:20%;
+}
 footer p.copyright {
     font-size: 10px;
     text-align: center;
@@ -689,7 +687,6 @@ footer p.copyright {
     padding: 0;
     letter-spacing: 1px;
 }
-
 /* ==============================================
  パーツ
 =============================================== */
@@ -751,7 +748,7 @@ div#complete_area .shop_information .name {
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 16px;
-    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
 }
 
 .mt5 {
@@ -791,17 +788,50 @@ header nav.memberNavi ul li:last-child {
 @media print, screen and (min-width: 960px) and (max-width: 1060px) {
     footer {
         width: 100%;
-        margin: 0;
         padding: 0 30px 50px;
         box-sizing: border-box;
+        margin-top: 9%;
+    }
+    footer nav.fNavi {
+        margin: 0 auto;
+        padding: 0 0 30px;
+        border-bottom: #dddddd solid 1px;
+        position: relative;
+        width:100%;
     }
 
+    footer nav.fNavi ul.sub {
+        width:80%;
+        margin: 0 auto;
+        padding: 0;
+    }
     footer nav.fNavi ul.sub li {
-        margin: 0 44px 0 0;
+        width:33.3%;
+        float: left;
+        list-style: none;
+        padding: 0;
+        font-size: 12px;
     }
-
+    footer nav.fNavi ul.sub li img {
+        width:40%;
+        display:block;
+        margin:0 auto;
+    }
     nav.gNavi ul li a {
         padding: 0 30px;
+    }
+    #undercolumn {
+        width: 100%;
+        margin: 0;
+    }
+    footer .logo {
+        padding: 40px 0 20px;
+        margin: 0;
+        line-height: 0;
+        text-align: center;
+    }
+    footer .logo img {
+        width:20%;
     }
 }
 
@@ -825,13 +855,52 @@ header nav.memberNavi ul li:last-child {
     footer {
         width: 100%;
         margin: 0;
-        max-width: auto;
-        padding: 0 30px 50px;
+        padding: 20px 30px 50px;
         box-sizing: border-box;
     }
+    footer nav.fNavi {
+        margin: 0 auto;
+        padding: 0 0 30px;
+        border-bottom:1px solid #dddddd;
+        position: relative;
+        width:100%;
+    }
 
+    footer nav.fNavi ul.sub {
+        width:80%;
+        margin: 0 auto;
+        padding: 0;
+    }
     footer nav.fNavi ul.sub li {
-        margin: 0 44px 0 0;
+        width:33.3%;
+        float: left;
+        list-style: none;
+        padding: 0;
+        font-size: 12px;
+    }
+    footer nav.fNavi ul.sub li img {
+        width:40%;
+        display:block;
+        margin:0 auto;
+    }
+    nav.gNavi ul li a {
+        padding: 0 30px;
+    }
+    div.title {
+        margin: 0 0 30px;
+    }
+    #undercolumn {
+        width: 100%;
+        margin: 0;
+    }
+    footer .logo {
+        padding: 40px 0 20px;
+        margin: 0;
+        line-height: 0;
+        text-align: center;
+    }
+    footer .logo img {
+        width:20%;
     }
 
     nav.gNavi ul li a {
@@ -872,7 +941,7 @@ header nav.memberNavi ul li:last-child {
 
     header nav.memberNavi {
         position: fixed;
-        top: 0px;
+        top: 0;
         right: 0;
         left: 0;
         height: 50px;
@@ -901,7 +970,7 @@ header nav.memberNavi ul li:last-child {
         padding: 0;
         height: 50px;
         line-height: 50px;
-        font-family: "Times New Roman", Times, "serif";
+        font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
         border-left: #dddddd solid 1px;
     }
 
@@ -1085,29 +1154,39 @@ header nav.memberNavi ul li:last-child {
         display: none;
     }
 
-    footer nav.fNavi ul.sub {
-        border-top: #ccc dotted 1px;
+    footer {
+        width: 100%;
+        padding: 20px 30px 50px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 3;
+        background: #fff;
+    }
+    footer nav.fNavi {
+        margin: 0 auto;
+        padding: 0 0 16px;
+        border-bottom:1px solid #dddddd;
+        position: relative;
+        width:100%;
     }
 
+    footer nav.fNavi ul.sub {
+        width:100%;
+        margin: 0 auto;
+        padding: 0;
+    }
     footer nav.fNavi ul.sub li {
-        float: none;
-        margin: 0;
+        width:33.3%;
+        float: left;
         list-style: none;
         padding: 0;
-        height: 40px;
         font-size: 12px;
-        line-height: 40px;
-        border-bottom: #ccc dotted 1px;
-        text-align: left;
     }
-
-    footer nav.fNavi ul.sub li a {
-        color: #000;
-        text-decoration: none;
-        padding: 0 20px;
-        height: 40px;
+    footer nav.fNavi ul.sub li img {
+        width:60%;
+        display:block;
+        margin:0 auto;
     }
-
     footer nav.fNavi ul.sns {
         position: static;
         top: 0;
@@ -1115,7 +1194,6 @@ header nav.memberNavi ul li:last-child {
         display: inline-block;
         padding: 20px 0;
     }
-
     footer nav.fNavi ul.sns li {
         float: left;
         margin: 0 10px;
@@ -1123,16 +1201,9 @@ header nav.memberNavi ul li:last-child {
         padding: 0;
         line-height: 0;
     }
-
-    footer .logo {
-        padding: 0px 0 20px;
-    }
-
-    footer {
-        padding: 0 0 20px;
-        background: #fff;
-        position: relative;
-        z-index: 3;
+    footer .logo img{
+        width:39%;
+        margin:0 auto;
     }
 
     .spNavi {
@@ -1155,7 +1226,7 @@ header nav.memberNavi ul li:last-child {
         line-height: 40px;
         padding: 0;
         text-decoration: none;
-        font-family: 'Roboto', sans-serif;
+        font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
         font-weight: 300;
         font-size: 13px;
         text-align: left;
@@ -1268,6 +1339,6 @@ header nav.memberNavi ul li:last-child {
     }
 
     h1, h2, h3, h4, section.dictionaryBanner .wrap .titleBlock, nav.dic_category ul li, nav.m_category ul li, section.dictionaryFront .front .label .open {
-        font-family: 微软雅黑, serif !important;
+        font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     }
 }

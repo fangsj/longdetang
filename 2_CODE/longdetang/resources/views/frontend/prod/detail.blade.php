@@ -71,15 +71,7 @@
                 </div>
             </div>
         </div>
-        <section class="dictionaryBanner">
-            <a href="contents/dictionary/index.html"></a>
-            <div class="wrap">
-                <div class="titleBlock">植物図鑑<br>
-                    <span>Plant dictionary</span></div>
-                <div class="open">OPEN A BOOK</div>
-                <p class="read">植物の基本知識がわかる図鑑</p>
-            </div>
-        </section>
+        @include('frontend.dictionary')
     </div>
 @endsection
 @push('bottom-scripts')

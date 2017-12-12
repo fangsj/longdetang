@@ -53,7 +53,7 @@
     </nav>
     <!--▲HEADER-->
 
-    <div id="container" class="clearfix">
+    <div id="container" class="clearfix" style="padding-top: 34px;">
         <div id="main_column" class="colnum1"><!-- ▼メイン -->
 
             <section class="top">
@@ -109,8 +109,8 @@
                     </div>
                 @endforeach
             </section>
-            <section class="concept">
-                <div class="logo"><img src="{{asset('fronted/img/common/logo.svg')}}" alt=""/></div>
+            <section class="concept" style="padding-top: 10px;">
+                <div class="logo"><img src="{{asset('frontend/img/common/logo.svg')}}" alt=""/></div>
                 <h2>龙德堂的文化背景历史人物</h2>
                 <p class="jp">驿站之外的断桥边，梅花孤单寂寞地淀开了花，无人过问。<br>
                     暮色降临，梅花无依无靠，已经够愁苦了，却又遇到了风雨的摧残。<br>
@@ -123,18 +123,11 @@
                     A sense of “green” with KIDORI.
                 </p>
             </section><!-- ▲コンセプト --><!-- ▼植物辞典バナー -->
-            <section class="dictionaryBanner">
-                <a href="contents/dictionary/index.html"></a>
-                <div class="wrap">
-                    <div class="titleBlock">植物図鑑<br>
-                        <span>Plant dictionary</span></div>
-                    <div class="open">OPEN A BOOK</div>
-                    <p class="read">植物の基本知識がわかる図鑑</p>
-                </div>
-            </section><!-- ▲植物辞典バナー --></div>
+        @include('frontend.dictionary')
+        <!-- ▲植物辞典バナー --></div>
     </div>
     @include('frontend.footer')
-    </div>
+</div>
 <script type="text/javascript" src="{{asset('frontend/js/common.js')}}"></script>
 </body>
 

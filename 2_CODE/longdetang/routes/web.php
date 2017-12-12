@@ -27,7 +27,20 @@ Route::get('/artist', function () {
 Route::get('/artist/list', 'ArtistController@list');
 Route::get('/artist/{id}', 'ArtistController@detail')->name('artist_detail');
 
+// 视频
 Route::get('/video', function () {
     return frontend_view('video.list');
 });
 Route::get('/video/list', 'VideoController@list');
+
+// 新事
+Route::get('/article', function () {
+    return frontend_view('article.list');
+});
+Route::get('/article/list', 'ArticleController@list');
+Route::get('/article/{id}', 'ArticleController@detail')->name('article_detail');
+
+// 关于我们
+Route::get('/aboutus', function () {
+    return frontend_view('aboutus');
+});
