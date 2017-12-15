@@ -97,7 +97,7 @@
                                 @foreach($category->prods as $prod)
                                     <li>
                                         <div class="thumb">
-                                            <a href="">
+                                            <a href="{{url('/prod/detail?id='.$prod->id)}}">
                                                 <img src="{{storage_url($prod->pic)}}" alt="{{$prod->name}}"/>
                                             </a>
                                         </div>
@@ -122,14 +122,12 @@
                     Add comfort and richness to your simple everyday life with a special pot.<br>
                     A sense of “green” with KIDORI.
                 </p>
-            </section><!-- ▲コンセプト --><!-- ▼植物辞典バナー -->
+            </section>
         @include('frontend.dictionary')
-        <!-- ▲植物辞典バナー --></div>
+        </div>
     </div>
     @include('frontend.footer')
 </div>
 <script type="text/javascript" src="{{asset('frontend/js/common.js')}}"></script>
 </body>
-
-<!-- ▲BODY部 エンド -->
 </html>

@@ -279,6 +279,9 @@
                             _this.article.pageNumberStart = (data.pageNumber - 2 > 0 ? data.pageNumber - 2 : 1)
                         }, 'json');
                     },
+                    view (id) {
+                        location.href = this.$baseURL + 'article/' + id
+                    }
                 }
             });
         });
@@ -297,7 +300,7 @@
                 <h1 class="title">NEWS</h1>
                 <div class="news_list clearfix">
                     <section>
-                        <div v-for="item in article.rows" class="new_list clearfix">
+                        <div v-for="item in article.rows" class="new_list clearfix" @click="view(item.id)">
                             <h2>@{{item.title || ''}}</h2>
                             <div class="date">
                                 <img src="{{asset('frontend/img/common/icon_date.jpg')}}" />

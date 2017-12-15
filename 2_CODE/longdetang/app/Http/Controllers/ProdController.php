@@ -74,7 +74,12 @@ class ProdController extends Controller
     public function get_detail(Request $request) {
         $data = [];
         $data['prod'] = Prod::find($request->id);
-        $data['prod_attachs'] = ProdAttach::where('prod_id', $request->id)->get();
+        $data['prod_attachs'] = ProdAttach::where('prod_id', $request->id)->get()->toArray();
+        if(empty($data['prod_attachs'])) {
+            $data['prod_attachs'] =  [['url' => $data['prod']->bar_pic]];
+        } else {
+            array_push($data['prod_attachs'], ['url' => $data['prod']->bar_pic]);
+        }
         return frontend_view('prod.detail', $data);
     }
 }

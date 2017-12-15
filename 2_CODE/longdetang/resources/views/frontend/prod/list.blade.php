@@ -104,7 +104,7 @@
                 <div class="Breadcrumb">
                     <ul id="crumbs">
                         <li><a href="/"><span>首页</span></a></li>
-                        <li><span>全部商品</span></li>
+                        <li><span>全部作品</span></li>
                     </ul>
                 </div>
                 <h1 class="title">PRODUCTS</h1>
@@ -161,12 +161,12 @@
                                 <div class="list_area clearfix"><a name="product256713"></a>
                                     <div class="listphoto">
                                         <!--★画像★-->
-                                        <a :href="$baseURL + '/prod/detail?id=' + item.id">
+                                        <a :href="$baseURL + 'prod/detail?id=' + item.id">
                                             <img :src="$storage + item.pic" :alt="item.name" class="picture">
                                         </a>
                                     </div>
                                     <div class="listrightbloc">
-                                        <h4><a :href="$baseURL + '/prod/detail?id=' + item.id">@{{item.name}}</a></h4>
+                                        <h4><a :href="$baseURL + 'prod/detail?id=' + item.id">@{{item.name}}</a></h4>
                                         <ul class="category clearfix">
                                             <li><span>材质: </span>@{{ $dicts.prod.texture[item.texture] }}</li>
                                             <li><span>容量: </span>@{{ item.capacity }}cc</li>
@@ -183,7 +183,7 @@
                                                 </div>
                                             </div>
                                             <div class="detai_btn_box">
-                                                <a :href="$baseURL + '/prod/detail?id=' + item.id" class="detail_btn"> 点击查看详情并扫码购买 </a>
+                                                <a :href="$baseURL + 'prod/detail?id=' + item.id" class="detail_btn"> 点击查看详情并扫码购买 </a>
                                             </div>
                                         </div>
                                         <div class="attention" id="cartbtn_dynamic_256713"></div>
