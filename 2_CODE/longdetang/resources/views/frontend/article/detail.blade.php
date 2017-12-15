@@ -1,4 +1,5 @@
 @extends('frontend.layout')
+@section('title', '龍德堂陶艺 | 新事')
 @section('body_class', 'LC_Page_Article_Detail')
 @section('content')
     <style>
@@ -165,7 +166,7 @@
             <div id="undercolumn">
                 <div class="Breadcrumb">
                     <ul id="crumbs">
-                        <li><a href="/"><span>首页</span></a></li>
+                        <li><a href="{{url('/')}}"><span>首页</span></a></li>
                         <li><span>新事</span></li>
                     </ul>
                 </div>

@@ -1,6 +1,6 @@
 @extends('frontend.layout')
+@section('title', '龍德堂陶艺 | 作品')
 @section('body_class', 'LC_Page_Products_Detail')
-
 @push('jquery-ui')
     <link rel="stylesheet" href="{{asset('frontend/js/jquery.ui/theme/jquery.ui.core.css')}}" type="text/css"
           media="all">
@@ -15,8 +15,8 @@
             <div id="undercolumn" class="undercolumn">
                 <div class="Breadcrumb">
                     <ul id="crumbs">
-                        <li><a href="/"><span>首页</span></a></li>
-                        <li><a href="/prod"><span>作品</span></a></li>
+                        <li><a href="{{url('/')}}"><span>首页</span></a></li>
+                        <li><a href="{{url('/prod')}}"><span>作品</span></a></li>
                         <li><span>{{$prod->name}}</span></li>
                     </ul>
                 </div>

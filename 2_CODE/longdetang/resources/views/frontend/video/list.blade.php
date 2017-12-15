@@ -1,4 +1,5 @@
 @extends('frontend.layout')
+@section('title', '龍德堂陶艺 | 泽峰说')
 @section('body_class', 'LC_Page_Video_List')
 @push('scripts')
     <script src="{{asset('js/vue.js')}}"></script>
@@ -61,7 +62,7 @@
             <div id="undercolumn">
                 <div class="Breadcrumb">
                     <ul id="crumbs">
-                        <li><a href="../index.html"><span>首页</span></a></li>
+                        <li><a href="{{url('/')}}"><span>首页</span></a></li>
                         <li><span>泽锋说</span></li>
                     </ul>
                 </div>

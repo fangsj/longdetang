@@ -1,4 +1,5 @@
 @extends('frontend.layout')
+@section('title', '龍德堂陶艺 | 艺术家')
 @section('body_class', 'LC_Page_Artists_List')
 @push('scripts')
     <script src="{{asset('js/dicts.js')}}"></script>
@@ -53,7 +54,7 @@
             <div id="undercolumn">
                 <div class="Breadcrumb">
                     <ul id="crumbs">
-                        <li><a href="../index.html"><span>首页</span></a></li>
+                        <li><a href="{{url('/')}}"><span>首页</span></a></li>
                         <li><span>艺术家</span></li>
                     </ul>
                 </div>

@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no, email=no, address=no">
-    <title>盆栽、多肉植物、塊根植物、観葉植物通販/KIDORI -キドリ-</title>
-
-    <meta name="author" content="KIDORI"/>
-
+    <title>龍德堂陶艺</title>
     <link rel="shortcut icon" href="{{asset('frontend/img/common/favicon.ico')}}"/>
     <link rel="icon" type="image/vnd.microsoft.icon" href="{{asset('frontend/img/common/favicon.ico')}}"/>
     <link rel="apple-touch-icon" href="{{asset('frontend/img/common/apple-touch-icon.png')}}">
