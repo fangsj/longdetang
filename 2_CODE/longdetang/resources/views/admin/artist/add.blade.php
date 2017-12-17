@@ -67,7 +67,7 @@
                                     <input type="hidden" name="pic" value="{{$pic or ''}}"/>
                                     <img width="190" height="148" src="{{isset($pic) ? storage_url($pic) : ''}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
                                 </div>
-                                <span class="help-block m-b-none text-danger my_clearfix_both">推荐尺寸(px):160*160</span>
+                                <span class="help-block m-b-none text-danger my_clearfix_both">推荐尺寸(px):1000*1000 或同等比例</span>
                             </div>
                         </div>
                     </div>

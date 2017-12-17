@@ -124,7 +124,7 @@
                                 <input type="text" v-model="keyword" placeholder="输入关键字按回车键搜索" @keyup.enter="searchByKeyword" class="input_full" name="keyword" value="">
                             </div>
                             <div class="side_block" v-for="item in categorys">
-                                <div class="filter_title"><span class="c_icon01" style="font-weight: bold">@{{item.name}}</span>
+                                <div class="filter_title"><span class="c_icon01" style="font-weight: bold;background-size:34%;" :style="{'background-image': 'url(\''+ $storage + item.thumbnail +'\')'}">@{{item.name}}</span>
                                 </div>
                                 <div class="filter_body">
                                     <ul class="filteritem">
@@ -135,7 +135,7 @@
                                 </div>
                             </div>
                             <div class="side_block">
-                                <div class="filter_title"><span class="c_icon01" style="font-weight: bold">艺人</span>
+                                <div class="filter_title"><span class="c_icon01" style="font-weight: bold;background-image: url('{{asset("/frontend/image/artist.svg")}}');background-size:34%;">艺人</span>
                                 </div>
                                 <div class="filter_body">
                                     <ul class="filteritem">

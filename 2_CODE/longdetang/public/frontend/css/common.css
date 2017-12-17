@@ -24,7 +24,7 @@ body {
     height: 28px;
     /* border-bottom: #dddddd solid 1px; */
     text-align: left;
-    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
+    font-family: 'Roboto',-apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     font-weight: 500;
     background: #2f2f2f;
     position: absolute;
@@ -399,7 +399,7 @@ h1.title {
     text-align: center;
     font-weight: normal;
     letter-spacing: 0.1em;
-    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
+    font-family: "Times New Roman", 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
     position: relative;
     z-index: 5;
 }
@@ -589,7 +589,7 @@ nav.gNavi ul li a {
     line-height: 60px;
     padding: 0 40px;
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 nav.topNavi {
@@ -623,7 +623,7 @@ nav.topNavi ul li a {
     line-height: 60px;
     padding: 0 50px;
     margin: 0;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 /* ==============================================
@@ -1226,8 +1226,8 @@ header nav.memberNavi ul li:last-child {
         line-height: 40px;
         padding: 0;
         text-decoration: none;
-        font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
-        font-weight: 300;
+        font-family: 'Roboto',-apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
+        font-weight: 400;
         font-size: 13px;
         text-align: left;
         display: block;

@@ -79,7 +79,7 @@
                 @foreach($categorys as $category)
                     <div class="contentsBlock contents0{{$loop->index % 2 == 0 ? '1' : '2'}}">
                         <div class="titleBlock">
-                            <h2 style="background-image: url('{{storage_url($category->thumbnail)}}')">{{$category->name}}
+                            <h2 style="background-image: url('{{storage_url($category->thumbnail)}}');background-size:13%;">{{$category->name}}
                                 <br>
                                 <span>{{$category->pinyin}}</span></h2>
                             <p class="read">{{$category->ad_slogan}}</p>
@@ -87,7 +87,6 @@
                         </div>
                         <div class="mainImage"
                              style="background-image:url({{storage_url($category->pic)}});">
-                            KIDORI
                         </div>
                         <div class="items" style="background-color: {{$category->bg_color}}">
                             <ul class="clearfix">

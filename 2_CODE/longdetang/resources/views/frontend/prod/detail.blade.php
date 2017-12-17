@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="{{asset('frontend/js/jquery.ui/theme/jquery.ui.theme.css')}}" type="text/css"
           media="all">
 @endpush
+@push('scripts')
+    <script>
+        $(function () {
+            $('#scanBar').click(function () {
+                var slider = $('.item_slider')
+                slider.slick('slickGoTo', slider.slick('getSlick').slideCount - 1);
+            })
+        });
+    </script>
+@endpush
 @section('content')
     <div id="container" class="clearfix">
         <div id="main_column" class="colnum1">
@@ -47,15 +57,16 @@
                             </div>
                             <div class="main_comment">{{$prod->is_essence == 1 ? '龙德堂精选': ''}}</div>
                             <dl class="pay">
-                                <dt>售价: </dt>
-                                <dd class="price"> <span id="price02_default">{{$prod->price}}</span>
+                                <dt>售价:</dt>
+                                <dd class="price"><span id="price02_default">{{$prod->price}}</span>
                                     <span id="price02_dynamic"></span>
                                     元
                                 </dd>
                             </dl>
                             <div class="cartBox clearfix">
-                                <div class="cart_area" style="position: relative">
-                                    <img src="{{asset('frontend/image/scan.png')}}" style="width: 32px;position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right: 0;">
+                                <div id="scanBar" class="cart_area" style="position: relative">
+                                    <img src="{{asset('frontend/image/scan.png')}}"
+                                         style="width: 32px;position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right: 0;">
                                 </div>
                                 <div class="favorite_btn">
                                     <a>点击左侧二维码扫码购买</a>
