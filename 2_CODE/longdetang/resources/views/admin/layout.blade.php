@@ -124,7 +124,7 @@
         </div>
         <div class="footer">
             <div>
-                <strong>Copyright</strong> 版权所有 © 2017
+                <strong>Copyright</strong> 龍德堂版权所有 © 2017
             </div>
         </div>
     </div>

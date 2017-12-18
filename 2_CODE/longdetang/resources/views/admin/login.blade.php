@@ -19,7 +19,7 @@
 <body class="gray-bg" style="padding-top: 8.5%;">
 <div class="middle-box text-center loginscreen animated fadeInDown" style="border: 1px solid #e7eaec;background: white;width: 370px;border-radius: 10px;box-shadow: 1px -1px 15px #e5e5e5;padding-top: 0; padding-bottom: 25px;">
     <div style="margin-bottom: 20px;width: 100%;background: #0e9aef;padding: 16px 0;border-top-left-radius:10px;border-top-right-radius:10px;">
-        <h2 style="font-weight: 400;color: white;margin: 0;">龙德堂后台系统</h2>
+        <h2 style="font-weight: 400;color: white;margin: 0;">龍德堂后台系统</h2>
     </div>
     <form style="padding:10px 40px;" class="m-t" role="form" id="loginForm" action="{{ route('admin.login') }}" method="post">
     <div class="form-group" style="margin-bottom: 22px;text-align: left;">
@@ -36,7 +36,7 @@
     </div>
     <button type="submit" class="btn btn-primary block full-width m-b" style="margin-top: 35px;background: #0e9aef">登录</button>
     </form>
-    <p class="m-t"> <small>龙德堂后台管理系统© 2017</small> </p>
+    <p class="m-t"> <small>龍德堂版权所有© 2017</small> </p>
 </div>
 </div>
 
