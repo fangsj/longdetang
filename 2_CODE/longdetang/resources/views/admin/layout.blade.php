@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>@yield('title')-龍德堂陶艺后台系统</title>
-
+    <link rel="shortcut icon" href="{{asset('frontend/img/common/favicon.ico')}}"/>
     <link href="{{asset('/assets/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('/assets/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
 

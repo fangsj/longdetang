@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="shortcut icon" href="{{asset('frontend/img/common/favicon.ico')}}"/>
     <title>龍德堂陶艺后台系统 | 登录</title>
 
     <link href="{{asset('/assets/css/bootstrap.min.css')}}" rel="stylesheet">
