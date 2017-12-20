@@ -44,11 +44,11 @@
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
                     <div class="dropdown profile-element"> <span>
-                            <img alt="image" class="img-circle" src="{{asset('/assets/img/profile_small.jpg')}}" />
+                            <img alt="image" class="img-circle" src="{{asset('/frontend/img/common/flogo.svg')}}" style="width: 48%;"/>
                              </span>
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear">
-                                <span class="block m-t-xs"> <strong class="font-bold">龙德堂</strong>
+                                <span class="block m-t-xs"> <strong class="font-bold">龍德堂</strong>
                                 </span>
                                 <span class="text-muted text-xs block">系统管理员 <b class="caret"></b>
                                 </span>
@@ -95,7 +95,7 @@
                 </div>
                 <ul class="nav navbar-top-links navbar-right">
                     <li>
-                        <span class="m-r-sm text-muted welcome-message">欢迎使用龙德堂管理平台！</span>
+                        <span class="m-r-sm text-muted welcome-message">欢迎使用龍德堂管理平台！</span>
                     </li>
 
                     <li>
