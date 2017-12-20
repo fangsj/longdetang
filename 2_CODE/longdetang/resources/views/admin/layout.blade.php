@@ -61,7 +61,7 @@
                         </ul>
                     </div>
                     <div class="logo-element">
-                        龙德堂
+                        龍德堂
                     </div>
                 </li>
                 <li data-menu-link="{{ admin('/prod')  }}" data-menu-code="001">
