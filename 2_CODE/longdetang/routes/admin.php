@@ -12,6 +12,7 @@ Route::any('logout', 'LoginController@logout');
 Route::any('/', 'IndexController@welcome');
 // 上传文件
 Route::post('upload', 'UploadController@upload');
+Route::post('uploadCK', 'UploadController@uploadCK');
 // 商品分类
 Route::get('prod/category', 'ProdCategoryController@list');
 Route::post('prod/category/add', 'ProdCategoryController@add');

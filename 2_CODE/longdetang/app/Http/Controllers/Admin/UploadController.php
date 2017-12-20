@@ -18,4 +18,10 @@ class UploadController extends BaseController
         }
         return response()->json($saveFiles);
     }
+
+    public function uploadCK(Request $request) {
+        $file = $request->file('upload');
+        $url = $file->storePublicly("upload/ck", 'public');
+        return response("<script>window.parent.CKEDITOR.tools.callFunction($request->CKEditorFuncNum, '".storage_url($url)."');</script>")->header('Content-Type', 'text/html;charset=UTF-8');
+    }
 }

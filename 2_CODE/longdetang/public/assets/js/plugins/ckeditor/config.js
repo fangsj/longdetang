@@ -9,7 +9,7 @@ CKEDITOR.editorConfig = function (config) {
     // config.uiColor = '#AADC6E';
     config.height = 450;
     config.skin = 'bootstrapck';
-    config.filebrowserImageUploadUrl = url('/uploadForCK/file.do');
+    config.filebrowserImageUploadUrl = url('/uploadCK');
     config.extraPlugins = 'colorbutton,video,filebrowser,lineheight,letterspacing,indent,indentblock';
     config.filebrowserUploadUrl = "";
 };
