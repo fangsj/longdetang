@@ -15,6 +15,9 @@
                 padding: 0!important;
             }
         }
+        .LC_Page_Products_Detail .landingBlock {
+            padding: 0;
+        }
     </style>
 @endpush
 @push('scripts')
