@@ -11,8 +11,8 @@
     <style>
         @media screen and (max-width: 767px) {
             .briefContainer {
-                width: 100%;
-                padding: 0;
+                width: 100% !important;
+                padding: 0!important;
             }
         }
     </style>
