@@ -52,7 +52,7 @@
                         <div id="detailrightbloc">
                             <h2>{{$prod->name}}</h2>
                             <div class="category">
-                                <a class="cate">材质: {{dicts('prod.texture') ? dicts('prod.texture')[$prod->texture] : ''}}</a>
+                                <a class="cate">材质: {{isset(dicts('prod.texture')[$prod->texture]) ? dicts('prod.texture')[$prod->texture] : ''}}</a>
                                 <a class="cate">容量: {{$prod->capacity}} cc</a>
                             </div>
                             <div class="main_comment">{{$prod->is_essence == 1 ? '龙德堂精选': ''}}</div>

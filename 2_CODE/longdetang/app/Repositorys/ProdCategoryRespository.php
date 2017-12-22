@@ -56,7 +56,7 @@ class ProdCategoryRespository implements IProdCategoryRepository
      */
     public function getCategoryLimitProd()
     {
-        $categorys = ProdCategory::where('status', 1)->get();
+        $categorys = ProdCategory::where('status', 1)->orderBy('seq')->get();
         foreach ($categorys as $category) {
             $category->prods = Prod::where('status', 1)->where('category_id', $category->id)->limit(4)->get();
         }
