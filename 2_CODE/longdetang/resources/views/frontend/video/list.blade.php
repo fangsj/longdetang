@@ -25,11 +25,11 @@
                         pervPage: 0
                     },
                 },
-                created() {
+                created: function() {
                     this.search(1)
                 },
                 methods: {
-                    search(pageNumber) {
+                    search: function(pageNumber) {
                         this.videos.rows = [];
                         var _this = this;
                         this.$http.get('{{url('/video/list')}}', {
@@ -44,7 +44,7 @@
                         }, 'json');
                     },
                     // 保证只播放一个视频PC
-                    play ($event, item) {
+                    play: function($event, item) {
                         if(this.selectedVideo != $event.target) {
                             this.selectedVideo && this.selectedVideo.pause()
                             this.selectedVideo = $event.target;

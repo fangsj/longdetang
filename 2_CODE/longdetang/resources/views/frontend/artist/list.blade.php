@@ -26,11 +26,11 @@
                         pervPage: 0
                     },
                 },
-                created() {
+                created: function() {
                     this.search(1)
                 },
                 methods: {
-                    search(pageNumber) {
+                    search: function(pageNumber) {
                         var _this = this;
                         this.$http.get('{{url('/artist/list')}}', {
                             pageSize: this.artists.pageSize,

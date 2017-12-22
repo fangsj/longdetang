@@ -32,7 +32,7 @@
                         nextPage: 0
                     }
                 },
-                created() {
+                created: function() {
                     var _this = this;
                     this.$http.get('{{url('/prod/categorys')}}', {}, function (data) {
                         _this.categorys = data
@@ -43,24 +43,24 @@
                     this.searchProds(this.prod.pageNumber);
                 },
                 methods: {
-                    searchByKeyword() {
+                    searchByKeyword: function() {
                         this.artist = ''
                         this.secondCategoryId = ''
                         this.searchProds(1)
                     },
-                    searchByArtis(artist) {
+                    searchByArtis: function(artist) {
                         this.keyword = ''
                         this.artist = artist
                         this.secondCategoryId = ''
                         this.searchProds(1)
                     },
-                    searchByCategory(categoryId) {
+                    searchByCategory: function(categoryId) {
                         this.keyword = ''
                         this.secondCategoryId = categoryId
                         this.artist = ''
                         this.searchProds(1)
                     },
-                    searchProds(pageNumber) {
+                    searchProds: function(pageNumber) {
                         if(this.openSearchDialog) this.closeSearch()
                         var _this = this;
                         this.$http.get('{{url('/prod/list')}}', {
@@ -77,14 +77,14 @@
                             _this.prod.pageNumberStart = (data.pageNumber - 2 > 0 ? data.pageNumber - 2 : 1)
                         }, 'json');
                     },
-                    openSearch() {
+                    openSearch: function() {
                         this.openSearchDialog = true
                         $('body').css('position','fixed');
                         $('.listWrapper .serchBlock').css({display:'block'}).animate({ opacity: '1'}, 500, "swing",function(){
                             $('.listWrapper .serchBlock form').animate({ opacity: '1'}, 500, "swing");
                         });
                     },
-                    closeSearch() {
+                    closeSearch: function() {
                         this.openSearchDialog = false
                         $('.listWrapper .serchBlock').animate({ opacity: '0'}, 500, "swing",function(){
                             $('.listWrapper .serchBlock').css({display:'none'});
