@@ -8,6 +8,14 @@
           media="all">
     <link rel="stylesheet" href="{{asset('frontend/js/jquery.ui/theme/jquery.ui.theme.css')}}" type="text/css"
           media="all">
+    <style>
+        @media print, screen and (max-width: 960px) and (min-width: 768px) {
+            .briefContainer {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
 @endpush
 @push('scripts')
     <script>
@@ -76,7 +84,7 @@
                     </div>
                 </div>
                 <div class="landingBlock" style="background: rgb(192, 192, 192);">
-                    <div class="wrap" style="width: 50%;padding:0 25%">
+                    <div class="wrap briefContainer" style="width: 50%;padding:0 25%">
                         {!!  $prod->brief !!}
                     </div>
                 </div>
