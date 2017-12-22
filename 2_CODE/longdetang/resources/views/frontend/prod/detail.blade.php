@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{asset('frontend/js/jquery.ui/theme/jquery.ui.theme.css')}}" type="text/css"
           media="all">
     <style>
-        @media print, screen and (max-width: 960px) and (min-width: 768px) {
+        @media screen and (max-width: 767px) {
             .briefContainer {
                 width: 100%;
                 padding: 0;
