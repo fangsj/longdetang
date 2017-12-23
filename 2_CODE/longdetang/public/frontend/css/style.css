@@ -194,7 +194,7 @@ section.top .contentsBlock .titleBlock {
 }
 
 section.top .contentsBlock .titleBlock h2 {
-    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     font-size: 30px;
     margin: 0 0 30px;
     padding: 0 0 70px;
