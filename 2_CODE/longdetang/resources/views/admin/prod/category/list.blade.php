@@ -255,7 +255,7 @@
                                         <label class="control-label col-md-3">广告语:
                                         </label>
                                         <div class="col-md-9">
-                                            <input type="text" id="adSloganInputField" name="ad_slogan" class="form-control" maxlength="15" placeholder="请输入简短广告语">
+                                            <input type="text" id="adSloganInputField" name="ad_slogan" class="form-control" maxlength="60" placeholder="请输入简短广告语">
                                         </div>
                                     </div>
                                 </div>
@@ -275,7 +275,7 @@
                                         <label class="control-label col-md-3">描述:
                                         </label>
                                         <div class="col-md-9">
-                                            <textarea id="explainInputField" name="explain" style="resize: none;" class="form-control" rows="4" maxlength="120" placeholder="请输入描述说明"></textarea>
+                                            <textarea id="explainInputField" name="explain" style="resize: none;" class="form-control" rows="4" maxlength="180" placeholder="请输入描述说明"></textarea>
                                         </div>
                                     </div>
                                 </div>
