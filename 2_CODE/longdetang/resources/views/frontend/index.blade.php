@@ -107,7 +107,6 @@
             </section>
             <section class="concept" style="padding-top: 10px;">
                 <div class="logo"><img src="{{asset('frontend/img/common/logo.svg')}}" alt=""/></div>
-                <h2>龙德堂的文化背景历史人物</h2>
                 <p class="jp">龙德堂紫砂是宜兴紫砂中的一枝奇葩，<br>
                     拥有几十位陶艺工作者，技术力量雄厚，产品独特，<br/>
                     品质优良，每件作品设计精心，用料考究，实用方便，<br>
