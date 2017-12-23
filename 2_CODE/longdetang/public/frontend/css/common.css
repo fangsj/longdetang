@@ -657,6 +657,7 @@ footer nav.fNavi ul.sub li {
 footer nav.fNavi ul.sub li img {
     width:50%;
     display:block;
+    margin: 0 auto;
 }
 
 footer nav.fNavi ul.sns {
