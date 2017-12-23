@@ -60,7 +60,7 @@
                             <label class="control-label col-md-4">分类
                                 <span class="required" aria-required="true">*&nbsp; </span>: </label>
                             <div class="col-md-8">
-                                <input type="hidden" id="category_id" name="category_id" value="{{$category_id or ''}}">
+                                <input type="hidden" id="category_id" name="category_id" value="{{$model['category_id'] or ''}}">
                                 <select class="form-control" id="second_category_id" name="second_category_id">
                                     <option value="">--请选择商品分类--</option>
                                     @foreach($categorys as $category)
