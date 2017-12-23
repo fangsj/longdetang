@@ -134,17 +134,17 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="side_block">
-                                <div class="filter_title"><span class="c_icon01" style="font-weight: bold;background-image: url('{{asset("/frontend/image/artist.svg")}}');background-size:34%;">艺人</span>
-                                </div>
-                                <div class="filter_body">
-                                    <ul class="filteritem">
-                                        <li @click="searchByArtis(artist.name)" style="padding-left: 13%" v-for="artist in artists">
-                                            <label><span class="icon_check"></span>@{{artist.name}} 制</label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            {{--<div class="side_block">--}}
+                                {{--<div class="filter_title"><span class="c_icon01" style="font-weight: bold;background-image: url('{{asset("/frontend/image/artist.svg")}}');background-size:34%;">艺人</span>--}}
+                                {{--</div>--}}
+                                {{--<div class="filter_body">--}}
+                                    {{--<ul class="filteritem">--}}
+                                        {{--<li @click="searchByArtis(artist.name)" style="padding-left: 13%" v-for="artist in artists">--}}
+                                            {{--<label><span class="icon_check"></span>@{{artist.name}} 制</label>--}}
+                                        {{--</li>--}}
+                                    {{--</ul>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
                         </form>
                     </div>
                     <div class="itemList">
