@@ -633,7 +633,7 @@ section.concept p.en {
     margin: 0 0 15px;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     font-size: 26px;
     font-weight: normal;
     background-size: auto 40px;
@@ -662,7 +662,7 @@ section.concept p.en {
 }
 
 .itemList h3.title {
-    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
 }
 
 .listWrapper .serchBlock {
@@ -837,7 +837,7 @@ section.concept p.en {
 #recommend_area h2 {
     margin: 0 0 60px;
     padding: 0 0 18px;
-    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     font-size: 30px;
     font-weight: normal;
     line-height: 1em;
@@ -1219,7 +1219,7 @@ section.related_item {
 section.related_item h2 {
     margin: 0 0 60px;
     padding: 0 0 18px;
-    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     font-size: 30px;
     font-weight: normal;
     line-height: 1em;
@@ -1309,7 +1309,7 @@ nav.m_category ul li {
     margin: 0;
     line-height: 1;
     border-right: #ccc solid 1px;
-    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     font-size: 13px;
 }
 
@@ -2276,7 +2276,7 @@ section.dictionaryFront .front .label a {
 }
 
 section.dictionaryFront .front .label h2 {
-    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     font-weight: normal;
     margin: 0 0 10px;
     padding: 0;
@@ -2309,7 +2309,7 @@ section.dictionaryFront .front .label p {
 section.dictionaryFront .front .label .open {
     padding: 40px 0 0;
     margin: 0;
-    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     font-weight: normal;
     font-size: 15px;
     background: url(image/book.svg) no-repeat top center;
@@ -2336,7 +2336,7 @@ nav.dic_category ul li {
     margin: 0;
     line-height: 1;
     border-right: #ccc solid 1px;
-    font-family: 'Noto Serif Japanese', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     font-size: 14px;
 }
 
@@ -2626,7 +2626,7 @@ nav.dic_category ul li:first-child {
         left: 40px;
         margin-right: 0;
         top: 62px;
-        height: 340px;
+        height: 360px;
     }
 
     section.top .main #stage {
@@ -3444,7 +3444,7 @@ nav.dic_category ul li:first-child {
     }
 
     .listWrapper .serchBlock .side_title {
-        font-family: Georgia, "Times New Roman", Times, "serif";
+        font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
         font-size: 16px;
         margin: 0 0 10px;
         padding: 0;
@@ -4029,18 +4029,18 @@ nav.dic_category ul li:first-child {
     section.guide .guideInfo h2.t_main {
 
         font-size: 16px;
-        font-family: 'Roboto', 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+        font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     }
 
     section.guide .guideInfo .guideArea .box_header h3 {
-        font-family: 'Roboto', 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+        font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
         font-size: 15px;
     }
 
     section.guide .guideInfo .guideArea .box h4 {
         font-size: 14px;
         margin: 0 0 5px;
-        font-family: 'Roboto', 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+        font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     }
 
     section.guide .guideInfo .guideArea .box p {
@@ -4133,7 +4133,7 @@ nav.dic_category ul li:first-child {
     }
 
     ul.itemlistBlock.c_layout.fav h4 {
-        font-family: 'Roboto', 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+        font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     }
 
     section.top .main #stage {
@@ -4296,7 +4296,7 @@ nav.dic_category ul li:first-child {
 
     section.dictionaryBanner .wrap .open {
         padding: 0 0 10px;
-        font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ 明朝", serif !important;
+        font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     }
 }
 
