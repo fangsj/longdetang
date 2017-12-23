@@ -57,7 +57,7 @@
                 <div class="main">
                     <div class="logo"><img src="{{asset('frontend/img/top/logo.svg')}}" width="165" alt="KIDORI"/>
                     </div>
-                    <h1>植物と暮らそう<br>小さな自然と四季を見つめながら<br>何気ない日常を 心地よく 豊かに<br>緑で、気取りを。</h1>
+                    <h1>龙德堂陶艺<br>竹沥水煮茶味真，疏香沾齿韵怡人。<br>何来月下烟岚色，龙德堂壶凤凰春。<br>方圆自在，紫玉梵音。</h1>
                     <div id="stage" class="pc">
                         @foreach ($banners as $banner)
                             <div id="photo{{$loop->index + 1}}" class="pic">
@@ -108,15 +108,14 @@
             <section class="concept" style="padding-top: 10px;">
                 <div class="logo"><img src="{{asset('frontend/img/common/logo.svg')}}" alt=""/></div>
                 <h2>龙德堂的文化背景历史人物</h2>
-                <p class="jp">驿站之外的断桥边，梅花孤单寂寞地淀开了花，无人过问。<br>
-                    暮色降临，梅花无依无靠，已经够愁苦了，却又遇到了风雨的摧残。<br>
-                    梅花并不像费劲心思去争艳斗宠，对百花的嫉妒排斥毫不在乎。<br>
-                    即使凋零了，被碾作泥土，又化作尘土了，梅花依然和往常一样散发出屡屡清香
+                <p class="jp">龙德堂紫砂是宜兴紫砂中的一枝奇葩，拥有几十位陶艺工作者，<br>
+                    技术力量雄厚，产品独特，品质优良，每件作品设计精心，用料考究，实用方便，<br>
+                    力求完美。以朴实的语言，强烈的情感来体现每件作品的艺术生命，至善至美！<br>
+                    “竹沥水煮茶味真，疏香沾齿韵怡人，何来月下烟岚色，龙德堂壶凤凰春。”<br>
+                    这正是对龙德堂作品的赞美。
                 </p>
-                <p class="en"><b>“Green” will bring some color to your everyday life.</b></p>
-                <p class="en">KIDORI plants, each perfected by craftsmen,are full of uniqueness.<br>
-                    Add comfort and richness to your simple everyday life with a special pot.<br>
-                    A sense of “green” with KIDORI.
+                <p class="en"><b>LONGDETANG is one of the best in yixing zisha group.</b></p>
+                <p class="en">It has dozens of potter workers, strong technical skills,unique products, excellent quality.<br>Each piece is carefully designed,with good materials, practical and convenient, striving for perfection.<br/>With the simple language, strong emotion to embody the artistic life of each piece, to the beauty!
                 </p>
             </section>
         @include('frontend.dictionary')
