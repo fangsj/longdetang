@@ -22,7 +22,7 @@
                     artists:[],
                     secondCategoryId: '',
                     prod: {
-                        pageSize: 15,
+                        pageSize: 16,
                         pageNumber: 1,
                         rows: [],
                         pages: 0,
