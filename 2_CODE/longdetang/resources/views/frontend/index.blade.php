@@ -108,10 +108,11 @@
             <section class="concept" style="padding-top: 10px;">
                 <div class="logo"><img src="{{asset('frontend/img/common/logo.svg')}}" alt=""/></div>
                 <h2>龙德堂的文化背景历史人物</h2>
-                <p class="jp">龙德堂紫砂是宜兴紫砂中的一枝奇葩，拥有几十位陶艺工作者，<br>
-                    技术力量雄厚，产品独特，品质优良，每件作品设计精心，用料考究，实用方便，<br>
-                    力求完美。以朴实的语言，强烈的情感来体现每件作品的艺术生命，至善至美！<br>
-                    “竹沥水煮茶味真，疏香沾齿韵怡人，何来月下烟岚色，龙德堂壶凤凰春。”<br>
+                <p class="jp">龙德堂紫砂是宜兴紫砂中的一枝奇葩，<br>
+                    拥有几十位陶艺工作者，技术力量雄厚，产品独特，<br/>
+                    品质优良，每件作品设计精心，用料考究，实用方便，<br>
+                    力求完美。以朴实的语言，强烈的情感来<br>
+                    体现每件作品的艺术生命，至善至美！<br>“竹沥水煮茶味真，疏香沾齿韵怡人，<br/>何来月下烟岚色，龙德堂壶凤凰春。”<br>
                     这正是对龙德堂作品的赞美。
                 </p>
                 <p class="en"><b>LONGDETANG is one of the best in yixing zisha group.</b></p>
