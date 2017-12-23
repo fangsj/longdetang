@@ -190,7 +190,7 @@ function editCategory(id) {
         $('#pinyinInputField').val(resp.data.pinyin);
         $('#categoryCodeInputField').val(resp.data.code);
         $('#previewThumbnail').attr('src', file(resp.data.thumbnail));
-        $('#picThumbnail').attr('src', file(resp.data.pic));
+        $('#previewPic').attr('src', file(resp.data.pic));
         $('#thumbnailHiddenInputField').val(resp.data.thumbnail);
         $('#picHiddenInputField').val(resp.data.pic);
         $('#categoryStatus' + resp.data.status + '').prop('checked', true);
