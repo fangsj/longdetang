@@ -22,6 +22,9 @@ class ArticleRepository implements IArticleRepository
         if (!empty($params['title'])) {
             $query->where('title', 'like', "%" . $params['title'] . "%");
         }
+        if (!empty($params['status'])) {
+            $query->where('status', $params['status']);
+        }
         if (!empty($params['sortName'])) {
             $query->orderBy($params['sortName'], (!empty($params['sortOrder']) ? $params['sortOrder'] : 'desc'));
         }
