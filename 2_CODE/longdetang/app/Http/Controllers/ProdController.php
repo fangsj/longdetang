@@ -57,7 +57,9 @@ class ProdController extends Controller
      */
     public function get_prods(Request $request)
     {
-        return $this->prodRepository->paginate_frontend($request->all());
+        $params = $request->all();
+        $params['status'] = 1;
+        return $this->prodRepository->paginate_frontend($params);
     }
 
     /**

@@ -28,7 +28,9 @@ class VideoController extends Controller
      */
     public function list(Request $request)
     {
-        return $this->videoRepository->paginate($request->all());
+        $params = $request->all();
+        $params['status'] = 1;
+        return $this->videoRepository->paginate($params);
     }
 
 }
