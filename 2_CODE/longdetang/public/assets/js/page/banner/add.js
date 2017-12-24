@@ -4,7 +4,7 @@ $(function () {
     });
 
     $('#choiseMobilePicBtn').click(function () {
-        $("#picInput").trigger('click');
+        $("#mobilePicInput").trigger('click');
     });
 
     $("#picInput").fileupload({
