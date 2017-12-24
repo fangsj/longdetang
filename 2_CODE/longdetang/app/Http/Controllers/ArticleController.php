@@ -22,7 +22,9 @@ class ArticleController extends Controller
      */
     public function list(Request $request)
     {
-        return $this->repository->paginate($request->all());
+        $params = $request->all();
+        $params['status'] = 1;
+        return $this->repository->paginate($params);
     }
 
     public function detail($id) {
