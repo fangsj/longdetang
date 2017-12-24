@@ -74,7 +74,7 @@
                                     <span class="upload-loading"></span>
                                 </div>
                                 <div id="mobilePic-preview" class="img-preview" style="display: {{isset($mobile_pic) ? 'block' : 'none'}};margin-top: 5px;">
-                                    <input type="hidden" name="pic" value="{{$mobile_pic or ''}}"/>
+                                    <input type="hidden" name="mobile_pic" value="{{$mobile_pic or ''}}"/>
                                     <img width="100%" src="{{isset($mobile_pic) ? storage_url($mobile_pic) : ''}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
                                 </div>
                                 <span class="help-block m-b-none text-danger my_clearfix_both">推荐尺寸(px):828*1052</span>
