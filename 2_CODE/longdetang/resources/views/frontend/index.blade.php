@@ -55,9 +55,9 @@
 
             <section class="top">
                 <div class="main">
-                    <div class="logo"><img src="{{asset('frontend/img/top/logo.svg')}}" width="165" alt="KIDORI"/>
+                    <div class="logo"><img src="{{asset('frontend/img/top/logo.png')}}" width="80" style="vertical-align: center" alt="KIDORI"/>
                     </div>
-                    <h1 style="font-size: 19px;font-family: 黑体">龙德堂陶艺<br>竹沥水煮茶味真，疏香沾齿韵怡人。<br>何来月下烟岚色，龙德堂壶凤凰春。<br>方圆自在，紫玉梵音。</h1>
+                    {{--<h1 style="font-size: 19px;font-family: 黑体">龙德堂陶艺<br>竹沥水煮茶味真，疏香沾齿韵怡人。<br>何来月下烟岚色，龙德堂壶凤凰春。<br>方圆自在，紫玉梵音。</h1>--}}
                     <div id="stage" class="pc">
                         @foreach ($banners as $banner)
                             <div id="photo{{$loop->index + 1}}" class="pic">
@@ -78,11 +78,11 @@
                 </nav>
                 @foreach($categorys as $category)
                     <div class="contentsBlock contents0{{$loop->index % 2 == 0 ? '1' : '2'}}">
-                        <div class="titleBlock">
-                            <h2 style="background-image: url('{{storage_url($category->thumbnail)}}');background-size:13%;">{{$category->name}}<br/><span>{{$category->pinyin}}</span></h2>
-                            <p class="read">{{$category->ad_slogan}}</p>
-                            <p>{{$category->explain}}</p>
-                        </div>
+                        {{--<div class="titleBlock">--}}
+                            {{--<h2 style="background-image: url('{{storage_url($category->thumbnail)}}');background-size:13%;">{{$category->name}}<br/><span>{{$category->pinyin}}</span></h2>--}}
+                            {{--<p class="read">{{$category->ad_slogan}}</p>--}}
+                            {{--<p>{{$category->explain}}</p>--}}
+                        {{--</div>--}}
                         <div class="mainImage"
                              style="background-image:url({{storage_url($category->pic)}});">
                         </div>

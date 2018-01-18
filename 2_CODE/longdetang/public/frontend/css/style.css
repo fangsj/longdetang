@@ -23,6 +23,14 @@ section.top .main .logo {
     padding: 0;
     line-height: 0;
     text-align: center;
+    background-color: #79242f;
+    height: 132px;
+    width: 100%;
+}
+
+section.top .main .logo img {
+    width: 100px;
+    margin-top: 16px;
 }
 
 section.top .main .mainImage {
@@ -40,10 +48,10 @@ section.top .main .mainImage {
 }
 
 section.top .main #stage {
-    width: 82%;
+    width: 100%;
     position: absolute;
     height: 448px;
-    top: 187px;
+    top: 180px;
     right: 0;
     overflow: hidden;
     text-indent: -9999px;
@@ -265,18 +273,27 @@ section.top .contentsBlock .items ul li .thumb {
 section.top .contentsBlock .items ul li .thumb img {
     width: 100%;
     height: auto;
+    border-radius: 15px;
+}
+
+section.top .contentsBlock .items ul li .thumb img:hover {
+    z-index: 2;
+    -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0);
 }
 
 section.top .contentsBlock .items ul li p {
     font-size: 13px;
-    color: #fff;
-    text-align: left;
+    color: #000;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
 
 section.top .contentsBlock .mainImage {
-    width: 72%;
+    width: 100%;
     position: absolute;
     height: 500px;
     top: 0px;
@@ -2638,7 +2655,7 @@ nav.dic_category ul li:first-child {
     }
 
     section.top .main .logo img {
-        width: 126px;
+        width: 104px;
         height: auto;
     }
 
@@ -3114,7 +3131,7 @@ nav.dic_category ul li:first-child {
     }
 
     section.top .main .logo img {
-        width: 120px;
+        width: 99px;
         height: auto;
     }
 
