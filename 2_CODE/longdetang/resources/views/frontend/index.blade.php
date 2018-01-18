@@ -83,8 +83,8 @@
                             {{--<p class="read">{{$category->ad_slogan}}</p>--}}
                             {{--<p>{{$category->explain}}</p>--}}
                         {{--</div>--}}
-                        <div class="mainImage"
-                             style="background-image:url({{storage_url($category->pic)}});">
+                        <div  onclick="location.href='{{url('/prod?category_id=').$category->id}}'" class="mainImage"
+                             style="background-image:url({{storage_url($category->pic)}});cursor: pointer">
                         </div>
                         <div class="items" style="background-color: {{$category->bg_color}}">
                             <ul class="clearfix">

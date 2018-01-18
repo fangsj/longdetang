@@ -32,10 +32,11 @@ class ProdController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index()
+    public function index(Request $request)
     {
         $data = [];
         $data['categorys'] = $this->prodCategoryRespository->get();
+        $data['category_id'] = $request->category_id;
         return frontend_view('prod.list', $data);
     }
 

@@ -21,6 +21,7 @@
                     openSearchDialog: false,
                     artists:[],
                     secondCategoryId: '',
+                    categoryId: '{{$category_id or ''}}',
                     prod: {
                         pageSize: 16,
                         pageNumber: 1,
@@ -52,12 +53,21 @@
                         this.keyword = ''
                         this.artist = artist
                         this.secondCategoryId = ''
+                        this.categoryId = ''
+                        this.searchProds(1)
+                    },
+                    searchBySecondCategory: function(categoryId) {
+                        this.keyword = ''
+                        this.secondCategoryId = categoryId
+                        this.categoryId = ''
+                        this.artist = ''
                         this.searchProds(1)
                     },
                     searchByCategory: function(categoryId) {
                         this.keyword = ''
-                        this.secondCategoryId = categoryId
+                        this.categoryId = categoryId
                         this.artist = ''
+                        this.secondCategoryId = ''
                         this.searchProds(1)
                     },
                     searchProds: function(pageNumber) {
@@ -67,6 +77,7 @@
                             pageSize: this.prod.pageSize,
                             pageNumber: pageNumber,
                             second_category_id: this.secondCategoryId,
+                            category_id: this.categoryId,
                             name: this.keyword,
                             artist: this.artist
                         }, function (data) {
@@ -113,7 +124,7 @@
                     <div class="itemSerchBtn" @click="openSearch"><span>搜索</span></div>
                     <div class="serchBlock" style="display: none; opacity: 0;">
 
-                        <form action="list.php" method="get" onsubmit="return false" style="opacity: 0;">
+                        <form action="#" method="get" onsubmit="return false" style="opacity: 0;">
                             <div class="cls" @click="closeSearch"><img src="{{asset('frontend/img/detail/close.svg')}}" alt="关闭">
                             </div>
                             <div class="side_header">
@@ -124,11 +135,11 @@
                                 <input type="text" v-model="keyword" placeholder="输入关键字按回车键搜索" @keyup.enter="searchByKeyword" class="input_full" name="keyword" value="">
                             </div>
                             <div class="side_block" v-for="item in categorys">
-                                <div class="filter_title"><span class="c_icon01" style="font-weight: bold;background-size:34%;" :style="{'background-image': 'url(\''+ $storage + item.thumbnail +'\')'}">@{{item.name}}</span>
+                                <div class="filter_title"  style="cursor: pointer" @click="searchByCategory(item.id)"><span class="c_icon01" style="font-weight: bold;background-size:34%;" :style="{'background-image': 'url(\''+ $storage + item.thumbnail +'\')'}">@{{item.name}}</span>
                                 </div>
                                 <div class="filter_body">
                                     <ul class="filteritem">
-                                        <li @click="searchByCategory(child.id)" style="padding-left: 13%" v-for="child in item.child">
+                                        <li @click="searchBySecondCategory(child.id)" style="padding-left: 13%" v-for="child in item.child">
                                             <label><span class="icon_check"></span>@{{child.name}}</label>
                                         </li>
                                     </ul>

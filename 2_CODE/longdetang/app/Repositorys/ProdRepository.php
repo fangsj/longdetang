@@ -86,6 +86,9 @@ class ProdRepository implements IProdRepository
         if (!empty($params['name'])) {
             $query->where('prods.name', 'like', "%" . $params['name'] . "%");
         }
+        if (!empty($params['category_id'])) {
+            $query->where('prods.category_id', $params['category_id']);
+        }
         if (!empty($params['second_category_id'])) {
             $query->where('prods.second_category_id', $params['second_category_id']);
         }
