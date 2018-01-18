@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no, email=no, address=no">
-    <title>龍德堂陶艺</title>
+    <title>龍德堂陶艺1111</title>
     <link rel="shortcut icon" href="{{asset('frontend/img/common/favicon.ico')}}"/>
     <link rel="icon" type="image/vnd.microsoft.icon" href="{{asset('frontend/img/common/favicon.ico')}}"/>
     <link rel="apple-touch-icon" href="{{asset('frontend/img/common/apple-touch-icon.png')}}">
