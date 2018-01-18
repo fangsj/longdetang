@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="{{asset('frontend/img/common/favicon.ico')}}"/>
     <link rel="icon" type="image/vnd.microsoft.icon" href="{{asset('frontend/img/common/favicon.ico')}}"/>
     <link rel="apple-touch-icon" href="{{asset('frontend/img/common/apple-touch-icon.png')}}">
-    <link rel="stylesheet" href="{{asset('frontend//css/import.css')}}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{asset('frontend/css/import.css')}}" type="text/css" media="all"/>
     <script src="{{asset('frontend/js/jquery-2.1.1.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('frontend/js/eccube.js')}}"></script>
     <script type="text/javascript" src="{{asset('frontend/js/eccube.legacy.js')}}"></script>
