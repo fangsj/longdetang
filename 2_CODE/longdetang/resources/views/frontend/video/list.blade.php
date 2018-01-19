@@ -75,6 +75,7 @@
                                     <video v-on:pause="pause($event, item)" v-on:play="play($event, item)" controls preload="metadata" :src="$storage + item.url" :poster="$storage + item.pic" style="width: 100%;">
                                     </video>
                                 </div>
+                                <h4>@{{ item.title }}</h4>
                                 <article>@{{item.description || ''}}</article>
                             </li>
                         </ul>
