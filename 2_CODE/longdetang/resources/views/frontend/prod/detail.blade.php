@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="landingBlock" style="background: rgb(192, 192, 192);">
+                <div class="landingBlock" style="">
                     <div class="wrap briefContainer" style="width: 50%;padding:0 25%">
                         {!!  $prod->brief !!}
                     </div>
