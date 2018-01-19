@@ -614,15 +614,24 @@ nav.topNavi ul li {
     font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
 }
 
+section.top .main .logo img {
+    width: 104px;
+    margin-top: 16px;
+}
+
 nav.topNavi ul li a {
     color: #000;
     text-decoration: none;
     display: block;
     height: 60px;
     line-height: 60px;
-    padding: 0 50px;
+    padding: 40px 50px;
     margin: 0;
     font-size: 14px;
+}
+
+nav.topNavi ul li a:hover{
+    opacity:0.65;
 }
 
 /* ==============================================
@@ -1083,13 +1092,14 @@ header nav.memberNavi ul li:last-child {
     }
 
     .DSbtn {
-        position: relative;
+        position: absolute;
         -webkit-transition: ease .5s;
         transition: ease .5s;
         cursor: pointer;
         display: block;
         width: auto;
         height: 50px;
+        left: 40px;
     }
 
     .DSbtn .hambarg:nth-child(1) {

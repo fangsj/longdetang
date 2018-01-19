@@ -5,7 +5,7 @@
     <style>
         .new_box{
             width:100%;
-            background:#e5e5e5;
+            /*background:#e5e5e5;*/
             position:relative;
             height:auto;
         }

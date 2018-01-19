@@ -66,9 +66,11 @@
 	position: relative;
 }
 .slick-slide img {
-	display: block;
-	height: auto;
-	width: 100%;
+    display: block;
+    height: auto;
+    width: 100%;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
 }
 .slick-slide.slick-loading img {
 	display: none;

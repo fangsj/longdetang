@@ -25,6 +25,7 @@
             z-index: 5;
             font-size: 15px;
             border-bottom: 1px solid #eeeeee;
+            cursor: pointer;
         }
 
         .new_list .date {
@@ -101,6 +102,7 @@
             width: 100%;
             display: block;
             height: auto;
+            cursor: pointer;
         }
 
         }
@@ -190,6 +192,7 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 margin-top: 10px;
+                cursor: pointer;
             }
 
             .new_list .box .btn {
@@ -206,6 +209,7 @@
                 display: block;
                 float: left;
                 margin-right: 3px;
+                cursor: pointer;
             }
 
             .new_list .box .btn span img {

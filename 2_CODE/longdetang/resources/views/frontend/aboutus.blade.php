@@ -73,7 +73,7 @@
         }
 
         .introduce .int_list {
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
             background: #f8f8f8;
             padding-top: 20px;
@@ -330,15 +330,15 @@
                         <div class="int_list">
                             <ul>
                                 <li>
-                                    <p><img src="{{asset('frontend/img/common/icon_phone.jpg')}}"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0510-87407766
+                                    <p><img src="{{asset('frontend/img/common/icon_phone.jpg')}}"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0510-83511666
                                     </p>
                                 </li>
                                 <li>
-                                    <p><img src="{{asset('frontend/img/common/icon_index.jpg')}}"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江苏省宜兴市丁蜀镇西施路一号
+                                    <p><img src="{{asset('frontend/img/common/icon_index.jpg')}}"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江苏省无锡市宜兴市丁蜀镇西望村
                                     </p>
                                 </li>
                                 <li>
-                                    <p><img src="{{asset('frontend/img/common/icon_mail.jpg')}}"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yutaizisha@163.com
+                                    <p><img src="{{asset('frontend/img/common/icon_mail.jpg')}}"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;937647848@qq.com
                                     </p>
                                 </li>
                                 <li class="ditu">
