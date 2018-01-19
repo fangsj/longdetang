@@ -82,7 +82,11 @@
                                         <i class="fa fa-upload"></i><span> 选择视频上传</span>
                                     </button>
                                     <input type="file" id="videoInput" name="video" accept="video/*" style="display: none"/>
-                                    <span class="upload-loading"></span>
+                                    <div id="videoUploaderProcessContainer" class="progress progress-striped active" style="width: 200px;height: 9px;margin-top: 2%;display: none;">
+                                        <div id="videoUploaderProcess" style="width: 0%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" role="progressbar" class="progress-bar">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div id="video-preview" class="img-preview" style="display: {{isset($url) ? 'block' : 'none'}};margin-top: 5px;width: 200px;">
                                     <input type="hidden" name="url" value="{{$url or ''}}"/>

@@ -19,7 +19,6 @@ $(function () {
                     find('input').val(resp.result[0].url);
                 }
             }
-            $(e.target).next('.upload-loading').hide();
         }
     });
 
@@ -35,8 +34,16 @@ $(function () {
                     find('input').val(resp.result[0].url);
                 }
             }
-            $(e.target).next('.upload-loading').hide();
+            $('#videoUploaderProcess').css('width', '100%');
+            $('#videoUploaderProcessContainer').hide();
+            $('#videoUploaderProcess').css('width', '0%');
         }
+    }).bind('fileuploadprogress', function (e, data) {
+        var progress = parseInt(data.loaded / data.total * 100, 10);
+        $('#videoUploaderProcess').css('width', progress + '%');
+    }).bind('fileuploadadd', function (e, data) {
+        $('#videoUploaderProcessContainer').show();
+        $('#videoUploaderProcess').css('width', '85%');
     });
 
     $('#dataForm').easyForm({
