@@ -90,6 +90,7 @@
             display: block;
             float: left;
             margin-right: 3px;
+            cursor: pointer;
         }
 
         .new_list .box .btn span img {
@@ -311,7 +312,7 @@
                                 <img src="{{asset('frontend/img/common/icon_date.jpg')}}" />
                                 <p>@{{item.publish_time && item.publish_time.substr(0, 10)}}</p>
                                 <img src="{{asset('frontend/img/common/icon_name.jpg')}}" />
-                                <p>by @{{item.author || ''}}</p>
+                                {{--<p>by @{{item.author || ''}}</p>--}}
                                 <div class="clear"></div>
                             </div>
                             <div class="box">

@@ -591,6 +591,10 @@ nav.gNavi ul li a {
     font-size: 14px;
 }
 
+nav.gNavi ul li a:hover {
+    opacity: .65;
+}
+
 nav.topNavi {
     margin: 0 0 86px;
     padding: 0;

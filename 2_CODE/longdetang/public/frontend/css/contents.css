@@ -736,7 +736,7 @@ div.listrightbloc h3 {
 /* コメント */
 div.listrightbloc .listcomment {
     margin: 0 0 10px 0;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
 }
 
@@ -3857,6 +3857,7 @@ padding: 0 20px;
 .artist_detail article {
     margin: 0 -10% 10%;
     font-weight: 300;
+    text-align: left;
 }
 
 .LC_Page_Artists_Detail .related_item ul{

@@ -68,7 +68,7 @@
 .slick-slide img {
     display: block;
     height: auto;
-    width: 100%;
+    width: 99%;
     border: 1px solid #f5f5f5;
     cursor: pointer;
 }

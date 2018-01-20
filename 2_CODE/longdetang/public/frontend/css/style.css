@@ -29,7 +29,7 @@ section.top .main .logo {
 }
 
 section.top .main .logo img {
-    width: 100px;
+    width: 104px;
     margin-top: 16px;
 }
 
@@ -1285,6 +1285,15 @@ section.related_item ul li .thumb {
 section.related_item ul li .thumb img {
     width: 100%;
     height: auto;
+    border: 1px solid #f5f5f5;
+    border-radius: 15px;
+}
+
+section.related_item ul li .thumb img:hover {
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0);
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 section.related_item ul li .caption {
@@ -1292,9 +1301,9 @@ section.related_item ul li .caption {
 }
 
 section.related_item ul li .caption h3 {
-    font-size: 12px;
-    text-align: left;
-    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px;
     padding: 0;
 }
 
