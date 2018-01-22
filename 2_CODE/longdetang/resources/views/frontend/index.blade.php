@@ -11,11 +11,57 @@
     <link rel="icon" type="image/vnd.microsoft.icon" href="{{asset('frontend/img/common/favicon.ico')}}"/>
     <link rel="apple-touch-icon" href="{{asset('frontend/img/common/apple-touch-icon.png')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/import.css')}}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{asset('frontend/js/swiper/swiper.min.css')}}" type="text/css" media="all"/>
     <script src="{{asset('frontend/js/jquery-2.1.1.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('frontend/js/eccube.js')}}"></script>
     <script type="text/javascript" src="{{asset('frontend/js/eccube.legacy.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/js/swiper/swiper.min.js')}}"></script>
+    <style>
+        #stage_pc {
+            display: block;
+        }
+        #stage2_sp {
+            display: none;
+        }
+        @media screen and (max-width: 767px) {
+            #stage_pc {
+                display: none;
+            }
+            #stage2_sp {
+                display: block;
+            }
+        }
+        #stage_pc .swiper-pagination-bullet, #stage2_sp .swiper-pagination-bullet {
+            width: 29px;
+            height: 4px;
+            border-radius: 4px;
+        }
+        #stage_pc .swiper-pagination-bullet-active, #stage2_sp .swiper-pagination-bullet-active {
+            background: white;
+        }
+    </style>
     <script type="text/javascript">//<![CDATA[
         $(function () {
+            var mySwiper = new Swiper ('#stage_pc', {
+                speed: 800,
+                // autoplay: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }
+            });
+            var mySwiper = new Swiper ('#stage2_sp', {
+                speed: 800,
+                // autoplay: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                }
+            })
         });
         //]]></script>
 
@@ -58,19 +104,27 @@
                     <div class="logo"><img src="{{asset('frontend/img/top/logo.png')}}" width="80" style="vertical-align: center" alt="KIDORI"/>
                     </div>
                     {{--<h1 style="font-size: 19px;font-family: 黑体">龙德堂陶艺<br>竹沥水煮茶味真，疏香沾齿韵怡人。<br>何来月下烟岚色，龙德堂壶凤凰春。<br>方圆自在，紫玉梵音。</h1>--}}
-                    <div id="stage" class="pc">
+                    <div id="stage_pc" class="pc swiper-container">
+                        <div class="swiper-wrapper">
                         @foreach ($banners as $banner)
-                            <div id="photo{{$loop->index + 1}}" class="pic">
-                                <div style="background-image:url({{storage_url($banner->pic)}});"></div>
+                            <div id="photo{{$loop->index + 1}}" class="pic swiper-slide">
+                                <img  style="width: 100%;" src="{{storage_url($banner->pic)}}">
                             </div>
                         @endforeach
+                        </div>
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                        <div class="swiper-button-next swiper-button-white"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div id="stage" class="sp">
+                    <div id="stage2_sp" class="swiper-container">
+                        <div class="swiper-wrapper">
                         @foreach ($banners as $banner)
-                            <div id="photo{{$loop->index + 1}}" class="pic">
-                                <div><img src="{{storage_url($banner->mobile_pic)}}" alt="龙德堂"/></div>
+                            <div id="photo{{$loop->index + 1}}" class="pic swiper-slide">
+                                <img style="width: 100%;" src="{{storage_url($banner->mobile_pic)}}" alt="龙德堂"/>
                             </div>
                         @endforeach
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
                 <nav class="topNavi">
