@@ -46,7 +46,7 @@
 
 @font-face {
     font-family: 'Kangxi';
-    src: url('../fonts/kxzdt.otf') format('opentype');
+    src: url('http://yltx-x.oss-cn-hangzhou.aliyuncs.com/kxzdt.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
