@@ -1,4 +1,4 @@
-<section class="dictionaryBanner" style="background: none">
+<section class="dictionaryBanner" style="background: white">
     <img style="width: 100%;" src="{{asset('frontend/img/common/bottom.jpg')}}">
     <a href="javascript:;"></a>
     {{--<div class="wrap">--}}
