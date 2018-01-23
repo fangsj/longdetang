@@ -19,12 +19,12 @@ section.top .main {
 }
 
 section.top .main .logo {
-    margin: 0 0 42px;
+    margin: 10px 0 42px;
     padding: 0;
     line-height: 0;
     text-align: center;
     background-color: #79242f;
-    height: 132px;
+    height: 140px;
     width: 100%;
 }
 
