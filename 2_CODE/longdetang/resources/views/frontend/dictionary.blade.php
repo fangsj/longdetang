@@ -1,6 +1,6 @@
 <section class="dictionaryBanner" style="background: white">
     <img style="width: 100%;" src="{{asset('frontend/img/common/bottom.jpg')}}">
-    <a href="javascript:;"></a>
+    <a href="{{url('/video')}}"></a>
     {{--<div class="wrap">--}}
         {{--<div class="titleBlock"><br>--}}
             {{--<span></span></div>--}}
