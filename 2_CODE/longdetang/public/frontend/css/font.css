@@ -43,3 +43,10 @@
   /*src: url(fonts/NotoSerifCJKjp/NotoSerifCJKjp-Black.otf) format('opentype');*/
  /*}*/
 
+
+@font-face {
+    font-family: 'KXZDT';
+    src: url('../fonts/kxzdt.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
