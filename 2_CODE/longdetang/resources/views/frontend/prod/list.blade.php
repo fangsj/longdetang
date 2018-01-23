@@ -163,12 +163,12 @@
                             全商品
                             <div class="swich">
                                 <ul>
-                                    <li class="sw01 active" onclick="setViewCols(1);">リスト表示</li>
-                                    <li class="sw02 " onclick="setViewCols(2);">サムネイル表示</li>
+                                    <li class="sw01" onclick="setViewCols(1);">リスト表示</li>
+                                    <li class="sw02 active" onclick="setViewCols(2);">サムネイル表示</li>
                                 </ul>
                             </div>
                         </h3>
-                        <ul class="itemlistBlock">
+                        <ul class="itemlistBlock c_layout">
                             <li v-for="item in prod.rows">
                                 <div class="list_area clearfix"><a name="product256713"></a>
                                     <div class="listphoto">
