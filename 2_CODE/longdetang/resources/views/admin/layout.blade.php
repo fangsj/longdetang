@@ -82,6 +82,9 @@
                 <li data-menu-link="{{ admin('/banner')  }}" data-menu-code="005">
                     <a><i class="fa fa-picture-o"></i> <span class="nav-label">首页轮播</span></a>
                 </li>
+                <li data-menu-link="{{ admin('/hotRecom')  }}" data-menu-code="007">
+                    <a><i class="fa fa-cubes"></i> <span class="nav-label">热销推荐</span></a>
+                </li>
             </ul>
 
         </div>
