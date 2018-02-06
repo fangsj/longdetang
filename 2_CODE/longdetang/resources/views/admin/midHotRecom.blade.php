@@ -20,6 +20,10 @@
                 transform: scale(1.005);
                 transition: all 0.6s;
             }
+
+            [data-position] {
+                cursor: pointer;
+            }
         </style>
     @endpush
     @push('scripts')
@@ -37,7 +41,7 @@
         </div>
         <div class="ibox-content">
             <div class="row" style="height: 250px;">
-                <div style="width: 32.8%;height: 100%;float: left;margin: .1%;">
+                <div  style="width: 32.8%;height: 100%;float: left;margin: .1%;">
                     <div data-position="left_top"  style="width: 100%;height: 49.5%;margin-bottom: .5%;" class="pic_bg" title="点击修改">
                         @if(isset($left_top))
                             <img data-meta="{{json_encode($left_top)}}" src="{{storage_url($left_top['pic'])}}" style="width: 100%;height: auto;max-height: 100%;">

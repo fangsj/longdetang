@@ -142,6 +142,9 @@
                     @include('frontend.menu')
                 </nav>
                 <style>
+                    #hot_recom_pc, #hot_recom_sp {
+                        cursor: pointer;
+                    }
                     @media screen and (max-width: 767px) {
                         #hot_recom_pc {
                             display: none;
