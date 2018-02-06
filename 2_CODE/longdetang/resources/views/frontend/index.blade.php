@@ -39,6 +39,15 @@
         #stage_pc .swiper-pagination-bullet-active, #stage2_sp .swiper-pagination-bullet-active {
             background: white;
         }
+
+        .pic_bg {
+            text-align: center;
+            background: url('{{asset('/assets/img/noimage.png')}}');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(230,230,230);
+            background-size: cover;
+        }
     </style>
     <script type="text/javascript">//<![CDATA[
         $(function () {
@@ -61,6 +70,9 @@
                     el: '.swiper-pagination',
                     clickable: true
                 }
+            });
+            $('[data-href]').click(function () {
+                location.href = $(this).data()['href'];
             })
         });
         //]]></script>
@@ -95,7 +107,6 @@
         @include('frontend.menu')
     </nav>
     <!--▲HEADER-->
-
     <div id="container" class="clearfix" style="padding-top: 34px;">
         <div id="main_column" class="colnum1"><!-- ▼メイン -->
 
@@ -130,6 +141,69 @@
                 <nav class="topNavi">
                     @include('frontend.menu')
                 </nav>
+                <style>
+                    @media screen and (max-width: 767px) {
+                        #hot_recom_pc {
+                            display: none;
+                        }
+                        #hot_recom_sp {
+                            display: block !important;
+                        }
+                    }
+                </style>
+                @if(!empty($hotRecoms))
+                <div id="hot_recom_pc" style="width: 100%;height: 250px;margin-bottom: 3%;">
+                    <div style="width: 32.8%;height: 100%;float: left;margin: .1%;">
+                        <a href='{{isset($hotRecoms['left_top']['link']) ? $hotRecoms['left_top']['link'] : ''}}'>
+                        <div data-position="left_top"  style="width: 100%;height: 49.5%;margin-bottom: .5%;background-image: url('{{isset($hotRecoms['left_top']['pic']) ? storage_url($hotRecoms['left_top']['pic']) : ''}}')" class="pic_bg">
+
+                        </div>
+                        </a>
+                        <a href='{{isset($hotRecoms['left_bottom']['link']) ? $hotRecoms['left_bottom']['link'] : ''}}'>
+                        <div data-position="left_bottom" style="width: 100%;height: 49.5%;margin-top: .5%;background-image: url('{{isset($hotRecoms['left_bottom']['pic']) ? storage_url($hotRecoms['left_bottom']['pic']) : ''}}')" class="pic_bg" >
+
+                        </div>
+                        </a>
+                    </div>
+                    <a href='{{isset($hotRecoms['center']['link']) ? $hotRecoms['center']['link'] : ''}}'>
+                    <div data-position="center" style="width: 44.8%;height: 100%;float: left;margin: .1%;background-image: url('{{isset($hotRecoms['center']['pic']) ? storage_url($hotRecoms['center']['pic']) : ''}}')" class="pic_bg" >
+
+                    </div>
+                    </a>
+                    <div style="width: 21.8%;height: 100%;float: left;margin: .1%;">
+                        <a href='{{isset($hotRecoms['right_top']['link']) ? $hotRecoms['right_top']['link'] : ''}}'>
+                        <div data-position="right_top" style="width: 100%;height: 49.5%;margin-bottom: .5%;background-image: url('{{isset($hotRecoms['right_top']['pic']) ? storage_url($hotRecoms['right_top']['pic']) : ''}}')" class="pic_bg" >
+
+                        </div>
+                        </a>
+                        <a href='{{isset($hotRecoms['right_bottom']['link']) ? $hotRecoms['right_bottom']['link'] : ''}}'>
+                        <div data-position="right_bottom" style="width: 100%;height: 49.5%;margin-top: .5%;background-image: url('{{isset($hotRecoms['right_bottom']['pic']) ? storage_url($hotRecoms['right_bottom']['pic']) : ''}}')" class="pic_bg" >
+
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                 <div id="hot_recom_sp" style="width: 100%;position: relative;display: none;background: white;line-height: 3px;">
+                         @if(isset($hotRecoms['left_top']) )
+                         <img data-href="{{$hotRecoms['left_top']['link']}}" src="{{isset($hotRecoms['left_top']['pic']) ? storage_url($hotRecoms['left_top']['pic']) : ''}}" style="width: 100%;height: auto;max-height: 150px;">
+                         @endif
+                         @if(isset($hotRecoms['left_bottom']) )
+                                 <img data-href="{{$hotRecoms['left_bottom']['link']}}" src="{{isset($hotRecoms['left_bottom']['pic']) ? storage_url($hotRecoms['left_bottom']['pic']) : ''}}" style="width: 100%;height: auto;max-height: 150px;margin-top: 2px;">
+                         @endif
+                         @if(isset($hotRecoms['center']) )
+                                 <img data-href="{{$hotRecoms['center']['link']}}" src="{{isset($hotRecoms['center']['pic']) ? storage_url($hotRecoms['center']['pic']) : ''}}" style="width: 100%;height: auto;max-height: 150px;margin-top: 2px;">
+                         @endif
+                         <div style="width: 100%;margin-top: 2px;">
+                             @if(isset($hotRecoms['right_top']) )
+                                 <img data-href="{{$hotRecoms['right_top']['link']}}" src="{{isset($hotRecoms['right_top']['pic']) ? storage_url($hotRecoms['right_top']['pic']) : ''}}" style="width: 50%;height: auto;border-right:1px solid transparent;float: left;max-height: 150px;box-sizing: border-box;">
+                             @endif
+                             @if(isset($hotRecoms['right_bottom']) )
+                                     <img data-href="{{$hotRecoms['right_bottom']['link']}}" src="{{isset($hotRecoms['right_bottom']['pic']) ? storage_url($hotRecoms['right_bottom']['pic']) : ''}}" style="width: 50%;border-left:1px solid transparent;height: auto;float: left;max-height: 150px;box-sizing: border-box;">
+                             @endif
+                             <div style="clear: both;"></div>
+                         </div>
+                 </div>
+                @endif
                 @foreach($categorys as $category)
                     <div class="contentsBlock contents0{{$loop->index % 2 == 0 ? '1' : '2'}}">
                         {{--<div class="titleBlock">--}}

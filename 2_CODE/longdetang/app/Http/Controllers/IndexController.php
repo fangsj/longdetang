@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Banner;
+use App\Models\MidHotRecom;
 use App\Repositorys\ProdCategoryRespository;
 
 class IndexController extends Controller
@@ -25,6 +26,10 @@ class IndexController extends Controller
         $data = [];
         $data['banners'] = Banner::where('status', 1)->orderBy('seq')->get(); // 获取banner
         $data['categorys'] = $this->repository->getCategoryLimitProd();
+        $data['hotRecoms'] = [];
+        foreach (MidHotRecom::all()->toArray() as $recom) {
+            $data['hotRecoms'][$recom['position']] = $recom;
+        }
         return frontend_view('index', $data);
     }
 }

@@ -72,3 +72,7 @@ Route::post('article/add', 'ArticleController@add');
 Route::get('article/edit', 'ArticleController@initEdit');
 Route::post('article/edit', 'ArticleController@edit');
 Route::post('article/status', 'ArticleController@switchStatus');
+
+//
+Route::get('hotRecom', 'MidHotRecomController@index');
+Route::post('hotRecom/save', 'MidHotRecomController@save');
