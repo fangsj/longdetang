@@ -188,20 +188,20 @@
                 </div>
                  <div id="hot_recom_sp" style="width: 100%;position: relative;display: none;background: white;line-height: 3px;">
                          @if(isset($hotRecoms['left_top']) )
-                         <img data-href="{{$hotRecoms['left_top']['link']}}" src="{{isset($hotRecoms['left_top']['pic']) ? storage_url($hotRecoms['left_top']['pic']) : ''}}" style="width: 100%;height: auto;max-height: 150px;">
+                         <img data-href="{{$hotRecoms['left_top']['link']}}" src="{{isset($hotRecoms['left_top']['pic']) ? storage_url($hotRecoms['left_top']['pic']) : ''}}" style="width: 100%;height: auto;">
                          @endif
                          @if(isset($hotRecoms['left_bottom']) )
-                                 <img data-href="{{$hotRecoms['left_bottom']['link']}}" src="{{isset($hotRecoms['left_bottom']['pic']) ? storage_url($hotRecoms['left_bottom']['pic']) : ''}}" style="width: 100%;height: auto;max-height: 150px;margin-top: 2px;">
+                                 <img data-href="{{$hotRecoms['left_bottom']['link']}}" src="{{isset($hotRecoms['left_bottom']['pic']) ? storage_url($hotRecoms['left_bottom']['pic']) : ''}}" style="width: 100%;height: auto;margin-top: 2px;">
                          @endif
                          @if(isset($hotRecoms['center']) )
-                                 <img data-href="{{$hotRecoms['center']['link']}}" src="{{isset($hotRecoms['center']['pic']) ? storage_url($hotRecoms['center']['pic']) : ''}}" style="width: 100%;height: auto;max-height: 150px;margin-top: 2px;">
+                                 <img data-href="{{$hotRecoms['center']['link']}}" src="{{isset($hotRecoms['center']['pic']) ? storage_url($hotRecoms['center']['pic']) : ''}}" style="width: 100%;height: auto;margin-top: 2px;">
                          @endif
                          <div style="width: 100%;margin-top: 2px;">
                              @if(isset($hotRecoms['right_top']) )
-                                 <img data-href="{{$hotRecoms['right_top']['link']}}" src="{{isset($hotRecoms['right_top']['pic']) ? storage_url($hotRecoms['right_top']['pic']) : ''}}" style="width: 50%;height: auto;border-right:1px solid transparent;float: left;max-height: 150px;box-sizing: border-box;">
+                                 <img data-href="{{$hotRecoms['right_top']['link']}}" src="{{isset($hotRecoms['right_top']['pic']) ? storage_url($hotRecoms['right_top']['pic']) : ''}}" style="width: 50%;height: auto;border-right:1px solid transparent;float: left;box-sizing: border-box;">
                              @endif
                              @if(isset($hotRecoms['right_bottom']) )
-                                     <img data-href="{{$hotRecoms['right_bottom']['link']}}" src="{{isset($hotRecoms['right_bottom']['pic']) ? storage_url($hotRecoms['right_bottom']['pic']) : ''}}" style="width: 50%;border-left:1px solid transparent;height: auto;float: left;max-height: 150px;box-sizing: border-box;">
+                                     <img data-href="{{$hotRecoms['right_bottom']['link']}}" src="{{isset($hotRecoms['right_bottom']['pic']) ? storage_url($hotRecoms['right_bottom']['pic']) : ''}}" style="width: 50%;border-left:1px solid transparent;height: auto;float: left;box-sizing: border-box;">
                              @endif
                              <div style="clear: both;"></div>
                          </div>
