@@ -819,7 +819,7 @@ header nav.memberNavi ul li:last-child {
         padding: 0;
     }
     footer nav.fNavi ul.sub li {
-        width:33.3%;
+        width: 25%;
         float: left;
         list-style: none;
         padding: 0;
