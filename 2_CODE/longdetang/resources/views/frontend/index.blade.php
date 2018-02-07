@@ -46,7 +46,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-color: rgb(230,230,230);
-            background-size: cover;
+            background-size: 100% 100%;
         }
     </style>
     <script type="text/javascript">//<![CDATA[
