@@ -50,12 +50,13 @@
         }
     </style>
     <script type="text/javascript">//<![CDATA[
-        resizeHeight()
         window.onresize = resizeHeight
         function resizeHeight() {
+            console.log(1)
             $('#hot_recom_pc').css('height', 250 * (window.innerWidth / 1010) + 'px');
         }
         $(function () {
+            resizeHeight()
             var mySwiper = new Swiper ('#stage_pc', {
                 speed: 800,
                 // autoplay: true,
