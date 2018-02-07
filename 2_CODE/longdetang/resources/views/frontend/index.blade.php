@@ -73,7 +73,12 @@
             });
             $('[data-href]').click(function () {
                 location.href = $(this).data()['href'];
-            })
+            });
+            resizeHeight()
+            window.onresize = resizeHeight
+            function resizeHeight() {
+                $('#hot_recom_sp').css('height', 250 * (window.innerWidth / 1010) + 'px')
+            }
         });
         //]]></script>
 
