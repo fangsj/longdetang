@@ -85,6 +85,16 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
+                            <label class="control-label col-md-4">链接: </label>
+                            <div class="col-md-5">
+                                <input type="text" id="drill_value" name="drill_value" class="form-control" maxlength="256" placeholder="请输入点击跳转链接" value="{{$drill_value or ''}}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
                             <label class="control-label col-md-4">状态<span class="required"
                                                                           aria-required="true">*&nbsp; </span>: </label>
                             <div class="col-md-5">

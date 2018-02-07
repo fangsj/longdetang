@@ -19,9 +19,11 @@
     <style>
         #stage_pc {
             display: block;
+            cursor: pointer;
         }
         #stage2_sp {
             display: none;
+            cursor: pointer;
         }
         @media screen and (max-width: 767px) {
             #stage_pc {
@@ -124,7 +126,7 @@
                         <div class="swiper-wrapper">
                         @foreach ($banners as $banner)
                             <div id="photo{{$loop->index + 1}}" class="pic swiper-slide">
-                                <img  style="width: 100%;" src="{{storage_url($banner->pic)}}">
+                                <a href="{{$banner->drill_value}}"><img  style="width: 100%;" src="{{storage_url($banner->pic)}}"></a>
                             </div>
                         @endforeach
                         </div>
@@ -136,7 +138,7 @@
                         <div class="swiper-wrapper">
                         @foreach ($banners as $banner)
                             <div id="photo{{$loop->index + 1}}" class="pic swiper-slide">
-                                <img style="width: 100%;" src="{{storage_url($banner->mobile_pic)}}" alt="龙德堂"/>
+                                <a href="{{$banner->drill_value}}"><img style="width: 100%;" src="{{storage_url($banner->mobile_pic)}}" alt="龙德堂"/></a>
                             </div>
                         @endforeach
                         </div>

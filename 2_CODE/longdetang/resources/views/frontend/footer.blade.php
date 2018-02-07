@@ -12,9 +12,10 @@
     </style>
     <nav class="fNavi">
         <ul class="sub clearfix">
-            <li><img src="{{asset('frontend/img/common/scan_01.jpg')}}"></li>
-            <li><img src="{{asset('frontend/img/common/scan_02.jpg')}}"></li>
-            <li><img src="{{asset('frontend/img/common/scan_03.jpg')}}"></li>
+            <li><img src="{{asset('frontend/bottom/weixin.jpg')}}"></li>
+            <li><img src="{{asset('frontend/bottom/jingdong.jpg')}}"></li>
+            <li><img src="{{asset('frontend/bottom/youzan.jpg')}}"></li>
+            <li><img src="{{asset('frontend/bottom/taobao.jpg')}}"></li>
             <div class="clear"></div>
         </ul>
     </nav>

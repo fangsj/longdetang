@@ -15,7 +15,7 @@ class BannerController extends BaseController
     protected $model;
     protected $repository;
     protected $view_dir = 'banner';
-    protected $update_filed = ['title', 'pic', 'mobile_pic', 'seq', 'status'];
+    protected $update_filed = ['title', 'pic', 'mobile_pic', 'drill_value','seq', 'status'];
 
     public function __construct(BannerRepository $bannerRepository)
     {
