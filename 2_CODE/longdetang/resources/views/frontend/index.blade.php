@@ -50,6 +50,11 @@
         }
     </style>
     <script type="text/javascript">//<![CDATA[
+        resizeHeight()
+        window.onresize = resizeHeight
+        function resizeHeight() {
+            $('#hot_recom_pc').css('height', 250 * (window.innerWidth / 1010) + 'px');
+        }
         $(function () {
             var mySwiper = new Swiper ('#stage_pc', {
                 speed: 800,
@@ -74,11 +79,6 @@
             $('[data-href]').click(function () {
                 location.href = $(this).data()['href'];
             });
-            resizeHeight()
-            window.onresize = resizeHeight
-            function resizeHeight() {
-                $('#hot_recom_sp').css('height', 250 * (window.innerWidth / 1010) + 'px')
-            }
         });
         //]]></script>
 
