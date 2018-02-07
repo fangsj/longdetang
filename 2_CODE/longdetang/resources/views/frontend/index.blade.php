@@ -158,19 +158,19 @@
                 <div id="hot_recom_pc" style="width: 100%;height: 250px;margin-bottom: 3%;">
                     <div style="width: 32.8%;height: 100%;float: left;margin: .1%;">
                         <a href='{{isset($hotRecoms['left_top']['link']) ? $hotRecoms['left_top']['link'] : ''}}'>
-                        <div data-position="left_top"  style="width: 100%;height: 49.5%;margin-bottom: .5%;" class="pic_bg">
-                            <img src="{{isset($hotRecoms['left_top']['pic']) ? storage_url($hotRecoms['left_top']['pic']) : ''}}" style="width: 100%;height: auto;">
+                        <div data-position="left_top"  style="width: 100%;height: 49.5%;margin-bottom: .5%;background-image: url('{{isset($hotRecoms['left_top']['pic']) ? storage_url($hotRecoms['left_top']['pic']) : ''}}')" class="pic_bg">
+
                         </div>
                         </a>
                         <a href='{{isset($hotRecoms['left_bottom']['link']) ? $hotRecoms['left_bottom']['link'] : ''}}'>
-                        <div data-position="left_bottom" style="width: 100%;height: 49.5%;margin-top: .5%;" class="pic_bg" >
-                            <img src="{{isset($hotRecoms['left_bottom']['pic']) ? storage_url($hotRecoms['left_bottom']['pic']) : ''}}" style="width: 100%;height: auto;">
+                        <div data-position="left_bottom" style="width: 100%;height: 49.5%;margin-top: .5%;background-image: url('{{isset($hotRecoms['left_bottom']['pic']) ? storage_url($hotRecoms['left_bottom']['pic']) : ''}}')" class="pic_bg" >
+
                         </div>
                         </a>
                     </div>
                     <a href='{{isset($hotRecoms['center']['link']) ? $hotRecoms['center']['link'] : ''}}'>
-                    <div data-position="center" style="width: 44.8%;height: 100%;float: left;margin: .1%;" class="pic_bg" >
-                        <img src="{{isset($hotRecoms['center']['pic']) ? storage_url($hotRecoms['center']['pic']) : ''}}" style="width: 100%;height: auto;">
+                    <div data-position="center" style="width: 44.8%;height: 100%;float: left;margin: .1%;background-image: url('{{isset($hotRecoms['center']['pic']) ? storage_url($hotRecoms['center']['pic']) : ''}}')" class="pic_bg" >
+
                     </div>
                     </a>
                     <div style="width: 21.8%;height: 100%;float: left;margin: .1%;">
