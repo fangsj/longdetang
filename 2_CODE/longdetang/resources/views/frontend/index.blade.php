@@ -52,7 +52,6 @@
     <script type="text/javascript">//<![CDATA[
         window.onresize = resizeHeight
         function resizeHeight() {
-            console.log(1)
             $('#hot_recom_pc').css('height', 250 * (window.innerWidth / 1010) + 'px');
         }
         $(function () {
@@ -161,7 +160,7 @@
                     }
                 </style>
                 @if(!empty($hotRecoms))
-                <div id="hot_recom_pc" style="width: 100%;height: 250px;margin-bottom: 3%;">
+                <div id="hot_recom_pc" style="width: 100%;height: 250px;margin-bottom: 1.5%;">
                     <div style="width: 32.8%;height: 100%;float: left;margin: .1%;">
                         <a href='{{isset($hotRecoms['left_top']['link']) ? $hotRecoms['left_top']['link'] : ''}}'>
                         <div data-position="left_top"  style="width: 100%;height: 49.5%;margin-bottom: .5%;background-image: url('{{isset($hotRecoms['left_top']['pic']) ? storage_url($hotRecoms['left_top']['pic']) : ''}}')" class="pic_bg">
