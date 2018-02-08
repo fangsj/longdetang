@@ -215,15 +215,8 @@
                  </div>
                 @endif
                 @foreach($categorys as $category)
-                    <div class="contentsBlock contents0{{$loop->index % 2 == 0 ? '1' : '2'}}">
-                        {{--<div class="titleBlock">--}}
-                            {{--<h2 style="background-image: url('{{storage_url($category->thumbnail)}}');background-size:13%;">{{$category->name}}<br/><span>{{$category->pinyin}}</span></h2>--}}
-                            {{--<p class="read">{{$category->ad_slogan}}</p>--}}
-                            {{--<p>{{$category->explain}}</p>--}}
-                        {{--</div>--}}
-                        <div  onclick="location.href='{{url('/prod?category_id=').$category->id}}'" class="mainImage"
-                             style="background-image:url({{storage_url($category->pic)}});cursor: pointer">
-                        </div>
+                    <div class="contentsBlock contents0{{$loop->index % 2 == 0 ? '1' : '2'}}" style="line-height: 0;">
+                        <img onclick="location.href='{{url('/prod?category_id=').$category->id}}'" src="{{storage_url($category->pic)}}" style="width: 100%;height: auto;cursor: pointer;">
                         <div class="items" style="background-color: {{$category->bg_color}}">
                             <ul class="clearfix">
                                 @foreach($category->prods as $prod)
